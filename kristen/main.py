@@ -1,6 +1,6 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
-FUNDO = "https://img.elo7.com.br/product/original/1D27E33/painel-cenario-mundo-encantado-frete-gratis-cenario.jpg"
+FUNDO = "https://macmagazine.uol.com.br/wp-content/uploads/2015/04/16-floresta.jpg"
 LIVRO = "https://oamor.com.br/wp-content/uploads/2018/12/Quando-a-borboleta-rompe-o-casulo-2-830x450.jpg"
 
 STYLE["width"] = 900
