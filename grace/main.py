@@ -11,7 +11,7 @@ class Lago():
 
     def __init__(self):
         self.fundo = Cena(FUNDO)
-        self.pessoa = Elemento(LIVRO, texto = "O cenário é mesmo bonito!", h=150 , w=150, x=150, y=150)
+        self.pessoa = Elemento(LIVRO, texto = "O cenário é mesmo bonito!", h=150 , w=150, x=150, y=120)
         self.mais = Texto(self.fundo, txt = "Alguém está observando este cenário!", foi = self.mostra_pessoa) 
         
     def mostra_pessoa(self, *_ ):
