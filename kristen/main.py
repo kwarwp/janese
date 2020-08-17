@@ -11,8 +11,8 @@ class inicialesquerda():
 
     def __init__(self):
         self.fundo = Cena(FUNDO)
-        self.livro = Elemento(LIVRO, texto = "Abra este livro!", h=150 , w=150, x=350, y=250)
-        self.mais = Texto(self.fundo, txt = "Teste!", foi = self.mostra_livro) 
+        self.livro = Elemento(LIVRO, texto = "Voe!", h=150 , w=150, x=350, y=250)
+        self.mais = Texto(self.fundo, txt = "Clique aqui", foi = self.mostra_livro) 
         
     def mostra_livro(self, *_ ):
         self.livro.entra(self.fundo)
