@@ -7,7 +7,7 @@ STYLE["width"] = 900
 STYLE["heigth"] = 900
 
 
-class inicial():
+class inicialesquerda():
 
     def __init__(self):
         self.fundo = Cena(FUNDO)
