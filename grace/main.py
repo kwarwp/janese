@@ -17,10 +17,10 @@ class Lago():
     def mostra_pessoa(self, *_ ):
         self.pessoa.entra(self.fundo)
         
-    def chama(self):
+    def vai(self):
         self.fundo.vai()
         self.mais.vai()
 
 if __name__ == "__main__":
-    Lago().chama()
+    Lago().vai()
         
