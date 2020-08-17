@@ -21,5 +21,5 @@ class inicialesquerda():
         self.fundo.vai()
         self.mais.vai()
         
-inicial().chama()
+inicialesquerda().chama()
         
