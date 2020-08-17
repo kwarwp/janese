@@ -2,12 +2,12 @@
 
 from _spy.vitollino.main import Cena, Elemento, STYLE
 
-fundo = "https://www.google.com/url?sa=i&url=https%3A%2F%2Foglobo.globo.com%2Fcultura%2Fentenda-em-que-ordem-assistir-star-wars-a-cronologia-dos-filmes-24136182&psig=AOvVaw0ROUJDdxU6-ECOVaclCzKr&ust=1597793213656000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLjDquuxo-sCFQAAAAAdAAAAABAD"
+fundo = "https://media.gazetadopovo.com.br/2019/10/31105652/star-wars-1724901_1920-960x540.jpg"
 
 STYLE["width"] = 900
 STYLE["heigth"] = 900
 
-class inicial():
+class teste():
 
       def _init_(self):
             self.fundo = Cena(FUNDO)
