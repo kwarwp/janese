@@ -17,4 +17,4 @@ class direita():
       def chama(self):
             self.fundo.vai()
             
-inicial().chama()
+direita().chama()
