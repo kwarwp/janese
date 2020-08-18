@@ -22,5 +22,5 @@ class inicialesquerda():
         self.mais.vai()
         
 if __name__ == "__main__":  
-inicialesquerda().chama()
+	inicialesquerda().chama()
         
