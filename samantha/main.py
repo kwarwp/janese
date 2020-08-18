@@ -8,7 +8,7 @@ LIVRO = "https://nerdstore.com.br/wp-content/uploads/2020/02/livro-o-hobbit-edic
 STYLE["width"] = 900
 STYLE["heigth"] = 900
 
-class direita():
+class turmaDireita():
 
       def _init_(self):
             self.fundo = Cena(FUNDO)
@@ -17,4 +17,4 @@ class direita():
       def chama(self):
             self.fundo.vai()
             
-direita().chama()
+turmaDireita().chama()
