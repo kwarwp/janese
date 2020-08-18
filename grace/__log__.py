@@ -62,3 +62,9 @@ ImportError: _spy.vitollino.main
                          ^
 SyntaxError: trailing comma not allowed without surrounding parentheses
 '''},
+{'date': 'Mon Aug 17 2020 21:06:27.544 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: Maximum call stack size exceeded
+  module '$exec_324' line 30
+inicial().chama()
+'''},
