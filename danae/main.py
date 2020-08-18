@@ -12,7 +12,7 @@ class Lago():
 
     def __init__(self):
         self.fundo = Cena(FUNDO)
-        self.livro = Elemento(LIVRO, texto = "Turma da direita :)", h=150, w=150, x=550, y=120, cena= self.fundo)
+        self.livro = Elemento(LIVRO, texto = "Olhado tudo com atenção!)", h=150, w=150, x=550, y=120, cena= self.fundo)
             
     def vai(self):
         self.fundo.vai()
