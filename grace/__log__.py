@@ -55,3 +55,10 @@ AttributeError: 'str' object has no attribute 'elt'
     from _spy.vitollino.main.py import Cena, Elemento, STYLE, Texto
 ImportError: _spy.vitollino.main
 '''},
+{'date': 'Mon Aug 17 2020 21:03:02.393 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 4
+  from danae.main import 
+                         ^
+SyntaxError: trailing comma not allowed without surrounding parentheses
+'''},
