@@ -16,4 +16,4 @@ class turmaDireita():
         self.fundo.vai()
 
 if __name__ == "__main__":     
-    turmaDireita().chama()
+    turmaDireita().vai()
