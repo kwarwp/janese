@@ -141,3 +141,10 @@ AttributeError: 'turmaDireita' object has no attribute 'fundo'
     self.fundo.vai()
 AttributeError: 'turmaDireita' object has no attribute 'fundo'
 '''},
+{'date': 'Mon Aug 17 2020 21:05:29.629 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  def chama(self):
+  ^
+IndentationError: unexpected indent
+'''},
