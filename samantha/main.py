@@ -12,7 +12,7 @@ class turmaDireita():
         self.fundo = Cena(FUNDO)
         self.livro = Elemento(LIVRO, texto = "Turma da direita :)", h=150, w=150, x=350, y=250, cena= self.fundo)
             
-    def chama(self):
+    def vai(self):
         self.fundo.vai()
 
 if __name__ == "__main__":     
