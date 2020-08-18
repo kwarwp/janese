@@ -1,4 +1,7 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
+#from janese.grace.main import Lago
+#        self.fundo = Cena(FUNDO, meio=Lago)
+
 
 FUNDO = "https://i.imgur.com/oGWvqFK.jpg"
 LIVRO = "https://i.imgur.com/vJ7YP8N.png"
