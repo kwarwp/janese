@@ -30,4 +30,3 @@ class inicial():
         
 if __name__ == "__main__":        
     inicial().chama()
-        
