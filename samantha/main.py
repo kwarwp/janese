@@ -15,5 +15,5 @@ class turmaDireita():
     def chama(self):
         self.fundo.vai()
 
-            
-turmaDireita().chama()
+if __name__ == "__main__":     
+    turmaDireita().chama()
