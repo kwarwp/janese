@@ -17,10 +17,10 @@ class inicialesquerda():
     def mostra_livro(self, *_ ):
         self.livro.entra(self.fundo)
         
-    def vai(self):
+    def chama(self):
         self.fundo.vai()
         self.mais.vai()
         
 if __name__ == "__main__":  
-inicialesquerda().vai()
+inicialesquerda().chama()
         
