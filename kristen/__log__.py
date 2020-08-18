@@ -15,3 +15,10 @@
     inicial().chama()
 NameError: name 'inicial' is not defined
 '''},
+{'date': 'Mon Aug 17 2020 21:24:28.320 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 25
+  inicialesquerda().vai()
+  ^
+IndentationError: expected an indented block
+'''},
