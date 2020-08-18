@@ -27,5 +27,7 @@ class inicial():
         self.fundo.vai()
         self.mais.vai()
         
-inicial().chama()
+        
+if __name__ == "__main__":        
+    inicial().chama()
         
