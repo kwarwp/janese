@@ -22,14 +22,13 @@ class botao():
       pass
          
 
-
 class Estrutura():
 
     def __init__(self):
         self.fundo = Cena(FUNDO)
         self.fundo.vai()
         
-        self.imix= Elemento(IMIX, tit="dia 17/08/2020", x=260, y=170, w=50, h=50, cena =self.fundo, vai=botao_17082020)
+        self.imix= Elemento(IMIX, tit="dia 17/08/2020", x=260, y=170, w=50, h=50, cena =self.fundo, vai=botao_17082020())
          
     def botao_17082020(self, event = None):
         return Inicial().vai()
