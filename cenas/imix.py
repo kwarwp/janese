@@ -15,7 +15,7 @@ Changelog
 
 """
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-from samantha.main import turmaDireita
+#from samantha.main import turmaDireita
 from kristen.main import inicialesquerda
 from danae.main import Lago
 
@@ -32,7 +32,7 @@ class Inicial():
 
     def __init__(self):
         """ Criação do fundo e preparação da cena para cliques à direita, esquerda e meios."""
-        self.fundo = Cena(FUNDO, direita =turmaDireita(), esquerda =inicialesquerda(), meio=Lago()) 
+        self.fundo = Cena(FUNDO, esquerda =inicialesquerda(), meio=Lago()) 
         """ Cria elemento da Cena. Adiciona nome ao elemento e texto."""
         self.livro = Elemento(LIVRO, tit = "LIVRO", texto = "Era uma vez...", h=300, w=300, x=350, y=250)
         """ Cria texto que é carregado junto da abertura da cena."""
