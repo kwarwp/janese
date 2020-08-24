@@ -11,7 +11,7 @@ Changelog
         - Implementação música
 
 """
-from _spy.vitollino.main import Sala
+from _spy.vitollino.main import Sala, Cena
 
 SALA="https://p2.trrsf.com/image/fget/cf/460/0/images.terra.com/2018/03/23/modelos-de-escadas-linear-sem-corrimao.jpg"
 ESCRITORIO="https://www.viveremcasa.com/wp-content/uploads/2018/02/cadeira-home-office-preta-couro-comprar.jpg"
