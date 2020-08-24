@@ -38,16 +38,19 @@ class Estrutura():
         self.fundo.vai()
         """ Primeiro modo de criar um botão. Utiliza a função vai() do vitollino"""
         self.imix= Elemento(CALEND["IMIX"], tit="dia 17/08/2020", x=0, y=0, w=100, h=100, cena =self.fundo, vai=self.botao_17082020)
-        """ Segundo modo de criar um botão. Utiliza o DOM"""
+        """ Segundo modo de criar um botão"""
         self.ik= Elemento(CALEND["IK"], tit="dia 24/08/2020", x=100, y=0, w=100, h=100, cena =self.fundo)
+        """Linka um evento a uma função através de uma keybind
+           O 'elt' faz parte de um protocolo do vitollino para anexar um elemento a outro
+        """
         self.ik.elt.bind("click", self.botao_24082020)
         
     def botao_17082020(self, event=None):
-        """ Método que será chamado no clique do IMIX"""
+        """ Função que será chamado no clique do IMIX"""
         Inicial().chama()
         
     def botao_24082020(self, event=None):
-        """ Método que será chamado no clique do IK"""
+        """ Função que será chamado no clique do IK"""
 
 if __name__ == "__main__":        
     Estrutura()
