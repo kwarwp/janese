@@ -558,3 +558,10 @@ NameError: name 'Cena' is not defined
     self.escrit.n.vai()
 AttributeError: 'Cena' object has no attribute 'n'
 '''},
+{'date': 'Mon Aug 24 2020 19:13:23.791 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 25
+  self.colecao = Sala(n=self.escrit , l= self.cozinha, s= , o= self.cozinha)
+                                                           ^
+SyntaxError: invalid syntax
+'''},
