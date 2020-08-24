@@ -1,6 +1,6 @@
 # janese.cenas.ik.py
 # SPDX-License-Identifier: GPL-3.0-or-later
-""" Projeto sem descrição, (mude esta linha).
+""" Vittolino na UNESP.
 
 .. codeauthor:: Equipe Supygirls <supygirls@gmail.com>
 
