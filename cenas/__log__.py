@@ -841,3 +841,10 @@ NameError: name 'botao_17082020' is not defined
     self.imix=Elemento(CALEND["IMIX"], tit="dia 17/08/2020", x=0, y=100, w=300, h=300, cena=self.fundo, vai=botao_17082020)
 NameError: name 'botao_17082020' is not defined
 '''},
+{'date': 'Mon Aug 24 2020 20:13:01.262 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 33
+  """ Primeiro modo de criar um botão. Utiliza a função vai() do vitollino"""
+  ^
+IndentationError: unexpected indent
+'''},
