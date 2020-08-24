@@ -798,3 +798,10 @@ UnboundLocalError: local variable 'botao_17082020' referenced before assignment
     self.imix=Elemento(CALEND["IMIX"], tit="dia 17/08/2020", x=0, y=100, w=300, h=300, cena=self.fundo, vai=botao_17082020)
 UnboundLocalError: local variable 'botao_17082020' referenced before assignment
 '''},
+{'date': 'Mon Aug 24 2020 20:05:13.604 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 35
+  def botao_17082020(self, event=None):
+  ^
+IndentationError: unexpected indent
+'''},
