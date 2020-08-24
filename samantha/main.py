@@ -1,4 +1,4 @@
-from _spy.vitollino.main import Cena, Elemento, STYLE
+from _spy.vitollino.main import Cena, Elemento, STYLE, texto
 
 FUNDO = "https://media.gazetadopovo.com.br/2019/10/31105652/star-wars-1724901_1920-960x540.jpg"
 LIVRO = "https://i.pinimg.com/originals/3f/04/04/3f04040d3c0dabe712b06177bc8301b2.jpg"
@@ -6,7 +6,7 @@ LIVRO = "https://i.pinimg.com/originals/3f/04/04/3f04040d3c0dabe712b06177bc8301b
 STYLE["width"] = 900
 STYLE["heigth"] = 900
 
-class turmaDireita():
+class samanthaNog():
 
     def __init__(self):
         self.fundo = Cena(FUNDO)
