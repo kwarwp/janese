@@ -35,7 +35,7 @@ class Estrutura():
         self.imix=Elemento(CALEND["IMIX"], tit="dia 17/08/2020", x=0, y=100, w=300, h=300, cena=self.fundo, vai=self.botao_17082020)
 
         """Segundo modo de criar um botão. """
-        self.ik= Elemento(CALEND["IK"], tit="dia 24/08/2020", x=150, y=100, w=300, h=300, cena=self.fundo)
+        self.ik= Elemento(CALEND["IK"], tit="dia 24/08/2020", x=200, y=100, w=300, h=300, cena=self.fundo)
         self.ik.elt.bind("click", self.botao_24082020)
         
     def botao_17082020(self, event=None):
