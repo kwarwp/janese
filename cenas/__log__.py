@@ -264,3 +264,10 @@ ImportError: cannot import name 'Inicial'
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Aug 24 2020 18:16:36.994 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  CORREDOR"https://i.pinimg.com/originals/b0/de/8a/b0de8ab7aa396b97d7f43d8289727146.jpg"
+           ^
+SyntaxError: invalid syntax
+'''},
