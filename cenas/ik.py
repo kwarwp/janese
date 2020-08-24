@@ -11,26 +11,29 @@ Changelog
         - Implementação música
 
 """
-from _spy.vitollino.main import Labirinto, Musica
+from _spy.vitollino.main import Sala, Musica
 
 SALA="https://p2.trrsf.com/image/fget/cf/460/0/images.terra.com/2018/03/23/modelos-de-escadas-linear-sem-corrimao.jpg"
 ESCRITORIO="https://www.viveremcasa.com/wp-content/uploads/2018/02/cadeira-home-office-preta-couro-comprar.jpg"
 CORREDOR"https://i.pinimg.com/originals/b0/de/8a/b0de8ab7aa396b97d7f43d8289727146.jpg"
 QUARTO="https://i.pinimg.com/originals/61/af/f4/61aff4dcbf8fdfe0ec7faa77bf310f64.jpg"
 BANHEIRO="https://www.iquilibrio.com/blog/wp-content/uploads/2017/03/71245-feng-shui-no-banheiro-veja-como-aplicar-em-sua-casa-1.jpg"
-
+COZINHA="https://i.pinimg.com/originals/18/bf/1b/18bf1b40b41a7d86b5913c38f6492799.jpg"
 
 class Passeio():
 
     def __init__(self):
-        entrada=Labirinto(
-        entrada.vai()
+        self.partida=Sala(n=self.sala , l=self.cozinha)
+        self.partida.vai()
     
-    def cozinha(self):
-        pass
-        
     def sala(self):
-        pass
+        escrit = Cena(SALA, meio=self.norte_escrit, direita=self.partida,  cena =self.partida)
+        
+    def norte_escrit(self):
+        escrit = Cena(ESCRITORIO, esquerda=self.sala, cena =self.sala)
+        
+    def leste_cozinha(self):
+        cozinha = Cena(cozinha, cena =self.partida)
         
     def floor_two(self):
         pass
