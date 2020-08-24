@@ -13,3 +13,11 @@ Changelog
 """
 from _spy.vitollino.main import Labirinto, Musica
 
+
+class Passeio():
+    pass
+    
+    
+if __name__ = "__main__":
+    Passeio()
+
