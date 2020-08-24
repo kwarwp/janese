@@ -1,4 +1,5 @@
-from _spy.vitollino.main import Cena, Elemento, STYLE, texto
+from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
+from cenas.imix import Inicial
 
 FUNDO = "https://images-americanas.b2w.io/produtos/01/00/img4/184202/8/184202888_1GG.jpg"
 
