@@ -21,7 +21,7 @@ CALEND={"IMIX":"https://i.imgur.com/XmmzDHZ.png",
 STYLE["width"] = 900
 STYLE["heigth"] = 900
 
-class turmadaDireita():
+class turmaDireita():
 
      def __init__(self):
     
@@ -34,4 +34,4 @@ class turmadaDireita():
             Inicial().chama()
             
 if __name__ == "__main__":
-    turmadaDireita()
+    turmaDireita()
