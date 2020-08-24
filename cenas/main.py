@@ -8,7 +8,8 @@
 """
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 from cenas.imix import Inicial
-#from cenas.ik import nome_a_definir__
+#from cenas.ik import Passeio
+from samantha.main import turmaDireita
 
 FUNDO = "https://img.freepik.com/vetores-gratis/fundo-branco-textura-elegante_23-2148415643.jpg?size=626&ext=jpg"
 
@@ -51,6 +52,7 @@ class Estrutura():
         
     def botao_24082020(self, event=None):
         """ Função que será chamado no clique do IK"""
+        turmaDireita().chama()
 
 if __name__ == "__main__":        
     Estrutura()
