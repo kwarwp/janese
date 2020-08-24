@@ -33,10 +33,11 @@ STYLE["heigth"] = 900
 
 class Estrutura():
 
-     def __init__(self):
+    def __init__(self):
     
         self.fundo=Cena(FUNDO)
         self.imix = Elemento(CALEND["IMIX"], cena=self.fundo)
+        
     def vai(self):
         self.fundo.vai()
         
