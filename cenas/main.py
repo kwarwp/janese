@@ -12,8 +12,8 @@ from cenas.imix import Inicial
 
 FUNDO = "https://img.freepik.com/vetores-gratis/fundo-branco-textura-elegante_23-2148415643.jpg?size=626&ext=jpg"
 
-CALEND={IMIX:"https://i.imgur.com/XmmzDHZ.png", 
-            IK:"https://i.imgur.com/9nieFUZ.png",
+CALEND={"IMIX":"https://i.imgur.com/XmmzDHZ.png", 
+            "IK":"https://i.imgur.com/9nieFUZ.png",
            }
 
 STYLE["width"] = 900
