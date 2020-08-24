@@ -257,3 +257,10 @@ ImportError: cannot import name 'Inicial'
     from cenas.imix import Inicial
 ImportError: cannot import name 'Inicial'
 '''},
+{'date': 'Mon Aug 24 2020 17:16:35.656 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module cenas.imix line 53
+  
+  ^
+IndentationError: expected an indented block
+'''},
