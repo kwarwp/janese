@@ -27,13 +27,15 @@ class Passeio():
         self.partida.vai()
     
     def sala(self):
-        escrit = Cena(SALA, meio=self.norte_escrit, direita=self.partida,  cena =self.partida)
+        self.escrit = Cena(SALA, meio=self.norte_escrit, direita=self.partida,  cena =self.partida)
+        self.escrit.vai()
         
     def norte_escrit(self):
         escrit = Cena(ESCRITORIO, esquerda=self.sala, cena =self.sala)
         
     def cozinha(self):
         cozinha = Cena(cozinha, cena =self.partida)
+        self.cozinha.vai()
         
     def floor_two(self):
         pass
