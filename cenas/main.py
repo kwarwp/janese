@@ -9,7 +9,7 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 from cenas.imix import Inicial
 #from cenas.ik import Passeio
-from canas.ik import Passeio
+from cenas.ik import Passeio
 
 FUNDO = "https://img.freepik.com/vetores-gratis/fundo-branco-textura-elegante_23-2148415643.jpg?size=626&ext=jpg"
 
