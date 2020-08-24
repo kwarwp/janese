@@ -102,3 +102,10 @@ ImportError: cannot import name 'Inicial'
     from cenas.imix import Inicial
 ImportError: cannot import name 'Inicial'
 '''},
+{'date': 'Mon Aug 24 2020 20:12:52.2 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 33
+  """ Primeiro modo de criar um botão. Utiliza a função vai() do vitollino"""
+  ^
+IndentationError: unexpected indent
+'''},
