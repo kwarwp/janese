@@ -3,13 +3,15 @@
 .. codeauthor:: Equipe Suoygirls <supygirls@gmail.com>
 
 .. version:: 20.01
-     - Botões para cada 
+     - Botões para cada tutorial;
 
 """
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 from cenas.imix import nome_a_definir_
 from cenas.ik import nome_a_definir__
 
+FUNDO = "https://img.freepik.com/vetores-gratis/fundo-branco-textura-elegante_23-2148415643.jpg?size=626&ext=jpg"
+IMIX = "https://i.imgur.com/XmmzDHZ.png"
 
 STYLE["width"] = 900
 STYLE["heigth"] = 900
