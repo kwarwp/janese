@@ -23,17 +23,11 @@ COZINHA="https://i.pinimg.com/originals/18/bf/1b/18bf1b40b41a7d86b5913c38f649279
 class Passeio():
 
     def __init__(self):
-        self.partida=Sala(n=self.sala , l=self.cozinha)
-        self.sala.n.vai()
+        self.partida=Sala(n=self.escrit , l=self.cozinha)
+        self.escrit.n.vai()
         
-    
-    def sala(self):
         self.escrit = Cena(SALA, meio=self.norte_escrit, direita=self.partida,  cena =self.partida)
-        self.escrit.vai()
-        
-    def cozinha(self):
-        cozinha = Cena(COZINHA, esquerda= self.sala, cena =self.partida)
-        self.cozinha.vai()
+        self.cozinha = Cena(COZINHA, esquerda= self.sala, cena =self.partida)
 
     
 if __name__ == "__main__":
