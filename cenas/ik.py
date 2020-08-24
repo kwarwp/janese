@@ -24,7 +24,7 @@ class Passeio():
 
     def __init__(self):
         self.partida=Sala(n=self.sala , l=self.cozinha)
-        self.partida.vai()
+        #self.partida.vai()
         
     
     def sala(self):
@@ -39,7 +39,8 @@ class Passeio():
         pass
         
     def vai(self):
-        self.partida.vai()
+        self.sala.vai()
+        self.cozinha.vai()
     
 if __name__ == "__main__":
     Passeio().vai()
