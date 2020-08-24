@@ -24,9 +24,8 @@ STYLE["heigth"] = 900
 
 
 class Estrutura():
-    
-    
-        
+
+
     def __init__(self):
     
         self.fundo=Cena(FUNDO)
