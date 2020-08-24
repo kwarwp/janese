@@ -29,4 +29,4 @@ class Passeio():
         self.escrit.n.vai()
     
 if __name__ == "__main__":
-    Passeio().vai()
+    Passeio()
