@@ -9,7 +9,7 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 from cenas.imix import Inicial
 #from cenas.ik import Passeio
-from cenas.ik import Passeio
+from samantha.main import turmaDireita
 
 FUNDO = "https://img.freepik.com/vetores-gratis/fundo-branco-textura-elegante_23-2148415643.jpg?size=626&ext=jpg"
 
@@ -42,11 +42,9 @@ class Estrutura():
         """ Segundo modo de criar um botão"""
         self.ik= Elemento(CALEND["IK"], tit="dia 24/08/2020", x=150, y=100, w=100, h=100, cena =self.fundo)
         """Linka um evento a uma função através de uma keybind
-           O 'elt' faz parte de um protocolo html do vitollino para anexar um elemento a outro
+           O 'elt' faz parte de um protocolo do vitollino para anexar um elemento a outro
         """
-        #self.ik.elt.bind("click", self.botao_24082020)
-        
-        self.ik.elt.onclick = self.botao_24082020 
+        self.ik.elt.bind("click", self.botao_24082020)
         
     def botao_17082020(self, event=None):
         """ Função que será chamado no clique do IMIX"""
@@ -54,7 +52,7 @@ class Estrutura():
         
     def botao_24082020(self, event=None):
         """ Função que será chamado no clique do IK"""
-        Passeio()
+        turmaDireita().chama()
 
 if __name__ == "__main__":        
     Estrutura()
