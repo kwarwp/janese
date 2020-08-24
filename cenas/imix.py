@@ -26,7 +26,7 @@ STYLE["width"] = 900
 STYLE["heigth"] = 900
 
 
-class inicial():
+class Inicial():
     """ Adiciona fundo, elemento e textos. 
     """
 
