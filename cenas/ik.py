@@ -7,11 +7,11 @@
 Changelog
 ---------
 .. versionadded::    20.08
-        - Implementação do Labirinto
+        - 
         - Implementação música
 
 """
-from _spy.vitollino.main import Sala, Musica
+from _spy.vitollino.main import Sala
 
 SALA="https://p2.trrsf.com/image/fget/cf/460/0/images.terra.com/2018/03/23/modelos-de-escadas-linear-sem-corrimao.jpg"
 ESCRITORIO="https://www.viveremcasa.com/wp-content/uploads/2018/02/cadeira-home-office-preta-couro-comprar.jpg"
@@ -24,23 +24,23 @@ class Passeio():
 
     def __init__(self):
         self.partida=Sala(n=self.sala , l=self.cozinha)
+        self.partida.vai()
         
     
     def sala(self):
         self.escrit = Cena(SALA, meio=self.norte_escrit, direita=self.partida,  cena =self.partida)
         self.escrit.vai()
         
-    def norte_escrit(self):
-        escrit = Cena(ESCRITORIO, esquerda=self.sala, cena =self.sala)
-        
     def cozinha(self):
-        cozinha = Cena(cozinha, cena =self.partida)
+        cozinha = Cena(COZINHA, esquerda= self.sala, cena =self.partida)
         self.cozinha.vai()
         
     def floor_two(self):
         pass
-    
+        
+    def vai(self):
+        self.partida.vai()
     
 if __name__ == "__main__":
-    Passeio()
+    Passeio().vai()
 
