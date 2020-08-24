@@ -1,6 +1,8 @@
 # janese.cenas.cru.py
 # SPDX-License-Identifier: GPL-3.0-or-later
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
+from cenas.imix import Inicial
+
 FUNDO = "https://img.freepik.com/vetores-gratis/fundo-branco-textura-elegante_23-2148415643.jpg?size=626&ext=jpg"
 CALEND={"IMIX":"https://i.imgur.com/XmmzDHZ.png", 
         "IK":"https://i.imgur.com/9nieFUZ.png",
@@ -26,4 +28,12 @@ class Estrutura():
      def __init__(self):
     
         self.fundo=Cena(FUNDO)
-        self.fundo
+        self.fundo.vai()
+        
+        self.imix=Elemento(CALEND["IMIX"], tit="dia 17/08/2020", x=0, y=100, w=100, h=100, cena=self.fundo, vai=botao_17082020)
+        
+        def botao_17082020(self, event=None):
+            Inicial().chama()
+            
+if __name__ == "__main__":
+    Estrutura()
