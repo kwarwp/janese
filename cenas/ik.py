@@ -34,13 +34,7 @@ class Passeio():
     def cozinha(self):
         cozinha = Cena(COZINHA, esquerda= self.sala, cena =self.partida)
         self.cozinha.vai()
-        
-    def floor_two(self):
-        pass
-        
-    def vai(self):
-        self.sala.vai()
-        self.cozinha.vai()
+
     
 if __name__ == "__main__":
     Passeio().vai()
