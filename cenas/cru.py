@@ -24,7 +24,10 @@ STYLE["heigth"] = 900
 
 
 class Estrutura():
-
+    
+    def botao_17082020(self, event=None):
+        Inicial().chama()
+        
     def __init__(self):
     
         self.fundo=Cena(FUNDO)
@@ -32,8 +35,7 @@ class Estrutura():
         
         self.imix=Elemento(CALEND["IMIX"], tit="dia 17/08/2020", x=0, y=100, w=300, h=300, cena=self.fundo, vai=botao_17082020)
     
-    def botao_17082020(self, event=None):
-        Inicial().chama()
+    
             
 if __name__ == "__main__":
     Estrutura()
