@@ -39,10 +39,14 @@ class Estrutura():
         self.fundo=Cena(FUNDO)
         self.imix = Elemento(CALEND["IMIX"], x=100, y=100, cena=self.fundo, vai=self.botao)
         self.ik = Elemento(CALEND["IK"], x=200, y=100, cena=self.fundo, vai=self.botao)
-        self.ik.onmouseenter(self.mostra)
+        self.ik.elt.onmouseenter = self.esconde
+        self.ik.elt.onmouseleave = self.mostra
+        
+    def esconde(self, ev=None):
+        self.imix.o = 0
         
     def mostra(self, ev=None):
-        self.imix.o = 0
+        self.imix.o = 1
         
     def outro_botao(self, ev=None):
         Inicial().chama()
