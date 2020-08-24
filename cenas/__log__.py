@@ -218,3 +218,10 @@ NameError: name 'IMIX' is not defined
     self.imix= Elemento(CALEND[IMIX], tit="dia 17/08/2020", x=0, y=0, w=300, h=300, cena =self.fundo, vai=self.botao_17082020)
 NameError: name 'IMIX' is not defined
 '''},
+{'date': 'Mon Aug 24 2020 17:14:43.117 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module cenas.imix line 53
+  
+  ^
+IndentationError: expected an indented block
+'''},
