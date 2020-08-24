@@ -24,9 +24,9 @@ class Passeio():
 
     def __init__(self):
         self.partida=Sala(n=self.escrit , l=self.cozinha)
+        self.escrit = Cena(SALA, meio=self.norte_escrit, direita=self.partida,  cena =self.partida)
         self.escrit.n.vai()
         
-        self.escrit = Cena(SALA, meio=self.norte_escrit, direita=self.partida,  cena =self.partida)
         self.cozinha = Cena(COZINHA, esquerda= self.sala, cena =self.partida)
 
     
