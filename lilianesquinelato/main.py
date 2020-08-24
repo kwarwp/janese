@@ -32,7 +32,7 @@ class Estrutura():
         self.fundo.vai()
         
 
-        self.imix=Elemnto(CALEND["IMIX"], tit="dia17/08/2020", x=0, y=100, w=100, h=100, cena=self.fundo, vai=botao_17082020)
+        self.imix=Elemnto(CALEND["IMIX"], tit="dia17/08/2020", x=0, y=100, w=100, h=100, cena=self.fundo, vai=self.botao_17082020)
         
         
             
