@@ -11,6 +11,7 @@ Changelog
 
 """
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
+from cenas.imix import Inicial
 FUNDO = "https://img.freepik.com/vetores-gratis/fundo-branco-textura-elegante_23-2148415643.jpg?size=626&ext=jpg"
 CALEND={"IMIX":"https://i.imgur.com/XmmzDHZ.png", 
         "IK":"https://i.imgur.com/9nieFUZ.png",
@@ -36,7 +37,18 @@ class Estrutura():
     def __init__(self):
     
         self.fundo=Cena(FUNDO)
-        self.imix = Elemento(CALEND["IMIX"], cena=self.fundo)
+        self.imix = Elemento(CALEND["IMIX"], x=100, y=100, cena=self.fundo, vai=self.botao)
+        self.ik = Elemento(CALEND["IK"], x=200, y=100, cena=self.fundo, vai=self.botao)
+        self.ik.onmouseenter(self.mostra)
+        
+    def mostra(self, ev=None):
+        self.imix.o = 0
+        
+    def outro_botao(self, ev=None):
+        Inicial().chama()
+        
+    def botao(self, ev=None):
+        Inicial().chama()
         
     def vai(self):
         self.fundo.vai()
