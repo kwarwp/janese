@@ -386,3 +386,10 @@ AttributeError: 'Sala' object has no attribute 'vai'
     self.sala.vai()
 AttributeError: 'method' object has no attribute 'vai'
 '''},
+{'date': 'Mon Aug 24 2020 18:55:32.100 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module cenas.imix line 53
+  
+  ^
+IndentationError: expected an indented block
+'''},
