@@ -27,10 +27,10 @@ class Estrutura():
 
     def __init__(self):
         self.fundo = Cena(FUNDO)
-        self.imix= Elemento(IMIX, tit="dia 17/08/2020", vai=botao_17082020, x=260, y=170, w=50, h=50, cena =self.fundo)
+        self.imix= Elemento(IMIX, tit="dia 17/08/2020", x=260, y=170, w=50, h=50, cena =self.fundo, vai=botao_17082020)
          
     def botao_17082020(self, event = None):
-        Inicial().vai()
+        return Inicial().vai()
         
     def botao_24082020(self, *_ ):
         pass
