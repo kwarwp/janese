@@ -48,8 +48,6 @@ class Estrutura():
         
     def botao_24082020(self, event=None):
         """ Método que será chamado no clique do IK"""
-        
 
-        
 if __name__ == "__main__":        
     Estrutura()
