@@ -409,3 +409,10 @@ IndentationError: expected an indented block
     from cenas.imix import Inicial
 ImportError: cannot import name 'Inicial'
 '''},
+{'date': 'Mon Aug 24 2020 18:56:46.89 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 53
+  
+  ^
+IndentationError: expected an indented block
+'''},
