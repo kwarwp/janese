@@ -34,7 +34,7 @@ class inicial():
         """ Criação do fundo e preparação da cena para cliques à direita, esquerda e meios."""
         self.fundo = Cena(FUNDO, direita =turmaDireita(), esquerda =inicialesquerda(), meio=Lago()) 
         """ Cria elemento da Cena. Adiciona nome ao elemento e texto."""
-        self.livro = Elemento(LIVRO, tit = "LIVRO" texto = "Era uma vez...", h=150 , w=150, x=350, y=250)
+        self.livro = Elemento(LIVRO, tit = "LIVRO", texto = "Era uma vez...", h=300, w=300, x=350, y=250)
         """ Cria texto que é carregado junto da abertura da cena."""
         self.mais = Texto(self.fundo, txt = "Teste!", foi = self.mostra_livro) 
         
