@@ -49,4 +49,4 @@ class Inicial():
         
         
 if __name__ == "__main__":        
-    inicial().chama()
+    Inicial().chama()
