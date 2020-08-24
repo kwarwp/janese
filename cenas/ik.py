@@ -26,7 +26,7 @@ class Passeio():
         self.cozinha = Cena(COZINHA)
         
         self.colecao = Sala(n=self.escrit, l= self.cozinha, o= self.cozinha)
-        self.escrit.n.vai()
+        self.colecao.n.vai()
     
 if __name__ == "__main__":
     Passeio()
