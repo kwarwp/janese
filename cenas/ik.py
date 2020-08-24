@@ -7,8 +7,7 @@
 Changelog
 ---------
 .. versionadded::    20.08
-        - 
-        - Implementação música
+      -
 
 """
 from _spy.vitollino.main import Sala, Cena
@@ -23,12 +22,11 @@ COZINHA="https://i.pinimg.com/originals/18/bf/1b/18bf1b40b41a7d86b5913c38f649279
 class Passeio():
 
     def __init__(self):
+        self.colecao = Sala(n=self.escrit , l= self.cozinha, s= , o= self.cozinha)
         self.escrit = Cena(SALA)
-        self.escrit.n.vai()
-        
         self.cozinha = Cena(COZINHA)
-        self.partida=Sala(n=self.escrit, l=self.cozinha)
+        
+        self.escrit.n.vai()
     
 if __name__ == "__main__":
     Passeio().vai()
-
