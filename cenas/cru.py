@@ -14,7 +14,7 @@ Changelog
       - Uso de botões para acessar segundo andar
 
 """
-from _spy.vitollino.main import Sala, Cena, STYLE
+from _spy.vitollino.main import Sala, Cena, STYLE, Elemento
 
 SALA="https://p2.trrsf.com/image/fget/cf/460/0/images.terra.com/2018/03/23/modelos-de-escadas-linear-sem-corrimao.jpg"
 ESCRITORIO="https://www.viveremcasa.com/wp-content/uploads/2018/02/cadeira-home-office-preta-couro-comprar.jpg"
@@ -27,21 +27,17 @@ COZINHA="https://i.pinimg.com/originals/18/bf/1b/18bf1b40b41a7d86b5913c38f649279
 STYLE["width"] = 900
 STYLE["heigth"] = 900
 
-class botao():
+class Botao():
 
-    def __init__(self,Elemento, acao, caminho, event=None):
-        self.Elemento = _Elemento
-        self.acao = clica
-        self.caminho = caminho
+    def __init__(self,imagem, x, y, acao,cena):
+        self.Elemento = Elemento(img=imagem, x=x,y=y, vai=self.clica, cena=cena)
+        self.acao = acao
+        #self.caminho = caminho
         
-    def _Elemento(self, olho="https://i.imgur.com/JuvyDuW.png"):
-        from _spy.vitollino.main import Elemento
-        self._Elemento = Elemento(self.olho, h, w, x, y, cena=cena)
-        
-    def clica(self):
-        return _Elemento.elt.bind("click", caminho)
+    def clica(self, event=None):
+        self.acao()
+        #return _Elemento.elt.bind("click", caminho)    
     
-    def caminho(self):
     
 class Passeio():
 
@@ -49,10 +45,14 @@ class Passeio():
         self.escrit = Cena(SALA)
         self.cozinha = Cena(COZINHA, direita = self.escrit)
         
-        self.botaoteste = botao(
+        self.botaoteste = Botao(QUARTO, 100, 200, self.passeia, self.escrit)
+        #self.botaoteste.Elemento.entra(self.escrit)
         
         self.colecao = Sala(n=self.escrit, l= self.cozinha, o= self.cozinha)
         self.colecao.norte.vai()
+        
+    def passeia(self):
+        self.colecao.oeste.vai()
     
 if __name__ == "__main__":
     Passeio()
