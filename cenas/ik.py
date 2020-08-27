@@ -30,7 +30,7 @@ STYLE["heigth"] = 900
 class Passeio():
 
     def __init__(self):
-        self.colecao = Sala(n=comodo_sala, l=comodo_cozinha)
+        self.colecao = Sala(n=self.comodo_sala, l=self.comodo_cozinha)
         self.colecao.norte.vai()
         
     def comodo_cozinha(self):
