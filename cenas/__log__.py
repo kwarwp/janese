@@ -972,3 +972,10 @@ Traceback (most recent call last):
   module <module> line 10
     from cenas.imix import Passeio
 '''},
+{'date': 'Wed Aug 26 2020 22:41:54.959 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 49
+  self.botaoteste = (
+                                                                                                                     ^
+SyntaxError: invalid syntax
+'''},
