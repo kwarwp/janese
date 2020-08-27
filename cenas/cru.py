@@ -23,7 +23,6 @@ QUARTO="https://i.pinimg.com/originals/61/af/f4/61aff4dcbf8fdfe0ec7faa77bf310f64
 BANHEIRO="https://www.iquilibrio.com/blog/wp-content/uploads/2017/03/71245-feng-shui-no-banheiro-veja-como-aplicar-em-sua-casa-1.jpg"
 COZINHA="https://i.pinimg.com/originals/18/bf/1b/18bf1b40b41a7d86b5913c38f6492799.jpg"
 
-INVISI = "https://i.imgur.com/JuvyDuW.png"
 
 STYLE["width"] = 900
 STYLE["heigth"] = 900
@@ -35,9 +34,9 @@ class botao():
         self.acao = clica
         self.caminho = caminho
         
-    def _Elemento(self):
+    def _Elemento(self, olho="https://i.imgur.com/JuvyDuW.png"):
         from _spy.vitollino.main import Elemento
-        self._Elemento = Elemento
+        self._Elemento = Elemento(self.olho, h, w, x, y, cena=cena)
         
     def clica(self):
         return _Elemento.elt.bind("click", caminho)
@@ -50,7 +49,7 @@ class Passeio():
         self.escrit = Cena(SALA)
         self.cozinha = Cena(COZINHA, direita = self.escrit)
         
-        self.botaoteste = (
+        self.botaoteste = botao(
         
         self.colecao = Sala(n=self.escrit, l= self.cozinha, o= self.cozinha)
         self.colecao.norte.vai()
