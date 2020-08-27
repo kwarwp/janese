@@ -9,7 +9,7 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 from cenas.imix import Inicial
 #from cenas.ik import Passeio
-from samantha.main import turmaDireita
+from cena.ik import 
 
 FUNDO = "https://img.freepik.com/vetores-gratis/fundo-branco-textura-elegante_23-2148415643.jpg?size=626&ext=jpg"
 
@@ -40,6 +40,7 @@ class Estrutura():
         """ Primeiro modo de criar um botão. Utiliza a função vai() do vitollino"""
         self.imix= Elemento(CALEND["IMIX"], tit="dia 17/08/2020", x=0, y=100, w=100, h=100, cena =self.fundo, vai=self.botao_17082020)
         """ Segundo modo de criar um botão"""
+        
         self.ik= Elemento(CALEND["IK"], tit="dia 24/08/2020", x=150, y=100, w=100, h=100, cena =self.fundo)
         """Linka um evento a uma função através de uma keybind
            O 'elt' faz parte de um protocolo do vitollino para anexar um elemento a outro
