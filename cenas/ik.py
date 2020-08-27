@@ -31,7 +31,7 @@ class Passeio():
 
     def __init__(self):
         self.escrit = Cena(SALA)
-        self.cozinha = Cena(COZINHA, direita = self.escrit)
+        self.cozinha = Cena(COZINHA, esquerda = self.escrit)
 
         
         self.colecao = Sala(n=self.escrit, l= self.cozinha, o= self.cozinha)
