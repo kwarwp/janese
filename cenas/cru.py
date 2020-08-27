@@ -28,16 +28,32 @@ STYLE["width"] = 900
 STYLE["heigth"] = 900
 
 class Botao():
+    """Constrói a estrutura botão.
+    
+            self.botao = Botao(imagem, x, y, acao, cena, bateria)
+       
+       :param imagem: 
+       :param x: 
+       :param y:
+       :param acao: Linka o clique do botão a chamada de um método. -> função
+       :param acao_forte: Linka o clique do botão a chamada de um método. ->função
+       :param bateria: Decide se a ação será acao ou acao_forte. -> boleano
+       
+          
+    """
 
-    def __init__(self,imagem, x, y, acao,cena):
+    def __init__(self,imagem, x, y,cena, acao_forte, acao=lambda:None, bateria=False):
         self.Elemento = Elemento(img=imagem, x=x,y=y, vai=self.clica, cena=cena)
+        """ """
         self.acao = acao
+        self.acao_forte = acao_forte
         #self.caminho = caminho
+        self.bateria= bateria
         
     def clica(self, event=None):
-        self.acao()
+        self.acao_forte() if self.bateria else self.acao()
         #return _Elemento.elt.bind("click", caminho)    
-    
+
     
 class Passeio():
 
@@ -45,7 +61,8 @@ class Passeio():
         self.escrit = Cena(SALA)
         self.cozinha = Cena(COZINHA, direita = self.escrit)
         
-        self.botaoteste = Botao(QUARTO, 100, 200, self.passeia, self.escrit)
+        
+        self.botaoteste = Botao(QUARTO, 100, 200, acao_forte=self.passeia, cena=self.escrit, True)
         #self.botaoteste.Elemento.entra(self.escrit)
         
         self.colecao = Sala(n=self.escrit, l= self.cozinha, o= self.cozinha)
