@@ -26,27 +26,13 @@ INVISI = "https://i.imgur.com/JuvyDuW.png"
 STYLE["width"] = 900
 STYLE["heigth"] = 900
 
-class botao():
-
-    def __init__(self,Elemento, acao, caminho, event=None):
-        self.Elemento = Elemento
-        self.acao = clica
-        self.caminho = caminho
         
-    def Elemento():
-        from _spy.vitollino.main import Elemento
-        
-    def clica(self):
-        return Elemento.elt.bind("click", caminho)
-    
-    
 class Passeio():
 
     def __init__(self):
         self.escrit = Cena(SALA)
         self.cozinha = Cena(COZINHA, direita = self.escrit)
-        
-        self.botaoteste = (
+
         
         self.colecao = Sala(n=self.escrit, l= self.cozinha, o= self.cozinha)
         self.colecao.norte.vai()
