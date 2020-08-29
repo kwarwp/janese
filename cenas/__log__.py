@@ -1069,3 +1069,10 @@ NameError: name 'comodo_sala' is not defined
     self.colecao.norte.vai()
 AttributeError: 'method' object has no attribute 'vai'
 '''},
+{'date': 'Fri Aug 28 2020 22:21:06.193 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 65
+  self.botaoteste = Botao(QUARTO, 100, 200, acao_forte=self.passeia, cena=self.escrit, True)
+                                                                                           ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
