@@ -42,7 +42,7 @@ class Botao():
           
     """
 
-    def __init__(self,imagem, x, y,cena, acao_forte, acao=lambda:None, bateria=False):
+    def __init__(self,imagem, x, y,cena, acao_forte, acao=lambda:None, bateria=True):
         self.Elemento = Elemento(img=imagem, x=x,y=y, vai=self.clica, cena=cena)
         """ """
         self.acao = acao
@@ -62,7 +62,7 @@ class Passeio():
         self.cozinha = Cena(COZINHA, direita = self.escrit)
         
         
-        self.botaoteste = Botao(QUARTO, 100, 200, acao_forte=self.passeia, cena=self.escrit, True)
+        self.botaoteste = Botao(QUARTO, 100, 200, acao_forte=self.passeia, cena=self.escrit)
         #self.botaoteste.Elemento.entra(self.escrit)
         
         self.colecao = Sala(n=self.escrit, l= self.cozinha, o= self.cozinha)
