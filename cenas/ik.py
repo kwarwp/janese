@@ -46,7 +46,7 @@ class Passeio():
         self.oeste_um = Cena(SALA_UM["OESTE"])
         self.sul_um = Cena(SALA_UM["SUL"])
         self.colecao_um = Sala(n=self.norte_um,l=self.leste_um,s=self.sul_um,o=self.oeste_um) 
-        return self.colecao_um.norte
+        return self.colecao_um.norte.vai()
                 
     def sala_dois(self):
         """Coleção de cenas 2"""
@@ -55,7 +55,7 @@ class Passeio():
         self.oeste_dois = Cena(SALA_UM["OESTE"])
         self.sul_dois = Cena(SALA_UM["SUL"])
         self.colecao_dois = Sala(n=self.norte_dois,l=self.leste_dois,s=self.sul_dois,o=self.oeste_dois)
-        return self.colecao_dois.norte
+        return self.colecao_dois.norte.vai()
     
 if __name__ == "__main__":
-    Passeio()
+     Passeio()
