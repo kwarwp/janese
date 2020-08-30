@@ -18,6 +18,11 @@ SALA_UM={NORTE="https://i.imgur.com/hqK4K6C.png",
          LESTE="https://i.imgur.com/IY0ZWKp.png",
          SUL="https://i.imgur.com/YDEzStv.png",
          OESTE="https://i.imgur.com/8HC6cMG.png"}
+         
+SALA_DOIS={NORTE="https://i.imgur.com/sH2GD9s.png",
+           LESTE="https://i.imgur.com/R7JE7pM.png",
+           SUL="https://i.imgur.com/BSov4HG.png",
+           OESTE="https://i.imgur.com/yBuIbjQ.png"}
 
 
 INVISI = "https://i.imgur.com/JuvyDuW.png"
