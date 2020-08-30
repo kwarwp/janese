@@ -34,7 +34,7 @@ STYLE["heigth"] = 900
 class Passeio():
     """Gera um labirinto com duas salas
     """
-    def __init__(self,vai):
+    def __init__(self):
         """Start com coleção de Salas"""
         self.colecao_total=Labirinto(n=self.sala_um,c=self.sala_dois)
         self.colecao_total.norte.vai()
