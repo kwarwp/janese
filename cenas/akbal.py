@@ -37,7 +37,7 @@ class Ambiente():
     def guarda_item(self, item):
         #self.item=nome_item = self
         #inv.bota(self, True)
-        inv.bota(self.maca, True, acao=self.fundo.vai())
+        #inv.bota(self.maca, True, acao=self.fundo)
         
 
 
