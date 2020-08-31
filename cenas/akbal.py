@@ -25,11 +25,11 @@ class Item(Elemento):
     
     #self.elemento = None
     def bota(self, elemento=None):
-        self.elemento= Elemento else self
+        self.elemento= Elemento 
         inv.bota(self.elemento, True)
         
-    def resgata(self,elemento):
-        self.elemento=Elemento
+    def resgata(self,elemento=None):
+        self.elemento=Elemento 
         inv.tira(self.elemento)
         self.vai(self.fundo)
 
