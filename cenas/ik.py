@@ -36,7 +36,7 @@ class Passeio():
     """
     def __init__(self):
         """Start com coleção de Salas"""
-        self.colecao_total=Labirinto(n=self.sala_um,l=self.sala_dois)
+        self.colecao_total=Labirinto(n=self.sala_um,c=self.sala_dois)
         self.colecao_total.n.vai()
     
     def sala_um(self):
