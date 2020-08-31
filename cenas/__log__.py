@@ -1551,3 +1551,10 @@ SyntaxError: invalid syntax
     self.maca=Elemento(ITEM["MACA"], tit="maçã", txt="Opa, você encontrou uma maçã!", h=100,w=100, x=100, y=20, cena=self.fundo, vai=tenta)
 NameError: name 'tenta' is not defined
 '''},
+{'date': 'Mon Aug 31 2020 17:16:40.311 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  self.maca=Elemento(ITEM["MACA"], tit="maçã", txt="Opa, você encontrou uma maçã!", 
+                                                                                                                                               ^
+SyntaxError: invalid syntax
+'''},
