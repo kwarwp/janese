@@ -11,8 +11,11 @@ Changelog
       - Implementação do inventário
 
 """
-from _spy.vitollino.main import Cena, Elemento
-from _spy.vitollino.main import Inventario as inv
+from _spy.vitollino.main import Cena, Elemento, STYLE
+from _spy.vitollino.main import INVENTARIO as inv
+
+STYLE["width"] = 900
+STYLE["heigth"]= "900px"
 
 ITEM={"LARANJA":"https://i.imgur.com/XXi1abd.png",
       "MACA":"https://i.imgur.com/8aCEBLc.png",
@@ -22,4 +25,11 @@ ITEM={"LARANJA":"https://i.imgur.com/XXi1abd.png",
 class ambiente():
 
     def __init__(self):
+        inv.inicia()
+        self.fundo=Cena(ITEM["FLORESTA"])
+        self.maca=Elemento(ITEM["MACA"], tit="maçã", txt="Opa, você encontrou uma maçã!",h=100,w=100, x=100, y=20, cena=self.fundo)
+        self.laranja=Elemento(ITEM["LARANJA"], tit="laranja", txt="Opa, você encontrou uma laranja!",h=100,w=100, x=100, y=40, cena=self.fundo)
+        self.fundo.vai()
         
+if __name__ == "__main__":
+    ambiente()
