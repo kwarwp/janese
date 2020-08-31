@@ -27,8 +27,10 @@ class ambiente():
     def __init__(self):
         inv.inicia()
         self.fundo=Cena(ITEM["FLORESTA"])
-        self.maca=Elemento(ITEM["MACA"], tit="maçã", txt="Opa, você encontrou uma maçã!",h=100,w=100, x=100, y=20, cena=self.fundo)
-        self.laranja=Elemento(ITEM["LARANJA"], tit="laranja", txt="Opa, você encontrou uma laranja!",h=100,w=100, x=100, y=40, cena=self.fundo)
+        self.maca=Elemento(ITEM["MACA"], tit="maçã", txt="Opa, você encontrou uma maçã!", h=100,w=100, x=100, y=20, cena=self.fundo, vai=inv.bota(self.maca))
+        self.laranja=Elemento(ITEM["LARANJA"], tit="laranja", txt="Opa, você encontrou uma laranja!",h=100,w=100, x=100, y=120, cena=self.fundo)
+        #inv.bota(self.maca, drag=True)
+        inv.bota(self.laranja, drag=True)
         self.fundo.vai()
         
 if __name__ == "__main__":
