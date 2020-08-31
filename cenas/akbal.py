@@ -24,7 +24,7 @@ ITEM={"LARANJA":"https://i.imgur.com/XXi1abd.png",
 class Item(Elemento):
     
     #self.elemento = None
-    def bota(self, elemento=None):
+    def bota(self):
         self.elemento= Elemento 
         inv.bota(self.elemento, True)
         
@@ -41,7 +41,7 @@ class Ambiente():
         
         self.maca=Elemento(ITEM["MACA"], tit="maçã",style=dict(height=60,widht=60, left=600, top=20),drag=True,drop={},cena=self.fundo, vai=Item.bota)
         
-        self.laranja=Elemento(ITEM["LARANJA"], tit="laranja",style=dict(height=60,widht=60, left=100, top=100),drag=True,cena=self.fundo, vai=Fruta.bota)
+        self.laranja=Elemento(ITEM["LARANJA"], tit="laranja",style=dict(height=60,widht=60, left=100, top=100),drag=True,cena=self.fundo, vai=Item.bota)
 
         self.fundo.vai()
         
