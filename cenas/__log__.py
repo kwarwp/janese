@@ -1739,3 +1739,10 @@ NameError: name 'ambiente' is not defined
     return inv.bota(self.maca) and self.fundo.pop(self.maca)
 AttributeError: 'Ambiente' object has no attribute 'maca'
 '''},
+{'date': 'Mon Aug 31 2020 18:24:58.225 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  self.maca=Elemento(ITEM["MACA"], tit="maçã",style=dict(h=100,w=100, x=100, y=), cena=self.fundo,drag=True, vai=self.guarda_item)
+                                                                                ^
+SyntaxError: invalid syntax
+'''},
