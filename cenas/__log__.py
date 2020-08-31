@@ -1558,3 +1558,10 @@ NameError: name 'tenta' is not defined
                                                                                                                                                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 31 2020 17:17:34.285 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 33
+  self.laranja=Elemento(ITEM["LARANJA"], tit="laranja", txt="Opa, você encontrou uma laranja!",style={h=100,w=100, x=100, y=120},
+                                                                                                                                ^
+SyntaxError: invalid syntax
+'''},
