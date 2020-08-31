@@ -21,6 +21,17 @@ ITEM={"LARANJA":"https://i.imgur.com/XXi1abd.png",
       "MACA":"https://i.imgur.com/8aCEBLc.png",
       "FLORESTA":"https://i.imgur.com/xUzMidi.jpeg"}
 
+class Fruta(Elemento):
+    
+    #self.elemento = None
+    def guarda_fruta(self, elemento=None):
+        self.elemento=Elemento
+        inv.bota(self.elemento, True)
+        
+    def resgata_fruta(self,elemento):
+        self.elemento=Elemento
+        inv.tira(self.elemento)
+        self.vai(self.fundo)
 
 class Ambiente():
 
@@ -28,18 +39,12 @@ class Ambiente():
         inv.inicia()
         self.fundo=Cena(ITEM["FLORESTA"])
         
-        self.maca=Elemento(ITEM["MACA"], tit="maçã",style=dict(height=60,widht=60, left=600, top=20),drag=True,drop={},cena=self.fundo, vai=self.guarda_item)
+        self.maca=Elemento(ITEM["MACA"], tit="maçã",style=dict(height=60,widht=60, left=600, top=20),drag=True,drop={},cena=self.fundo, vai=Fruta.guarda_fruta)
         
-        self.laranja=Elemento(ITEM["LARANJA"], tit="laranja",style=dict(height=60,widht=60, left=100, top=100),drag=True,cena=self.fundo, vai=self.guarda_item)
+        self.laranja=Elemento(ITEM["LARANJA"], tit="laranja",style=dict(height=60,widht=60, left=100, top=100),drag=True,cena=self.fundo, vai=Fruta.guarda_fruta)
 
         self.fundo.vai()
         
-    def guarda_item(self, item):
-        #self.item=nome_item = self
-        #inv.bota(self, True)
-        #inv.bota(self.maca, True, acao=self.fundo)
-        
-
 
 if __name__ == "__main__":
     Ambiente()
