@@ -27,14 +27,19 @@ class Ambiente():
     def __init__(self):
         inv.inicia()
         self.fundo=Cena(ITEM["FLORESTA"])
-        self.maca=Elemento(ITEM["MACA"], tit="maçã",style=dict(h=100,w=100, x=100, y=20), cena=self.fundo, vai=self.teste_inventario)
-        self.laranja=Elemento(ITEM["LARANJA"], tit="laranja", txt="Opa, você encontrou uma laranja!",style=dict(h=100,w=100, x=100, y=120),
-                              cena=self.fundo)
-        inv.bota(self.laranja, drag=True)
+        self.maca=Elemento(ITEM["MACA"], tit="maçã",style=dict(h=100,w=100, x=100, y=20), 
+                          cena=self.fundo)
+        
+        self.laranja=Elemento(ITEM["LARANJA"], tit="laranja", txt="Opa, você encontrou uma laranja!",
+                             style=dict(h=100,w=100, x=100, y=120),
+                             cena=self.fundo)
+        
+        #inv.bota(self.laranja, drag=True)
         self.fundo.vai()
         
-    def teste_inventario(self):
-        return inv.bota(self.maca) and self.fundo.pop(self.maca)
+    def guarda_item(self):
+        
+        #return inv.bota(self.maca) and self.fundo.pop(self.maca)
         
 if __name__ == "__main__":
     Ambiente()
