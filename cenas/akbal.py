@@ -35,8 +35,8 @@ class Ambiente():
         self.fundo.vai()
         
     def guarda_item(self):
-        
         #return inv.bota(self.maca) and self.fundo.pop(self.maca)
-        
+
+
 if __name__ == "__main__":
     Ambiente()
