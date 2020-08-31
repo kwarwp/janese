@@ -1844,3 +1844,10 @@ Traceback (most recent call last):
     self.maca=Elemento(ITEM["MACA"], tit="maçã",style=dict(height=60,widht=60, left=600, top=20),drag=True,drop={},cena=self.fundo, vai=Fruta.bota())
 AttributeError: 'Fruta' object has no attribute 'bota'
 '''},
+{'date': 'Mon Aug 31 2020 20:14:52.61 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 28
+  self.elemento= Elemento else self
+                           ^
+SyntaxError: invalid syntax
+'''},
