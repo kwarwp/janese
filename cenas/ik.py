@@ -9,7 +9,7 @@ Changelog
 .. versionadded::    20.08
       - Criação de múltipla cenas
       - Concatenação das múltiplas cenas (Sala)
-      - Uso de botões para acessar segundo andar
+      - Implementação do labirinto
 
 """
 from _spy.vitollino.main import Sala, Cena, Labirinto,STYLE
