@@ -24,11 +24,11 @@ ITEM={"LARANJA":"https://i.imgur.com/XXi1abd.png",
 class Item(Elemento):
     
     #self.elemento = None
-    def bota(self):
+    def bota(self,elemento=None, *_):
         self.elemento= Elemento 
         inv.bota(self.elemento, True)
         
-    def resgata(self,elemento=None):
+    def resgata(self,elemento=None, *_):
         self.elemento=Elemento 
         inv.tira(self.elemento)
         self.vai(self.fundo)
