@@ -28,9 +28,9 @@ class Ambiente():
         inv.inicia()
         self.fundo=Cena(ITEM["FLORESTA"])
         
-        self.maca=Elemento(ITEM["MACA"], tit="maçã",style=dict(h=100,w=100, x=300, y=20),cena=self.fundo)
+        self.maca=Elemento(ITEM["MACA"], tit="maçã",style=dict(height=60,widht=60, left=600, top=20),cena=self.fundo)
         
-        self.laranja=Elemento(ITEM["LARANJA"], tit="laranja",style=dict(h=100,w=100, x=100, y=120),cena=self.fundo)
+        self.laranja=Elemento(ITEM["LARANJA"], tit="laranja",style=dict(height=60,widht=60, left=100, top=300),cena=self.fundo)
 
         self.fundo.vai()
         
