@@ -1526,3 +1526,10 @@ UnboundLocalError: local variable 'tenta' referenced before assignment
     tenta = inv.bota(self.maca)
 AttributeError: 'ambiente' object has no attribute 'maca'
 '''},
+{'date': 'Mon Aug 31 2020 17:09:20.352 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 32
+  inv.bota(self.maca, drag=True, acao= .entra(self.fundo))
+                                        ^
+SyntaxError: invalid syntax
+'''},
