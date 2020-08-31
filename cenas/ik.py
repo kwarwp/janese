@@ -36,7 +36,7 @@ class Passeio():
     """
     def __init__(self):
         """Start com coleção de Salas"""
-        self.colecao_total=Labirinto(n=self.sala_um,c=self.sala_dois)
+        self.colecao_total=Labirinto(n=self.colecao_um,l=self.colecao_dois)
         self.colecao_total.norte.vai()
     
     def sala_um(self):
@@ -50,10 +50,10 @@ class Passeio():
                 
     def sala_dois(self):
         """Coleção de cenas 2"""
-        self.norte_dois = Cena(SALA_UM["NORTE"])
-        self.leste_dois = Cena(SALA_UM["LESTE"])
-        self.oeste_dois = Cena(SALA_UM["OESTE"])
-        self.sul_dois = Cena(SALA_UM["SUL"])
+        self.norte_dois = Cena(SALA_DOIS["NORTE"])
+        self.leste_dois = Cena(SALA_DOIS["LESTE"])
+        self.oeste_dois = Cena(SALA_DOIS["OESTE"])
+        self.sul_dois = Cena(SALA_DOIS["SUL"])
         self.colecao_dois = Sala(n=self.norte_dois,l=self.leste_dois,s=self.sul_dois,o=self.oeste_dois)
         return self.colecao_dois.norte.vai()
     
