@@ -20,3 +20,6 @@ ITEM={"LARANJA":"https://i.imgur.com/XXi1abd.png",
 
 
 class ambiente():
+
+    def __init__(self):
+        
