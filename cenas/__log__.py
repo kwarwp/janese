@@ -1746,3 +1746,10 @@ AttributeError: 'Ambiente' object has no attribute 'maca'
                                                                                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 31 2020 18:25:43.27 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  self.maca=Elemento(ITEM["MACA"], tit="maçã",style=dict(h=100,w=100, x=100, y=), cena=self.fundo,drag=True, vai=self.guarda_item)
+                                                                                ^
+SyntaxError: invalid syntax
+'''},
