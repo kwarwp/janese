@@ -39,13 +39,14 @@ class Ambiente():
         inv.inicia()
         self.fundo=Cena(ITEM["FLORESTA"])
         
-        self.maca=Elemento(ITEM["MACA"], tit="maçã",style=dict(height=60,widht=60, left=600, top=20),drag=True,drop={},cena=self.fundo, vai=Item.bota)
+        self.maca=Elemento(ITEM["MACA"], tit="maçã",style=dict(height=60,widht=60, left=600, top=20),drag=True,drop={},cena=self.fundo, vai=self.guarda_item)
         
         self.laranja=Elemento(ITEM["LARANJA"], tit="laranja",style=dict(height=60,widht=60, left=100, top=100),drag=True,cena=self.fundo, vai=Item.bota)
 
         self.fundo.vai()
         
-    def guarda_item(self):    
+    def guarda_item(self,*_):    
+        # sem o "*_" nos parâmetros: TypeError: guarda_item() takes 1 positional argument but more were given 
         inv.bota(self.maca, True)
         
 if __name__ == "__main__":
