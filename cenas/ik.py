@@ -28,7 +28,9 @@ SALA_DOIS={"NORTE":"https://i.imgur.com/sH2GD9s.png",
 INVISI = "https://i.imgur.com/JuvyDuW.png"
 
 STYLE["width"] = 900
-STYLE["heigth"] = 900
+STYLE["heigth"] = "900px"
+"""Adequação da área de clique"""
+STYLE["min-height"] = "900px"
 
         
 class Passeio():
@@ -36,8 +38,9 @@ class Passeio():
     """
     def __init__(self):
         """Start com coleção de Salas"""
-        self.colecao_total=Labirinto(n=self.sala_um,c=self.sala_dois)
-        self.colecao_total.n.vai()
+        self.colecao_total=Labirinto(n=self.sala_um(),c=self.sala_dois())
+        """Referencia a sala e a cena do labirinto"""
+        self.colecao_total.centro.norte.vai()
     
     def sala_um(self):
         """Coleção de cenas 1"""
@@ -46,7 +49,7 @@ class Passeio():
         self.oeste_um = Cena(SALA_UM["OESTE"])
         self.sul_um = Cena(SALA_UM["SUL"])
         self.colecao_um = Sala(n=self.norte_um,l=self.leste_um,s=self.sul_um,o=self.oeste_um) 
-        return self.colecao_um.norte.vai()
+        return self.colecao_um
                 
     def sala_dois(self):
         """Coleção de cenas 2"""
@@ -55,7 +58,7 @@ class Passeio():
         self.oeste_dois = Cena(SALA_DOIS["OESTE"])
         self.sul_dois = Cena(SALA_DOIS["SUL"])
         self.colecao_dois = Sala(n=self.norte_dois,l=self.leste_dois,s=self.sul_dois,o=self.oeste_dois)
-        return self.colecao_dois.norte.vai()
+        return self.colecao_dois
     
 if __name__ == "__main__":
      Passeio()
