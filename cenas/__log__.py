@@ -2028,3 +2028,10 @@ TypeError: memento() takes 2 positional arguments but more were given
     self.laranja.mementor(110,150,100,100)
 TypeError: mementor() takes 2 positional arguments but more were given
 '''},
+{'date': 'Thu Sep 03 2020 21:52:19.527 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 66
+  print(str(list(range(10)))
+       ^
+SyntaxError: Unbalanced bracket (
+'''},
