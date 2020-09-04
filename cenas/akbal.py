@@ -30,10 +30,7 @@ class Item(Elemento):
         self.vai=lambda*_:self.resgata(x=x,y=y,w=w,h=h)
         
     def resgata(self,x,y,w,h):
-        self.x=x
-        self.y=y
-        self.w=w
-        self.h=w
+        self.x,self.y,self.w,self.h=self
         inv.tira(self.tit)
         self.entra(inv.cena)
         self.vai=self.bota
