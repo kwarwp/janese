@@ -1967,3 +1967,21 @@ AttributeError: 'method' object has no attribute 'cenas'
     self.colecao_total.n.norte.vai()
 AttributeError: 'function' object has no attribute 'norte'
 '''},
+{'date': 'Thu Sep 03 2020 21:03:06.899 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 177
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 55
+    Ambiente()
+  module <module> line 46
+    self.laranja=Elemento(ITEM["LARANJA"], tit="laranja",style=dict(height=60,widht=60, left=100, top=100),cena=self.fundo, vai=Item.resgata(150,200,60,60))
+TypeError: resgata() missing 1 positional argument: h
+'''},
