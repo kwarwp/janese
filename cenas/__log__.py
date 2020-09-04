@@ -1985,3 +1985,10 @@ AttributeError: 'function' object has no attribute 'norte'
     self.laranja=Elemento(ITEM["LARANJA"], tit="laranja",style=dict(height=60,widht=60, left=100, top=100),cena=self.fundo, vai=Item.resgata(150,200,60,60))
 TypeError: resgata() missing 1 positional argument: h
 '''},
+{'date': 'Thu Sep 03 2020 21:09:20.102 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 47
+  self.laranja.vai=lambda*_:self.laranja.resgata(X=150,Y=200,W=60,h=60))
+                                                                       ^
+SyntaxError: invalid syntax
+'''},
