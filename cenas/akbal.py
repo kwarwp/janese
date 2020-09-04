@@ -24,14 +24,24 @@ ITEM={"LARANJA":"https://i.imgur.com/XXi1abd.png",
 class Item(Elemento):
     
     #self.elemento = None
-    def bota(self,elemento=None, *_):
-        self.elemento= Elemento 
-        inv.bota(self.elemento, True)
+    def bota(self, *_): 
+        inv.bota(self, True)
+        x,y,w,h=self.memento
+        self.vai=lambda*_:self.resgata(x=x,y=y,w=w,h=h)
         
-    def resgata(self,elemento=None, *_):
-        self.elemento=Elemento 
-        inv.tira(self.elemento)
-        self.vai(self.fundo)
+    def resgata(self,x,y,w,h):
+        self.x=x
+        self.y=y
+        self.w=w
+        self.h=w
+        inv.tira(self.tit)
+        self.entra(inv.cena)
+        self.vai=self.bota
+        
+    def memento(self,memento):
+        self.memento=memento
+        
+    
 
 class Ambiente():
 
@@ -39,9 +49,12 @@ class Ambiente():
         inv.inicia()
         self.fundo=Cena(ITEM["FLORESTA"])
         
-        self.maca=Elemento(ITEM["MACA"], tit="maçã",style=dict(height=60,widht=60, left=600, top=20),drag=True,drop={},cena=self.fundo, vai=self.guarda_item)
+        self.maca=Elemento(ITEM["MACA"], tit="maçã",style=dict(height=60,widht=60, left=600, top=20),cena=self.fundo, vai=self.guarda_item)
         
-        self.laranja=Elemento(ITEM["LARANJA"], tit="laranja",style=dict(height=60,widht=60, left=100, top=100),drag=True,cena=self.fundo, vai=Item.bota)
+        self.laranja=Item(ITEM["LARANJA"], tit="laranja",style=dict(height=60,widht=60, left=100, top=100),cena=self.fundo)
+        self.laranja.memento(110,150,100,100)
+        self.laranja.vai=self.laranja.bota
+        
 
         self.fundo.vai()
         
