@@ -50,7 +50,7 @@ class Ambiente():
         self.maca=Elemento(ITEM["MACA"], tit="maçã",style=dict(height=60,widht=60, left=600, top=20),cena=self.fundo, vai=self.guarda_item)
         
         self.laranja=Item(ITEM["LARANJA"], tit="laranja",style=dict(height=60,widht=60, left=100, top=100),cena=self.fundo)
-        self.laranja.mementor((110,150,100,100))
+        self.laranja.mementor((110,150,200,"200px"))
         self.laranja.vai=self.laranja.bota
         
 
