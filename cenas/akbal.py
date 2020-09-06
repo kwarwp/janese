@@ -56,7 +56,7 @@ class Ambiente():
 
         self.fundo.vai()
         
-    def guarda_item(self,*_):    
+    def guarda_item(self, *_):    
         # sem o "*_" nos parâmetros: TypeError: guarda_item() takes 1 positional argument but more were given 
         inv.bota(self.maca, True)
         
