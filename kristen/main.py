@@ -14,9 +14,9 @@ class inicialesquerda():
         self.zero = Elemento (INICIOMONTANHA, x=230 , y=620, cena=self.fundo)
         #self.planocartesiano = buscar uma imagem
         #self.bonequinha = bonequinha(self.fundo)
-        self.mais = Texto(self.fundo, txt = "Clique aqui", foi=self.foi, A="3,5", B="-3,5")
+        self.mais = Texto(self.fundo, txt = "Clique aqui", foi=self.foi, A="4", B="-4")
         self.mais.vai()
-        self.cf = dict(A=3.5, B=-3.5) 
+        self.cf = dict(A=4, B=-4) 
         
     def foi(self,opcao):
         self.bonequinha = bonequinha(self.fundo, self.cf[opcao])
@@ -26,9 +26,9 @@ class inicialesquerda():
                
 class bonequinha():
     def __init__(self,fundo, opcao):
-        self.boneca = Elemento(BONEQUINHA, texto = "Voe!", h=250 , w=250, x=100, y=200)
+        self.boneca = Elemento(BONEQUINHA, texto = "Voe!", h=250 , w=250, x=100, y=400)
         self.x = 100
-        self.c = 20
+        self.c = 200
         self.a = opcao
         self.boneca.vai = self.equacao1
         self.boneca.entra(fundo)
