@@ -43,3 +43,10 @@ SyntaxError: invalid syntax
                         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Sep 07 2020 20:16:07.454 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 35
+  self.boneca.y = self.(-10)+self.c
+                        ^
+SyntaxError: invalid syntax
+'''},
