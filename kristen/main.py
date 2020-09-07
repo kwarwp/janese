@@ -13,7 +13,7 @@ class inicialesquerda():
 
     def __init__(self):
         self.fundo = Cena(FUNDO)
-        self.a = Texto(self.fundo, txt = "10") 
+        self.a = Texto(self.fundo, txt = "Descubra a função que levará a Profa até o topo da montanha") 
         self.a.vai()
         self.bonequinha = bonequinha(self.fundo, self.a)
         
@@ -26,7 +26,7 @@ class bonequinha():
         self.boneca = Elemento(BONEQUINHA, texto = "Voe!", h=250 , w=250, x=150, y=450)
         self.x = 150
         self.c = 600
-        self.a = a
+        self.a = -10
         self.boneca.vai = self.equacao1
         self.boneca.entra(fundo)
         
