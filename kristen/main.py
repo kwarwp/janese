@@ -1,7 +1,7 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
 FUNDO = "https://imgur.com/cf9dvHG.png"
-LIVRO = "https://oamor.com.br/wp-content/uploads/2018/12/Quando-a-borboleta-rompe-o-casulo-2-830x450.jpg"
+LIVRO = "https://imgur.com/Z8SiiTg.png"
 
 STYLE["width"] = 900
 STYLE["heigth"] = 900
