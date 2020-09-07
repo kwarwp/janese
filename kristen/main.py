@@ -2,6 +2,7 @@ from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
 FUNDO = "https://imgur.com/cf9dvHG.png"
 BONEQUINHA = "https://imgur.com/gfe9a1S.png"
+INICIOMONTANHA = "https://imgur.com/hXur4Nv.png"
 
 STYLE["width"] = 900
 STYLE["heigth"] = 900
@@ -10,6 +11,7 @@ STYLE["heigth"] = 900
 class inicialesquerda():
     def __init__(self):
         self.fundo = Cena(FUNDO)
+        self.zero = Elemento (INICIOMONTANHA, x=150 , y=400, cena=self.fundo)
         #self.bonequinha = bonequinha(self.fundo)
         self.mais = Texto(self.fundo, txt = "Clique aqui", foi=self.foi, A="2,5", B="-2,5")
         self.mais.vai()
