@@ -1,6 +1,6 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
-FUNDO = "<blockquote class="imgur-embed-pub" lang="en" data-id="CrjHmQY"><a href="https://imgur.com/CrjHmQY">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>"
+FUNDO = "[img]https://i.imgur.com/CrjHmQY.png[/img]"
 LIVRO = "https://oamor.com.br/wp-content/uploads/2018/12/Quando-a-borboleta-rompe-o-casulo-2-830x450.jpg"
 
 STYLE["width"] = 900
