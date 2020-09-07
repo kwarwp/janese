@@ -11,24 +11,26 @@ class inicialesquerda():
 
     def __init__(self):
         self.fundo = Cena(FUNDO)
-        self.bonequinha = bonequinha(self.fundo)
-        self.mais = Texto(self.fundo, txt = "Clique aqui") 
+        self.a = Texto(self.fundo, txt = "Clique aqui", A=10, B=20, C=30) 
+        self.bonequinha = bonequinha(self.fundo, self.a)
+        
         
          
     def vai(self):
         self.fundo.vai()
                
 class bonequinha():
-    def __init__(self,fundo):
+    def __init__(self,fundo,a):
         self.boneca = Elemento(BONEQUINHA, texto = "Voe!", h=150 , w=250, x=200, y=300)
-        self.x = 50
-        self.c = 200
+        self.x = 200
+        self.c = 300
+        self.a = a
         self.boneca.vai = self.equacao1
         self.boneca.entra(fundo)
         
     def equacao1(self,*_):
         self.boneca.x = self.x = self.x+10
-        self.boneca.y = self.x*(-2)+self.c
+        self.boneca.y = self.a+self.c
     
 if __name__ == "__main__":  
 	inicialesquerda().vai()
