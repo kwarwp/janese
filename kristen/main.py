@@ -23,7 +23,7 @@ class inicialesquerda():
                
 class bonequinha():
     def __init__(self,fundo,a):
-        self.boneca = Elemento(BONEQUINHA, texto = "Voe!", h=250 , w=250, x=200, y=100)
+        self.boneca = Elemento(BONEQUINHA, texto = "Voe!", h=250 , w=250, x=200, y=500)
         self.x = 200
         self.c = 300
         self.a = a
