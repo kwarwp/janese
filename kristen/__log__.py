@@ -29,3 +29,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Sep 07 2020 17:21:53.212 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 3
+  FUNDO = "<blockquote class="imgur-embed-pub" lang="en" data-id="CrjHmQY"><a href="https://imgur.com/CrjHmQY">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>"
+                               ^
+SyntaxError: invalid syntax
+'''},
