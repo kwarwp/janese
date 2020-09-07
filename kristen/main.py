@@ -11,7 +11,8 @@ class inicialesquerda():
 
     def __init__(self):
         self.fundo = Cena(FUNDO)
-        self.a = Texto(self.fundo, txt = "10" , A="10", B="20", C="30") 
+        self.a = Texto(self.fundo, txt = "10") 
+        self.b = Texto(self.fundo, txt = "20") 
         self.a.vai()
         self.bonequinha = bonequinha(self.fundo, self.a)
         
