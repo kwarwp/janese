@@ -50,3 +50,10 @@ SyntaxError: invalid syntax
                         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Sep 07 2020 20:25:35.431 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  def foi(self, opcao)
+                       ^
+SyntaxError: invalid syntax
+'''},
