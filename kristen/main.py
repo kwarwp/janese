@@ -11,9 +11,9 @@ class inicialesquerda():
     def __init__(self):
         self.fundo = Cena(FUNDO)
         #self.bonequinha = bonequinha(self.fundo)
-        self.mais = Texto(self.fundo, txt = "Clique aqui", foi=self.foi, A="2", B="-2")
+        self.mais = Texto(self.fundo, txt = "Clique aqui", foi=self.foi, A="2,5", B="-2,5")
         self.mais.vai()
-        self.cf = dict(A=2, B=-2) 
+        self.cf = dict(A=2.5, B=-2.5) 
     def foi(self,opcao):
         self.bonequinha = bonequinha(self.fundo, self.cf[opcao])
          
