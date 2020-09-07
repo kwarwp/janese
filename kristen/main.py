@@ -1,7 +1,7 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
 FUNDO = "https://imgur.com/cf9dvHG.png"
-LIVRO = "https://imgur.com/Z8SiiTg.png"
+BONEQUINHA = "https://imgur.com/Z8SiiTg.png"
 
 STYLE["width"] = 900
 STYLE["heigth"] = 900
@@ -11,16 +11,25 @@ class inicialesquerda():
 
     def __init__(self):
         self.fundo = Cena(FUNDO)
-        self.livro = Elemento(LIVRO, texto = "Voe!", h=150 , w=250, x=50, y=200)
-        self.mais = Texto(self.fundo, txt = "Clique aqui", foi = self.mostra_livro) 
+        self.bonequinha = bonequinha(self.fundo)
+        self.mais = Texto(self.fundo, txt = "Clique aqui") 
         
-    def mostra_livro(self, *_ ):
-        self.livro.entra(self.fundo)
-        
+         
     def vai(self):
         self.fundo.vai()
-        self.mais.vai()
+               
+class bonequinha():
+    def __init__(self,fundo):
+        self.boneca = Elemento(BONEQUINHA, texto = "Voe!", h=150 , w=250, x=50, y=200)
+        self.x = 50
+        self.c = 200
+        self.boneca.vai = self.equacao1
+        self.boneca.entra(fundo)
         
+    def equacao1(self,*_):
+        self.boneca.x = self.x+10
+        self.boneca.y = self.x*2+self.c
+    
 if __name__ == "__main__":  
 	inicialesquerda().vai()
         
