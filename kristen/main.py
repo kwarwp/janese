@@ -1,6 +1,6 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
-FUNDO = "https://macmagazine.uol.com.br/wp-content/uploads/2015/04/16-floresta.jpg"
+FUNDO = "https://imgur.com/CrjHmQY"
 LIVRO = "https://oamor.com.br/wp-content/uploads/2018/12/Quando-a-borboleta-rompe-o-casulo-2-830x450.jpg"
 
 STYLE["width"] = 900
