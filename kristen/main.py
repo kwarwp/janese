@@ -21,16 +21,17 @@ class inicialesquerda():
         self.fundo.vai()
                
 class bonequinha():
-    def __init__(self,fundo):
+    def __init__(self,fundo, opcao):
         self.boneca = Elemento(BONEQUINHA, texto = "Voe!", h=250 , w=250, x=50, y=200)
         self.x = 50
         self.c = 200
+        self.a = opcao
         self.boneca.vai = self.equacao1
         self.boneca.entra(fundo)
         
     def equacao1(self,*_):
         self.boneca.x = self.x+10
-        self.boneca.y = self.a*2+self.c
+        self.boneca.y = self.a*self.x+self.c
     
 if __name__ == "__main__":  
 	inicialesquerda().vai()
