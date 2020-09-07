@@ -1,7 +1,9 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
 FUNDO = "https://imgur.com/cf9dvHG.png"
-BONEQUINHA = "https://imgur.com/Z8SiiTg.png"
+BONEQUINHA = "https://imgur.com/gfe9a1S.png"
+BOTAO10 = "https://imgur.com/7JoDeNt.png"
+BOTAO20 = "https://imgur.com/ORgkcss.png"
 
 STYLE["width"] = 900
 STYLE["heigth"] = 900
