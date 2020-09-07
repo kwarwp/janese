@@ -11,7 +11,7 @@ STYLE["heigth"] = 900
 class inicialesquerda():
     def __init__(self):
         self.fundo = Cena(FUNDO)
-        self.zero = Elemento (INICIOMONTANHA, x=240 , y=620, cena=self.fundo)
+        self.zero = Elemento (INICIOMONTANHA, x=230 , y=620, cena=self.fundo)
         #self.bonequinha = bonequinha(self.fundo)
         self.mais = Texto(self.fundo, txt = "Clique aqui", foi=self.foi, A="2,5", B="-2,5")
         self.mais.vai()
