@@ -14,19 +14,17 @@ class inicialesquerda():
     def __init__(self):
         self.fundo = Cena(FUNDO)
         self.a = Texto(self.fundo, txt = "10") 
-        self.b = Texto(self.fundo, txt = "20") 
         self.a.vai()
         self.bonequinha = bonequinha(self.fundo, self.a)
         
-        
-         
+                
     def vai(self):
         self.fundo.vai()
                
 class bonequinha():
     def __init__(self,fundo,a):
-        self.boneca = Elemento(BONEQUINHA, texto = "Voe!", h=150 , w=250, x=200, y=300)
-        self.x = 200
+        self.boneca = Elemento(BONEQUINHA, texto = "Voe!", h=250 , w=250, x=400, y=300)
+        self.x = 400
         self.c = 300
         self.a = a
         self.boneca.vai = self.equacao1
