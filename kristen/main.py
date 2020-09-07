@@ -12,13 +12,15 @@ class inicialesquerda():
     def __init__(self):
         self.fundo = Cena(FUNDO)
         self.zero = Elemento (INICIOMONTANHA, x=230 , y=620, cena=self.fundo)
+        #self.planocartesiano = buscar uma imagem
         #self.bonequinha = bonequinha(self.fundo)
-        self.mais = Texto(self.fundo, txt = "Clique aqui", foi=self.foi, A="2,5", B="-2,5")
+        self.mais = Texto(self.fundo, txt = "Clique aqui", foi=self.foi, A="3,5", B="-3,5")
         self.mais.vai()
-        self.cf = dict(A=2.5, B=-2.5) 
+        self.cf = dict(A=3.5, B=-3.5) 
+        
     def foi(self,opcao):
         self.bonequinha = bonequinha(self.fundo, self.cf[opcao])
-         
+        #self.cf = dict(A = "(2,3)"
     def vai(self):
         self.fundo.vai()
                
