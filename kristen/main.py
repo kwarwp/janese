@@ -26,13 +26,13 @@ class bonequinha():
         self.boneca = Elemento(BONEQUINHA, texto = "Voe!", h=250 , w=250, x=150, y=450)
         self.x = 150
         self.c = 100
-        self.a = a
+       # self.a = a
         self.boneca.vai = self.equacao1
         self.boneca.entra(fundo)
         
     def equacao1(self,*_):
-        self.boneca.x = self.x = self.x*2
-        self.boneca.y = self.a+self.c
+        self.boneca.x = self.x = self.x+10
+        self.boneca.y = self.(-10)+self.c
     
 if __name__ == "__main__":  
 	inicialesquerda().vai()
