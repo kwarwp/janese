@@ -17,7 +17,7 @@ class inicialesquerda():
         #self.bonequinha = bonequinha(self.fundo)
         self.comeca()
     def comeca(self, *_):
-        self.bonequinha.x = -1000
+        self.bonequinha.x = 200
         self.mais = Texto(self.fundo, txt = "Clique aqui", foi=self.foi, A="-0.8", B="-4")
         self.mais.vai()
         self.cf = dict(A=-0.8, B=-4) 
