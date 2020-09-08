@@ -23,7 +23,7 @@ class inicialesquerda():
         self.cf = dict(A=-0.8, B=-4) 
         
     def foi(self,opcao):
-        self.bonequinha.a = opcao
+        self.bonequinha.a = self.cf [opcao]
         self.bonequinha.x = 200
         self.bonequinha.y = 620
         #self.cf = dict(A = "(2,3)"
