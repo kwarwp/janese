@@ -27,9 +27,10 @@ class inicialesquerda():
 class bonequinha():
     def __init__(self,fundo, opcao):
         self.x = 200
-        self.c = 550
+        self.c = 650
         self.a = opcao
-        self.boneca = Elemento(BONEQUINHA, h=250 , w=250, x=self.x, y=500)
+        y = self.a*self.x+self.c
+        self.boneca = Elemento(BONEQUINHA, h=250 , w=250, x=self.x, y=y)
         self.boneca.vai = self.equacao1
         self.boneca.entra(fundo)
         
