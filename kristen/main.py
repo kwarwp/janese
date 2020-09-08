@@ -31,6 +31,7 @@ class bonequinha():
         self.a = opcao
         y = self.a*self.x+self.c
         self.boneca = Elemento(BONEQUINHA, h=250 , w=250, x=self.x, y=y)
+        self.boneca.y = self.a*self.x+self.c
         self.boneca.vai = self.equacao1
         self.boneca.entra(fundo)
         
