@@ -26,7 +26,7 @@ class inicialesquerda():
                
 class bonequinha():
     def __init__(self,fundo, opcao):
-        self.x = 100
+        self.x = 50
         self.c = 620
         self.a = opcao
         y = self.a*self.x+self.c
