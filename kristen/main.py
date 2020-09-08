@@ -24,6 +24,8 @@ class inicialesquerda():
         
     def foi(self,opcao):
         self.bonequinha.a = opcao
+        self.bonequinha.x = 200
+        self.bonequinha.y = 620
         #self.cf = dict(A = "(2,3)"
     def vai(self):
         self.fundo.vai()
