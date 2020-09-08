@@ -27,6 +27,7 @@ class inicialesquerda():
         self.bonequinha.a = self.cf [opcao]
         self.bonequinha.x = 200
         self.bonequinha.y = 620
+        self.bonequinha.aparece()
         #self.cf = dict(A = "(2,3)"
     def vai(self):
         self.fundo.vai()
@@ -38,10 +39,14 @@ class bonequinha():
         self.a = opcao
         y = self.a*self.x+self.c
         self.boneca = Elemento(BONEQUINHA, h=250 , w=250, x=self.x, y=y)
+        self.boneca.o = 0
         self.boneca.y = self.a*self.x+self.c
         self.boneca.x = self.x
         self.boneca.vai = self.equacao1
         self.boneca.entra(fundo)
+        
+    def aparece(self):
+        self.boneca.o = 1
         
     def equacao1(self,*_):
         self.boneca.x = self.x = self.x + 10
