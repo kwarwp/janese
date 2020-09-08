@@ -37,8 +37,9 @@ class bonequinha():
         self.boneca.entra(fundo)
         
     def equacao1(self,*_):
+        self.boneca.x = self.x = self.x + 10
         self.boneca.y = self.a*self.x+self.c
-        self.boneca.x = self.x = self.x + 10 
+        
     
 if __name__ == "__main__":  
 	inicialesquerda().vai()
