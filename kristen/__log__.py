@@ -57,3 +57,10 @@ SyntaxError: invalid syntax
                        ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Sep 07 2020 21:20:27.135 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  def comeca(self, *_)
+                       ^
+SyntaxError: invalid syntax
+'''},
