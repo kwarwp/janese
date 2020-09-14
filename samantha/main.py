@@ -7,7 +7,7 @@ INICIO = "https://i.imgur.com/hXur4Nv.png"
 STYLE["width"] = 900
 STYLE["heigth"] = 900
 
-class inicio()
+class inicio():
     def __init__(self):
         self.fundo = Cena(FUNDO)
         self.zero = Elemento(INCIO, x=230, y=620, cena = self.fundo, vai = self.comeca)
