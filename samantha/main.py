@@ -1,6 +1,6 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
-FUNDO = "https://image.freepik.com/vetores-gratis/desenhos-animados-do-rio-no-cenario-natural-bonito-medio_43633-5901.jpg"
+FUNDO = "https://imgur.com/v7dtxen"
 BONECO = "https://imgur.com/gfe9a1S.png"
 INICIO = "https://i.imgur.com/hXur4Nv.png"
 
