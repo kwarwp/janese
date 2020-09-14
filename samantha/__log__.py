@@ -426,3 +426,10 @@ SyntaxError: invalid syntax
                   ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Sep 14 2020 20:38:40.315 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 28
+  def vai(self)
+                ^
+SyntaxError: invalid syntax
+'''},
