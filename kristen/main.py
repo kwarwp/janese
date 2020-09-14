@@ -13,13 +13,13 @@ class inicialesquerda():
         self.fundo = Cena(FUNDO)
         self.zero = Elemento (INICIOMONTANHA, x=230 , y=620, cena=self.fundo, vai=self.comeca)
         self.bonequinha = bonequinha(self.fundo, 1)
-        self.cf = dict(A=-0.8, B=-4) 
+        self.cf = dict(A=-1,3655, B=-4) 
         #self.planocartesiano = buscar uma imagem
         #self.bonequinha = bonequinha(self.fundo)
         self.comeca()
     def comeca(self, *_):
         self.bonequinha.x = 200
-        self.mais = Texto(self.fundo, txt = "Clique aqui", foi=self.foi, A="-0.8", B="-4")
+        self.mais = Texto(self.fundo, txt = "Clique aqui", foi=self.foi, A="-1,3655", B="-4")
         self.mais.vai()
        
         
@@ -49,7 +49,7 @@ class bonequinha():
         self.boneca.o = 1
         
     def equacao1(self,*_):
-        self.boneca.x = self.x = self.x + 10
+        self.boneca.x = self.x = self.x -5,457
         self.boneca.y = self.a*self.x+self.c
         
     
