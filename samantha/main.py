@@ -1,6 +1,6 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
-FUNDO = "https://imgur.com/v7dtxen"
+FUNDO = "https://i.imgur.com/v7dtxen.jpg"
 BONECO = "https://imgur.com/gfe9a1S.png"
 INICIO = "https://i.imgur.com/hXur4Nv.png"
 
