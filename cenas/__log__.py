@@ -2035,3 +2035,5 @@ TypeError: mementor() takes 2 positional arguments but more were given
        ^
 SyntaxError: Unbalanced bracket (
 '''},
+{'date': 'Mon Sep 14 2020 16:56:38.845 GMt-0300 (Hora padrão de Brasília) -X- SuPyGirls -X-',
+'error': ''''''},
