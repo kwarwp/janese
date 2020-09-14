@@ -412,3 +412,10 @@ UnboundLocalError: local variable 'botao_17082020' referenced before assignment
                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Sep 14 2020 20:37:35.137 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  class inicio()
+                 ^
+SyntaxError: invalid syntax
+'''},
