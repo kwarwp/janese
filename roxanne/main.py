@@ -21,6 +21,7 @@ from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
 FUNDO = "https://img.elo7.com.br/product/original/1D27E33/painel-cenario-mundo-encantado-frete-gratis-cenario.jpg"
 LIVRO = "https://comunicamack.files.wordpress.com/2016/12/livro.png"
+TESTE = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmancilha.files.wordpress.com%2F2008%2F09%2Fteste2.png"
 
 STYLE["width"] = 900
 STYLE["heigth"] = 900
@@ -30,7 +31,9 @@ STYLE["heigth"] = 900
 #fundo.vai()
 
 def cria_fundo():
-    fundo = Cena(FUNDO) 
+    teste = Cena(TESTE)
+    #fundo = Cena(FUNDO, esquerda=teste, meio=teste) #sem o direita não funciona
+    fundo = Cena(FUNDO, esquerda=teste, meio=teste, direita=teste) # com o direita funciona
     fundo.vai()
     
 cria_fundo()
