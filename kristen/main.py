@@ -49,7 +49,7 @@ class bonequinha():
         self.boneca.o = 1
         
     def equacao1(self,*_):
-        self.boneca.x = self.x = self.x -5,457
+        self.boneca.x = self.x = self.x -5.457
         self.boneca.y = self.a*self.x+self.c
         
     
