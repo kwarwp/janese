@@ -31,13 +31,13 @@ class fasedois()
 class boneco():
     def __init__(self, fundo, opcao1, opcao2):
         self.x = opcao
-        self.b = 400
+        ## self.b = 400
         self.c = 500
         self.a = 200
-        y = self.a*self.x*self.x + self.b*self.x + self.c
+        y = self.a*self.x+self.c
         self.bonequinha = Elemento(BONECO, h=250 , w=250, x=self.x, y=y)
         self.bonequinha.o = 0
-        self.bonequinha.y = self.a*self.x*self.x + self.b*self.x + self.c
+        self.bonequinha.y = self.a*self.x+self.c
         self.bonequinha.x = self.x
         self.bonequinha.vai = self.equacao1
         self.bonequinha.entra(fundo)
@@ -46,8 +46,8 @@ class boneco():
         self.bonequinha.o = 1
         
     def equacao1(self,*_):
-        self.bonequinha.x = self.x = self.x*self.x + self.x + 10
-        self.bonequinha.y = self.a*self.x*self.x + self.b*self.x + self.c
+        self.bonequinha.x = self.x = self.x + 10
+        self.bonequinha.y = self.a*self.x+self.c
 
 if __name__ == "__main__":
 	fasedois().vai()
