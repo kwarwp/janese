@@ -25,7 +25,7 @@ class inicio():
         self.boneco.y = 620
         self.boneco.aparece()
         
-    def vai(self)
+    def vai(self):
         self.fundo.vai()
         
 class boneco():
