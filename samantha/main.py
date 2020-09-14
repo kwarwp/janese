@@ -10,7 +10,7 @@ STYLE["heigth"] = 900
 class inicio():
     def __init__(self):
         self.fundo = Cena(FUNDO)
-        self.zero = Elemento(INCIO, x=230, y=620, cena = self.fundo, vai = self.comeca)
+        self.zero = Elemento(INICIO, x=230, y=620, cena = self.fundo, vai = self.comeca)
         self.boneco = boneco(self.fundo, 1)
         self.cf = dict(A=0.8, B=-4)
         self.comeca()
