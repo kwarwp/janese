@@ -13,7 +13,7 @@ class inicialesquerda():
         self.fundo = Cena(FUNDO)
         self.zero = Elemento (INICIOMONTANHA, x=230 , y=620, cena=self.fundo, vai=self.comeca)
         self.bonequinha = bonequinha(self.fundo, 1)
-        self.cf = dict(A=-1,3655, B=-4) 
+        self.cf = dict(A=-1.350, B=-4) 
         #self.planocartesiano = buscar uma imagem
         #self.bonequinha = bonequinha(self.fundo)
         self.comeca()
