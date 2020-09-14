@@ -1,40 +1,53 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-from cenas.imix import Inicial
 
-FUNDO = "https://images-americanas.b2w.io/produtos/01/00/img4/184202/8/184202888_1GG.jpg"
-
-
-CALEND={"IMIX":"https://i.imgur.com/XmmzDHZ.png", 
-        "IK":"https://i.imgur.com/9nieFUZ.png",
-        "AKBAL":"XX",
-        "KAN":"XX",
-        "CHICCHAN":"XX",
-        "CIMI":"XX",
-        "MANIK":"XX",
-        "LAMAT":"XX",
-        "MALUC":"XX",
-        "OC":"XX",
-        "CHUEN":"XX",
-        "EB":"XX",
-        "AKBAL":"XX"
-       }
+FUNDO = "https://image.freepik.com/vetores-gratis/desenhos-animados-do-rio-no-cenario-natural-bonito-medio_43633-5901.jpg"
+BONECO = "https://imgur.com/gfe9a1S.png"
+INICIO = "https://i.imgur.com/hXur4Nv.png"
 
 STYLE["width"] = 900
 STYLE["heigth"] = 900
 
-class Estrutura():
-    
-    
-        
+class fasedois()
     def __init__(self):
-    
-        self.fundo=Cena(FUNDO)
+        self.fundo = Cena(FUNDO)
+        self.zero = Elemento(INCIO, x=230, y=620, cena = self.fundo, vai = self.comeca)
+        self.boneco = boneco(self.fundo, 1)
+        self.cf = dict(A=0.8, B=-4)
+        self.comeca()
+    def comeca(self, *_):
+        self.boneco.x = 200
+        self.mais = Texto(self.fundo, txt = "Clique aqui", foi=self.foi,  A="-0.8", B="-4")
+        self.mais.vai()
+        
+    def foi(self,opcao):
+        self.boneco.a = self.cf [opcao]
+        self.boneco.x = 200
+        self.boneco.y = 620
+        self.boneco.aparece()
+        
+    def vai(self)
         self.fundo.vai()
         
-        self.imix=Elemento(CALEND["IMIX"], tit="dia 17/08/2020", x=0, y=100, w=300, h=300, cena=self.fundo, vai=self.botao_17082020)
+class boneco():
+    def __init__(self, fundo, opcao1, opcao2):
+        self.x = opcao
+        self.b = 400
+        self.c = 500
+        self.a = 200
+        y = self.a*self.x*self.x + self.b*self.x + self.c
+        self.bonequinha = Elemento(BONECO, h=250 , w=250, x=self.x, y=y)
+        self.bonequinha.o = 0
+        self.bonequinha.y = self.a*self.x*self.x + self.b*self.x + self.c
+        self.bonequinha.x = self.x
+        self.bonequinha.vai = self.equacao1
+        self.bonequinha.entra(fundo)
+        
+    def aparece(self):
+        self.bonequinha.o = 1
+        
+    def equacao1(self,*_):
+        self.bonequinha.x = self.x = self.x*self.x + self.x + 10
+        self.bonequinha.y = self.a*self.x*self.x + self.b*self.x + self.c
 
-    def botao_17082020(self, event=None):
-        Inicial().chama()
-            
 if __name__ == "__main__":
-    Estrutura()
+	fasedois().vai()
