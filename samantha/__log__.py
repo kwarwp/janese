@@ -399,3 +399,5 @@ UnboundLocalError: local variable 'botao_17082020' referenced before assignment
 'error': ''''''},
 {'date': 'Mon Sep 14 2020 15:21:15.926 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
 'error': ''''''},
+{'date': 'Mon Sep 14 2020 15:22:50.782 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': ''''''},
