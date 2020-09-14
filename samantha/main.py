@@ -29,7 +29,7 @@ class inicio():
         self.fundo.vai()
         
 class boneco():
-    def __init__(self, fundo, opcao1, opcao2):
+    def __init__(self, fundo, opcao):
         self.x = opcao
         ## self.b = 400
         self.c = 500
