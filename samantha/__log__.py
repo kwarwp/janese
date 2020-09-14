@@ -405,3 +405,10 @@ UnboundLocalError: local variable 'botao_17082020' referenced before assignment
 'error': ''''''},
 {'date': 'Mon Sep 14 2020 15:32:51.243 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
 'error': ''''''},
+{'date': 'Mon Sep 14 2020 20:36:59.268 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  class fasedois()
+                   ^
+SyntaxError: invalid syntax
+'''},
