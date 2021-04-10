@@ -222,3 +222,10 @@ TypeError: 'module' object is not callable
     circus(1, [[TOPO_ESQUERDA, TOPO_CENTRO, TOPO_DIREITA], [MEIO_ESQUERDA, CENTRO, MEIO_DIREITA], [FUNDO_ESQUERDA, FUNDO_CENTRO, FUNDO_DIREITA]])
 TypeError: 'module' object is not callable
 '''},
+{'date': 'Sat Apr 10 2021 15:47:30.858 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  if __name__ == "__main__":
+                            ^
+IndentationError: expected an indented block
+'''},
