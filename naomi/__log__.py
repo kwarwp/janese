@@ -20,3 +20,10 @@ IndentationError: expected an indented block
              ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sat Apr 10 2021 15:44:11.990 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  TOPO_ESQUERDA = "AN"
+  ^
+IndentationError: expected an indented block
+'''},
