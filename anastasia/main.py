@@ -2,7 +2,7 @@
 
 from circus.circus import circus
 
-def desafio0:
+def desafio0():
     T_ESQ = "LS"
     T_DIR = "LO"
     T_CEN = "JN"
