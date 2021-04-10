@@ -3,6 +3,7 @@
 
 from circus.circus import circus
 
+desafio0():
 TOPO_ESQUERDA = "AN"
 TOPO_DIREITA = "AN"
 TOPO_CENTRO = "AN"
@@ -14,3 +15,4 @@ circus(1, [[TOPO_ESQUERDA, TOPO_CENTRO, TOPO_DIREITA], [MEIO_ESQUERDA, CENTRO,
         MEIO_DIREITA], [FUNDO_ESQUERDA, FUNDO_CENTRO, FUNDO_DIREITA]])
         
 if __name__ == "__main__":
+	desafio0()
