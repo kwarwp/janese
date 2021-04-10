@@ -1,3 +1,5 @@
+# aqui é a Lilian
+
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
 FUNDO = "https://imgur.com/cf9dvHG.png"
