@@ -1,6 +1,6 @@
 # janese.anastasia.main.py
 
-from _spy.circus.circus import circus
+from circus.circus import circus
 
 def desafio0():
     T_ESQ = "LS"
@@ -13,4 +13,3 @@ def desafio0():
     
 if __name__ == "__main__":
 	desafio0()
-    
