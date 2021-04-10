@@ -3,7 +3,7 @@
 
 from circus.circus import circus
 
-desafio0():
+def desafio0():
 TOPO_ESQUERDA = "AN"
 TOPO_DIREITA = "AN"
 TOPO_CENTRO = "AN"
