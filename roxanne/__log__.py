@@ -61,3 +61,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Sat Apr 10 2021 15:57:56.560 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 3
+  TOPO_ESQUERDA = "LS"
+  ^
+IndentationError: expected an indented block
+'''},
