@@ -11,6 +11,6 @@ def desafio0():
     
     circus = (1, [[T_ESQ, T_DIR, T_CEN], [M_ESQ, CEN, M_DIR], [F_ESQ, F_CEN, F_DIR]])
     
-if __name__ = "__main__":
+if __name__ == "__main__":
 desafio0()
     
