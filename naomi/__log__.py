@@ -13,3 +13,10 @@ IndentationError: expected an indented block
                             ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Sat Apr 10 2021 15:43:51.847 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  desafio0():
+             ^
+SyntaxError: invalid syntax
+'''},
