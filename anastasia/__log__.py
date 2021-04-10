@@ -13,3 +13,10 @@ SyntaxError: invalid syntax
                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sat Apr 10 2021 15:48:30.917 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  desafio0()
+  ^
+IndentationError: expected an indented block
+'''},
