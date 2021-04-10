@@ -52,7 +52,7 @@ class bonequinha():
         
     def equacao1(self,*_):
         self.boneca.x = self.x = self.x +5.457
-        self.boneca.y = self.a*self.x+self.c
+        self.boneca.y = self.a*self.x - self.c
         
     
 if __name__ == "__main__":  
