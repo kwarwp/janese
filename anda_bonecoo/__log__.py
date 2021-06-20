@@ -153,3 +153,9 @@ RuntimeError: too much recursion
     Cena.vai()
 TypeError: vai() missing 1 positional argument: self
 '''},
+{'date': 'Sun Jun 20 2021 17:28:07.346 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+RuntimeError: too much recursion
+  module '$exec_1937' line 27
+    Cena().vai()
+'''},
