@@ -91,3 +91,9 @@ TypeError: __init__() takes 1 positional argument but more were given
     self.fundo = Cena(FUNDO)
 TypeError: __init__() takes 1 positional argument but more were given
 '''},
+{'date': 'Sun Jun 20 2021 17:21:55.319 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+RuntimeError: too much recursion
+  module '$exec_1881' line 26
+    Cena().vai()
+'''},
