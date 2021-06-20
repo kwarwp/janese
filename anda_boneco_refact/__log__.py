@@ -17,3 +17,10 @@
     self.bonequinha = Persona_control(self.fundo)        
 TypeError: __init__() missing 1 positional argument: movi
 '''},
+{'date': 'Sun Jun 20 2021 20:04:34.58 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 32
+  def __init__(self, nome_do_fundo, self.movi):
+                                    ^
+SyntaxError: duplicate argument 'self' in function definition
+'''},
