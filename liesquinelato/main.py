@@ -15,9 +15,12 @@ class inicial():
     def __init__(self):
         self.fundo = Cena(FUNDO)
         self.bonequinha = Elemento(BONEQUINHA)
+        self.bonequinha = bonequinha(self.fundo, 1)
+        self.bonequinha = bonequinha(self.fundo)
+        self.comeca()
     def vai(self):
         self.fundo.vai()
-        self.bonequinha.vai()
+        
         
 if __name__ == "__main__":  
     inicial().vai()     
