@@ -18,23 +18,28 @@ class Quadro:
 
     def __init__(self,*_):   
         self.fundo = Cena(FUNDO) 
-        self.bonequinha = Persona_control(self.fundo,300)        
+        self.bonequinha = Persona_control(PERSONAGEM, self.fundo)        
         
     def vai(self):
         self.fundo.vai()
         
 class Persona_control:
-    """ Cria um elemento que anda a partir do clique em outro elemento.
+    """ Cria um elemento que anda a partir do clique no joystick
     
-    
+        self.nome_do_elemento = Persona_control(nome_do_fundo, movi)
+        :param nome_do_fundo: Insere o personagem em um fundo pré-criado
+        :param movi: Determina a quantidade de movimento do personagem. Por padrão é 10
     """
-
-    def __init__(self, nome_do_fundo, movi= 10):
+    def __init__(self, variavel_personagem, nome_do_fundo, h =100, w=100, movi= 10):
         self.x = 10
         self.y = 430
-        self.movi = movi 
+        self.h = h 
+        self.w = w 
         
-        self.persona = Elemento(PERSONAGEM, h=100 , w=100, x=self.x, y=self.y)
+        self.movi = movi 
+        self.variavel_personagem = variavel_personagem
+        
+        self.persona = Elemento(self.variavel_personagem, h=self.h , w=self.w, x=self.x, y=self.y)
         self.persona.entra(nome_do_fundo)
         
         #self.persona.x = self.x
@@ -57,6 +62,7 @@ class Persona_control:
         """
         """
         self.persona.x = self.x = self.x - self.movi
+        
     def anda_esquerda(self,*_):
         self.persona.x = self.x = self.x + self.movi
         
