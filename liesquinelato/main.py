@@ -15,4 +15,4 @@ class inicial():
         self.bonequinha = Elemento(BONEQUINHA, x=230, y=620)
         
 if __name__ == "__main__":  
-      inicial().vai()     
+    inicial().vai()     
