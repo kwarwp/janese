@@ -460,3 +460,10 @@ AttributeError: 'Persona_control' object has no attribute 'fundo'
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Sun Jun 20 2021 19:35:08.203 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  def __init__(self, fundo):
+  ^
+IndentationError: unexpected indent
+'''},
