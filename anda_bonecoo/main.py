@@ -1,4 +1,5 @@
 # janese.anda_bonecoo.main.py
+
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
 BONEQUINHA = "https://imgur.com/gfe9a1S.png"
@@ -8,12 +9,10 @@ MARCADOR = "https://imgur.com/hEF8XPG.png"
 STYLE["width"] = 900
 STYLE["heigth"] = 900
 
-#class Cena():
-#    def __init__(self,*_):
-self.fundo = Cena(FUNDO)
+class Cena():
+    def __init__(self,*_):   
+        self.fundo = Cena(FUNDO) 
+        self.fundo.vai()
         
-#    def vai(self):
-self.fundo.vai()
-        
-#if __name__ == "__main__":  
-#    Cena().vai()
+if __name__ == "__main__":  
+    Cena()
