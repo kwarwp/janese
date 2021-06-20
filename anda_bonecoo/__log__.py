@@ -127,3 +127,7 @@ RuntimeError: too much recursion
     self.fundo = Cena(FUNDO)
 TypeError: __init__() takes 1 positional argument but more were given
 '''},
+{'date': 'Sun Jun 20 2021 17:26:25.98 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+RuntimeError: <InternalError: too much recursion>
+'''},
