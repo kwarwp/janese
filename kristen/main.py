@@ -32,7 +32,7 @@ class inicialesquerda():
         self.bonequinha.x = 200
         self.bonequinha.y = 620
         self.bonequinha.aparece()
-        #self.cf = dict(A = "(2,3)"
+        self.cf = dict(A = "(2,3)"
     def vai(self):
         self.fundo.vai()
                
