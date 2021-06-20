@@ -32,7 +32,7 @@ class Persona_control:
     def __init__(self, nome_do_fundo, movi= 10):
         self.x = 10
         self.y = 430
-        self.movi= 10
+        movi = self.movi = 10
         
         self.persona = Elemento(PERSONAGEM, h=100 , w=100, x=self.x, y=self.y)
         self.persona.entra(nome_do_fundo)
@@ -56,15 +56,15 @@ class Persona_control:
     def anda_direita(self,*_):
         """
         """
-        self.persona.x = self.x = self.x - movi
+        self.persona.x = self.x = self.x - self.movi
     def anda_esquerda(self,*_):
-        self.persona.x = self.x = self.x + movi
+        self.persona.x = self.x = self.x + self.movi
         
     def anda_cima(self,*_):
-        self.persona.y = self.y = self.y - movi
+        self.persona.y = self.y = self.y - self.movi
         
     def anda_baixo(self,*_):
-        self.persona.y = self.y = self.y + movi
+        self.persona.y = self.y = self.y + self.movi
 
 if __name__ == "__main__":  
     Quadro().vai()
