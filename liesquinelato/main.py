@@ -17,6 +17,7 @@ class inicial():
         self.bonequinha = Elemento(BONEQUINHA)
     def vai(self):
         self.fundo.vai()
+        self.bonequinha.vai()
         
 if __name__ == "__main__":  
     inicial().vai()     
