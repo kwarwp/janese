@@ -54,16 +54,16 @@ class Persona_control:
         self.esquerda.entra(fundo)
 
     def anda_direita(self,*_):
-        self.persona.x = self.x = self.x + 10
+        self.persona.x = self.x = self.x - 10
 
     def anda_esquerda(self,*_):
-        self.persona.x = self.x = self.x - 10
+        self.persona.x = self.x = self.x + 10
         
     def anda_cima(self,*_):
-        self.persona.y = self.y = self.y + 10
+        self.persona.y = self.y = self.y - 10
         
     def anda_baixo(self,*_):
-        self.persona.y = self.y = self.y - 10
+        self.persona.y = self.y = self.y + 10
 
 if __name__ == "__main__":  
     Quadro().vai()
