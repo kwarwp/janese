@@ -15,7 +15,7 @@ STYLE["heigth"] = 900
 
 class Quadro:
     def __init__(self,*_):   
-        self.fundo = Cena(FUNDO)
+        self.fundo = Cena(FUNDO) 
         self.bonequinha = Persona_control(self.fundo)        
 
         #self.cima = Elemento(PERSONAGEM, h=100 , w=100, x=10, y=430, cena= self.fundo)
