@@ -131,3 +131,10 @@ SyntaxError: invalid syntax
                                                                                                   ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sun Jun 20 2021 17:08:19.259 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  self.bonequinha = Elemento(img = BONEQUINHA, cena=self.fundo, x=0, y=250, style=dict(heigth=100, width=60)
+                                                                                                                  ^
+SyntaxError: invalid syntax
+'''},
