@@ -8,7 +8,7 @@ FUNDO = "https://imgur.com/7hpkeNU.png"
 #LABIRINTO = "https://imgur.com/OkOhvxf.png"
 BONEQUINHA = "https://imgur.com/gfe9a1S.png"
 
-STYLE["width"] = 900
+STYLE["width"] = 1200
 STYLE["heigth"] = 900
 
 class inicial():
