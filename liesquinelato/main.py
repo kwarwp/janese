@@ -8,11 +8,13 @@ FUNDO = "https://imgur.com/7hpkeNU.png"
 #LABIRINTO = "https://imgur.com/OkOhvxf.png"
 BONEQUINHA = "https://imgur.com/gfe9a1S.png"
 
+STYLE["width"] = 900
+STYLE["heigth"] = 900
 
 class inicial():
     def __init__(self):
-        self.fundo = Cena(FUNDO, w=900, h=900)
-        #self.bonequinha = Elemento(BONEQUINHA, x=230, y=620)
+        self.fundo = Cena(FUNDO)
+        #self.bonequinha = Elemento(BONEQUINHA, x=, y=620)
     def vai(self):
         self.fundo.vai()
         
