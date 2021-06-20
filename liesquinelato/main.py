@@ -13,7 +13,7 @@ class inicial():
     def __init__(self):
         self.fundo = Cena(FUNDO)
         self.bonequinha = Elemento(BONEQUINHA, x=230, y=620)
-    def.vai(self):
+    def vai(self):
         self.fundo.vai()
         
 if __name__ == "__main__":  
