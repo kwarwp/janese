@@ -18,6 +18,7 @@ class inicial():
         self.y1 = 200
         self.fundo = Cena(FUNDO)
         self.bonequinha = Elemento(img = BONEQUINHA, cena = self.fundo, x=self.x1, y=self.y1, h=200, w=200)
+        document.bind("keydown", self.anda_boneco)  # captura o evento de teclado
     def vai(self):
         self.fundo.vai()
     
@@ -34,6 +35,6 @@ class inicial():
         elif teclado in [38, 40]:
             teclado = (teclado - 39) * 5
             self.bonequinha.y = self.bonequinha.y + teclado #muda a posição de mais um ou menos um
-        self.fundo.vai()    
+
 if __name__ == "__main__":  
     inicial().vai()     
