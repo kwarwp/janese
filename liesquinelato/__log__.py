@@ -117,3 +117,10 @@ AttributeError: 'int' object has no attribute '__getitem__'
                                                                                                                     ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sun Jun 20 2021 17:03:57.560 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  self.bonequinha = Elemento(img = BONEQUINHA, cena=self.fundo, style=dict(left=350, top=550, width=60)))
+                                                                                                        ^
+SyntaxError: invalid syntax
+'''},
