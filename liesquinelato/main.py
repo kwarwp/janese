@@ -34,6 +34,6 @@ class inicial():
         elif teclado in [38, 40]:
             teclado = (teclado - 39) * 5
             self.bonequinha.y = self.bonequinha.y + teclado #muda a posição de mais um ou menos um
-                
+        self.fundo.vai()    
 if __name__ == "__main__":  
     inicial().vai()     
