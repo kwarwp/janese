@@ -277,3 +277,10 @@ RuntimeError: too much recursion
   module '$exec_2005' line 18
     Cena()
 '''},
+{'date': 'Sun Jun 20 2021 17:38:04.155 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 19
+  class Personagem
+                   ^
+SyntaxError: invalid syntax
+'''},
