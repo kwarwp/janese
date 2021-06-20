@@ -24,6 +24,8 @@ class Quadro:
         
 class Persona_control:
     """ Cria um elemento que anda a partir do clique em outro elemento.
+    
+    
     """
 
     def __init__(self, nome_do_fundo):
