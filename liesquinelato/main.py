@@ -30,11 +30,11 @@ class inicial():
         # os códigos 39 e 40 são a seta para cima e para baixo
         
         if teclado in [37, 39]:
-            teclado = (teclado - 38) * 5
+            teclado = (teclado - 38) * 10
             self.bonequinha.x = self.bonequinha.x + teclado # muda a posição de mais um ou menos um
             
         elif teclado in [38, 40]:
-            teclado = (teclado - 39) * 5
+            teclado = (teclado - 39) * 10
             self.bonequinha.y = self.bonequinha.y + teclado #muda a posição de mais um ou menos um
 
 if __name__ == "__main__":  
