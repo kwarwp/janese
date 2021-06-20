@@ -14,7 +14,7 @@ STYLE["heigth"] = 900
 class inicial():
     def __init__(self):
         self.fundo = Cena(FUNDO)
-        self.bonequinha = Elemento(img = BONEQUINHA)
+        self.bonequinha = Elemento(img = BONEQUINHA, cena=self.fundo, x=200, y=200)
     def vai(self):
         self.fundo.vai()
                 
