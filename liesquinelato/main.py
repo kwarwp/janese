@@ -3,9 +3,9 @@
 
 from _spy.vitollino.main import Cena, Elemento, STYLE
 
-FUNDO = "https://imgur.com/7hpkeNU"
-#CIMA = "https://imgur.com/9cZpb4V"
-#LABIRINTO = "https://imgur.com/OkOhvxf"
+FUNDO = "https://imgur.com/7hpkeNU.png"
+#CIMA = "https://imgur.com/9cZpb4V.png"
+#LABIRINTO = "https://imgur.com/OkOhvxf.png"
 BONEQUINHA = "https://imgur.com/gfe9a1S.png"
 
 
