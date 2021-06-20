@@ -53,7 +53,7 @@ class Persona_control:
         self.esquerda = Elemento(MARCADOR_ESQUERDA, h=40 , w=40, x=840, y=490, vai=self.anda_esquerda)
         self.esquerda.entra(fundo)
 
-    def anda_direita(self):
+    def anda_direita(self,*_):
         self.persona.x = self.x = self.x - 10
 
     def anda_esquerda(self,*_):
