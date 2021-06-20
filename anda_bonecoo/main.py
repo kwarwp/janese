@@ -16,7 +16,7 @@ STYLE["heigth"] = 900
 class Quadro:
     def __init__(self,*_):   
         self.fundo = Cena(FUNDO)
-        self.bonequinha = Persona_control()        
+        self.bonequinha = Persona_control(self.fundo)        
 
         #self.cima = Elemento(PERSONAGEM, h=100 , w=100, x=10, y=430, cena= self.fundo)
         #self.cima = Elemento(MARCADOR_CIMA, h=40 , w=40, x=780, y=450, cena= self.fundo)
@@ -41,16 +41,16 @@ class Persona_control:
         self.persona.y = self.y
         
         
-        self.cima = Elemento(MARCADOR_CIMA, h=40 , w=40, x=780, y=450, cena= self.fundo, vai=self.anda_cima)
+        self.cima = Elemento(MARCADOR_CIMA, h=40 , w=40, x=780, y=450, vai=self.anda_cima)
         self.cima.entra(fundo)
         
-        self.baixo = Elemento(MARCADOR_BAIXO, h=40 , w=40, x=780, y=530, cena= self.fundo, vai=self.anda_baixo)
+        self.baixo = Elemento(MARCADOR_BAIXO, h=40 , w=40, x=780, y=530, vai=self.anda_baixo)
         self.baixo.entra(fundo)
         
-        self.direita = Elemento(MARCADOR_DIREITA, h=40 , w=40, x=720, y=490, cena= self.fundo,vai=self.anda_direita)
+        self.direita = Elemento(MARCADOR_DIREITA, h=40 , w=40, x=720, y=490,vai=self.anda_direita)
         self.direita.entra(fundo)
         
-        self.esquerda = Elemento(MARCADOR_ESQUERDA, h=40 , w=40, x=840, y=490, cena= self.fundo, vai=self.anda_esquerda)
+        self.esquerda = Elemento(MARCADOR_ESQUERDA, h=40 , w=40, x=840, y=490, vai=self.anda_esquerda)
         self.esquerda.entra(fundo)
 
     def anda_direita():
