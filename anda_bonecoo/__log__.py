@@ -330,3 +330,10 @@ IndentationError: expected an indented block
     self.bonequinha = bonequinha(self.fundo, 1)
 NameError: name 'bonequinha' is not defined
 '''},
+{'date': 'Sun Jun 20 2021 19:01:47.124 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 33
+  """
+  ^
+IndentationError: expected an indented block
+'''},
