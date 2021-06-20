@@ -9,10 +9,10 @@ STYLE["width"] = 900
 STYLE["heigth"] = 900
 
 class Cena:
-    def __init__ (self):
+    def __init__ (self, *_):
         self.fundo = Cena(FUNDO)
         
-    def vai(self, *_):
+    def vai(self,*_):
         self.fundo.vai()
         
 class Personagem:
