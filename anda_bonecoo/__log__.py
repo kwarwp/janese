@@ -265,3 +265,9 @@ TypeError: object() takes no parameters
     self.fundo = Cena(FUNDO) 
 TypeError: object() takes no parameters
 '''},
+{'date': 'Sun Jun 20 2021 17:34:36.196 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+RuntimeError: too much recursion
+  module '$exec_2001' line 18
+    Cena()
+'''},
