@@ -16,7 +16,7 @@ STYLE["heigth"] = 900
 class Quadro:
     def __init__(self,*_):   
         self.fundo = Cena(FUNDO)
-        self.bonequinha = Persona_control(self.fundo)        
+        self.bonequinha = Persona_control()        
 
         #self.cima = Elemento(PERSONAGEM, h=100 , w=100, x=10, y=430, cena= self.fundo)
         #self.cima = Elemento(MARCADOR_CIMA, h=40 , w=40, x=780, y=450, cena= self.fundo)
@@ -30,18 +30,13 @@ class Quadro:
         
 class Persona_control:
 
-"""
-Constrói um boneco que se movimenta com clique no joystick
-
-nome_do_elemento = Persona_control(fundo)        
-"""
-
     def __init__(self, fundo):
         self.x = 10
         self.y = 430 
         
-        self.persona = Elemento(PERSONAGEM, h=100 , w=100, x=self.x, y=self.y, cena= self.fundo)
+        self.persona = Elemento(PERSONAGEM, h=100 , w=100, x=self.x, y=self.y)
         self.persona.entra(fundo)
+        
         self.persona.x = self.x
         self.persona.y = self.y
         
@@ -65,7 +60,7 @@ nome_do_elemento = Persona_control(fundo)
         self.persona.x = self.x = self.x - 10
         
     def anda_cima():
-        self.persona.y = self.y = self.y - 10
+        self.persona.y = self.y = self.y + 10
         
     def anda_baixo():
         self.persona.y = self.y = self.y - 10
