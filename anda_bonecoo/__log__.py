@@ -453,3 +453,10 @@ TypeError: __init__() missing 1 positional argument: fundo
     self.cima = Elemento(MARCADOR_CIMA, h=40 , w=40, x=780, y=450, cena= self.fundo, vai=self.anda_cima)
 AttributeError: 'Persona_control' object has no attribute 'fundo'
 '''},
+{'date': 'Sun Jun 20 2021 19:34:54.76 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 26
+  """ Cria um elemento que anda a partir do clique em outro elemento.
+  ^
+IndentationError: expected an indented block
+'''},
