@@ -131,3 +131,9 @@ TypeError: __init__() takes 1 positional argument but more were given
 'error': '''
 RuntimeError: <InternalError: too much recursion>
 '''},
+{'date': 'Sun Jun 20 2021 17:27:32.951 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+RuntimeError: too much recursion
+  module '$exec_1921' line 27
+    Cena()
+'''},
