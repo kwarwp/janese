@@ -39,7 +39,7 @@ class bonequinha():
         self.x = 50
         self.c = 500
         self.a = opcao
-        y = self.a*self.x-self.c
+        y = self.a*self.x+self.c
         self.boneca = Elemento(BONEQUINHA, h=250 , w=250, x=self.x, y=y)
         self.boneca.o = 0
         self.boneca.y = self.a*self.x+self.c
