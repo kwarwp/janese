@@ -126,3 +126,10 @@ NameError: name 'INICIOMONTANHA' is not defined
     self.fundo = Cena(FUNDO)
 NameError: name 'FUNDO' is not defined
 '''},
+{'date': 'Sun Jun 20 2021 16:36:54.342 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 21
+  self.planocartesiano = buscar uma imagem
+                                 ^
+SyntaxError: invalid syntax
+'''},
