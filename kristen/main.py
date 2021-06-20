@@ -25,7 +25,7 @@ class inicialesquerda():
         self.bonequinha.x = 200
         self.mais = Texto(self.fundo, txt = "Clique aqui", foi=self.foi, A="-1,3655", B="-4")
         self.mais.vai()
-       
+    
         
     def foi(self,opcao):
         self.bonequinha.a = self.cf [opcao]
