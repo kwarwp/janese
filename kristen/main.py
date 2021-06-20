@@ -2,11 +2,11 @@
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
-FUNDO = "https://imgur.com/7hpkeNU"
-DIREITA = "https://imgur.com/9cZpb4V"
-LABIRINTO = "https://imgur.com/OkOhvxf"
+#FUNDO = "https://imgur.com/7hpkeNU"
+#CIMA = "https://imgur.com/9cZpb4V"
+#LABIRINTO = "https://imgur.com/OkOhvxf"
 BONEQUINHA = "https://imgur.com/gfe9a1S.png"
-#INICIOMONTANHA = "https://imgur.com/hXur4Nv.png"
+INICIOMONTANHA = "https://imgur.com/hXur4Nv.png"
 
 STYLE["width"] = 900
 STYLE["heigth"] = 900
