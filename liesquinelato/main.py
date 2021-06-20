@@ -2,6 +2,7 @@
 # aqui é a Lilian
 
 from _spy.vitollino.main import Cena, Elemento, STYLE
+from browser import document # importa o DOM para atribuir o evento de teclado
 
 FUNDO = "https://imgur.com/7hpkeNU.png"
 #CIMA = "https://imgur.com/9cZpb4V.png"
@@ -19,6 +20,20 @@ class inicial():
         self.bonequinha = Elemento(img = BONEQUINHA, cena = self.fundo, x=self.x, y=self.y, h=200, w=200)
     def vai(self):
         self.fundo.vai()
+    
+    def andaboneca(self, ev=None):
+        teclado = ev.keyCode #chama o teclado
+        
+        # os códigos 37 e 38 são a seta para esquerda e para direita
+        # os códigos 39 e 40 são a seta para cima e para baixo
+        
+        if teclado in [37, 39]:
+            teclado = (teclado - 38) * 5
+            self.x = self.x + teclado # muda a posição de mais um ou menos um
+            
+        elif teclado in [38, 40]:
+            teclado = (teclado - 39) * 5
+            self.y = self.y + teclado #muda a posição de mais um ou menos um
                 
 if __name__ == "__main__":  
     inicial().vai()     
