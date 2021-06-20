@@ -110,3 +110,10 @@ AttributeError: 'inicial' object has no attribute 'FUNDO'
     imagem, kwargs = (imagem, {}) if isinstance(imagem, str) \
 AttributeError: 'int' object has no attribute '__getitem__'
 '''},
+{'date': 'Sun Jun 20 2021 17:03:32.858 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  self.bonequinha = Elemento(img = BONEQUINHA, cena=self.fundo, x=0, y=250, style=dict(left=350, top=550, width=60)))
+                                                                                                                    ^
+SyntaxError: invalid syntax
+'''},
