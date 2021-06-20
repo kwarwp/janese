@@ -8,14 +8,14 @@ MARCADOR = "https://imgur.com/hEF8XPG.png"
 STYLE["width"] = 900
 STYLE["heigth"] = 900
 
-class cena():
+class Cena():
     def __init__ ():
         self.fundo = Cena(FUNDO)
         
     def vai(self):
         self.fundo.vai()
         
-class personagem():
+class Personagem():
     def __init__():
         pass
         
@@ -23,4 +23,4 @@ class personagem():
         pass
         
 if __name__ == "__main__":  
-    cena().vai()
+    Cena().vai()
