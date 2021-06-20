@@ -11,8 +11,8 @@ BONEQUINHA = "https://imgur.com/gfe9a1S.png"
 
 class inicial():
     def __init__(self):
-        self.fundo = Cena(self.FUNDO)
-        self.bonequinha = Elemento(BONEQUINHA, x=230, y=620)
+        self.fundo = Cena(FUNDO)
+        #self.bonequinha = Elemento(BONEQUINHA, x=230, y=620)
     def vai(self):
         self.fundo.vai()
         
