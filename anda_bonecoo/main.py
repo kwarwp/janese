@@ -53,16 +53,16 @@ class Persona_control:
         self.esquerda = Elemento(MARCADOR_ESQUERDA, h=40 , w=40, x=840, y=490, vai=self.anda_esquerda)
         self.esquerda.entra(fundo)
 
-    def anda_direita():
+    def anda_direita(self):
         self.persona.x = self.x = self.x + 10
 
-    def anda_esquerda():
+    def anda_esquerda(self):
         self.persona.x = self.x = self.x - 10
         
-    def anda_cima():
+    def anda_cima(self):
         self.persona.y = self.y = self.y + 10
         
-    def anda_baixo():
+    def anda_baixo(self):
         self.persona.y = self.y = self.y - 10
 
 if __name__ == "__main__":  
