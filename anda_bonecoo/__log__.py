@@ -165,3 +165,9 @@ RuntimeError: too much recursion
   module '$exec_1945' line 27
     Cena().vai()
 '''},
+{'date': 'Sun Jun 20 2021 17:29:12.873 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+RuntimeError: too much recursion
+  module '$exec_1953' line 26
+    Cena().vai()
+'''},
