@@ -63,3 +63,10 @@ AttributeError: 'inicial' object has no attribute 'vai'
     inicial().vai()     
 AttributeError: 'inicial' object has no attribute 'vai'
 '''},
+{'date': 'Sun Jun 20 2021 16:20:04.248 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  def.vai(self):
+      ^
+SyntaxError: invalid syntax
+'''},
