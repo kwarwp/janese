@@ -8,19 +8,12 @@ MARCADOR = "https://imgur.com/hEF8XPG.png"
 STYLE["width"] = 900
 STYLE["heigth"] = 900
 
-class Cena:
-    def __init__ (self, *_):
-        self.fundo = Cena(FUNDO)
+#class Cena():
+#    def __init__(self,*_):
+self.fundo = Cena(FUNDO)
         
-    def vai(self,*_):
-        self.fundo.vai()
+#    def vai(self):
+self.fundo.vai()
         
-class Personagem:
-    def __init__():
-        pass
-        
-    def andar():
-        pass
-        
-if __name__ == "__main__":  
-    Cena().vai()
+#if __name__ == "__main__":  
+#    Cena().vai()
