@@ -26,20 +26,24 @@ class Quadro:
 class Persona_control:
     """ Cria um elemento que anda a partir do clique no joystick
     
-        self.nome_do_elemento = Persona_control(nome_do_fundo, movi)
+        self.nome_do_elemento = Persona_control(variavel_personagem, nome_do_fundo, 
+                                                h =100, w=100, x=10, y=430, movi= 10)
+        
         :param variavel_personagem:Requisita o nome da variável que guarda o link do personagem
         :param nome_do_fundo: Insere o personagem em um fundo pré-criado
-        :param h:
-        :param w:
+        :param h: Valor que define a altura do personagem. Por padrão é 100
+        :param w: Valor que define a largura do persongem. Por padrão é 100
+        :param x: Valor que define a posição do personagem no eixo x. Por padrão é 10
+        :param y: Valor que define a posição do personagem no eixo y. Por padrão é 430
         :param movi: Determina a quantidade de movimento do personagem. Por padrão é 10
     """
     def __init__(self, variavel_personagem, nome_do_fundo, h =100, w=100, x=10, y=430, movi= 10):
-        self.x = x
-        self.y = y
-        self.h = h 
-        self.w = w 
+        self.x = x # Diz que o x acima é nomeado como self.x abaixo
+        self.y = y # Diz que o y acima é nomeado como self.y abaixo
+        self.h = h # Diz que o h acima é nomeado como self.h abaixo
+        self.w = w # Diz que o w acima é nomeado como self.w abaixo
         
-        self.movi = movi 
+        self.movi = movi # Diz que o movi acima é nomeado como self.movi abaixo
         self.variavel_personagem = variavel_personagem
         
         self.persona = Elemento(self.variavel_personagem, h=self.h , w=self.w, x=self.x, y=self.y)
