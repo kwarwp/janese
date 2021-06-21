@@ -14,12 +14,14 @@ MARCADOR_BAIXO = "https://imgur.com/hEF8XPG.png"
 STYLE["width"] = 900
 STYLE["heigth"] = 900
 
-def teste():
-    fundo = Cena(FUNDO) 
-    fundo.vai()
-    bonequinha = Persona_control(PERSONAGEM, fundo) 
+class Quadro:
 
-  
+    def __init__(self,*_):   
+        self.fundo = Cena(FUNDO) 
+        self.bonequinha = Persona_control(Personagem, self.fundo)        
+        
+    def vai(self):
+        self.fundo.vai()
 
 class Persona_control:
     """ Cria um elemento que anda a partir do clique no joystick
