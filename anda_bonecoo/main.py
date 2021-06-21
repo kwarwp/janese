@@ -23,7 +23,13 @@ class Quadro:
         self.fundo.vai()
         
 class Persona_control:
-
+    """ Cria um elemento que anda a partir do clique no joystick
+    
+        self.nome_do_elemento = Persona_control( nome_do_fundo)
+        
+        :param nome_do_fundo: Insere o personagem em um fundo pré-criado
+        
+    """
     def __init__(self, nome_do_fundo):
         self.x = 10 # valor pré-estabelecido do x
         self.y = 430 # valor pré-estabelecido do y
