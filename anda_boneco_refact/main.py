@@ -82,5 +82,3 @@ fundo = Cena(FUNDO)
 fundo.vai()
 bonequinha = Persona_control(PERSONAGEM, fundo) 
 
-if __name__ == "__main__":  
-    teste()
