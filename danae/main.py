@@ -7,6 +7,9 @@ from browser import document
 FUNDO = "https://i.imgur.com/73J8HqZ.png"
 PERSONAGEM = "https://imgur.com/0Zyn3IL.png"
 
+STYLE["width"]=500
+STYLE["height"]=120
+
 class inicial():
     def __init__(self):
         self.fundo = Cena(FUNDO)
