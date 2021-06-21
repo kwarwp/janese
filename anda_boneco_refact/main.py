@@ -18,7 +18,7 @@ class Quadro:
 
     def __init__(self,*_):   
         self.fundo = Cena(FUNDO) 
-        self.bonequinha = Persona_control(Personagem, self.fundo)        
+        self.bonequinha = Persona_control(PERSONAGEM, self.fundo)        
         
     def vai(self):
         self.fundo.vai()
