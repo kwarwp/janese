@@ -6,3 +6,10 @@
            ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Jun 21 2021 17:53:48.366 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 11
+  STYLE["height"= 200
+                        ^
+SyntaxError: invalid syntax
+'''},
