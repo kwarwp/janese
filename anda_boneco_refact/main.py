@@ -86,4 +86,4 @@ class Persona_control:
         
 
 if __name__ == "__main__":  
-    teste()
+    Quadro().vai()
