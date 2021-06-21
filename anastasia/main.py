@@ -11,8 +11,10 @@ PERSONAGEM = "https://imgur.com/7qQzMJb.png"
 
 class inicial():
     def __init__(self):
+        self.x1 = 0
+        self.y1 = 500
         self.fundo = Cena(FUNDO)
-        self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo)
+        self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=500, w=120)
         document.bind("keydown", self.andapersonagem)
         
         
