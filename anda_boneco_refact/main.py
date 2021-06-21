@@ -77,8 +77,11 @@ class Persona_control:
         """Este método guarda a expressão de movimentação do elemento quando o botão 'embaixo' é clicado.
         """
         self.persona.y = self.y = self.y + self.movi
+        
+def teste():
+    fundo = Cena(FUNDO) 
+    fundo.vai()
+    bonequinha = Persona_control(PERSONAGEM, fundo) 
 
-fundo = Cena(FUNDO) 
-fundo.vai()
-bonequinha = Persona_control(PERSONAGEM, fundo) 
-
+if __name__ == "__main__":  
+    teste()
