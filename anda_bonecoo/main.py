@@ -23,45 +23,49 @@ class Quadro:
         self.fundo.vai()
         
 class Persona_control:
-    """ Cria um elemento que anda a partir do clique em outro elemento.
-    
-    
-    """
 
     def __init__(self, nome_do_fundo):
-        self.x = 10
-        self.y = 430 
+        self.x = 10 # valor pré-estabelecido do x
+        self.y = 430 # valor pré-estabelecido do y
         
-        self.persona = Elemento(PERSONAGEM, h=100 , w=100, x=self.x, y=self.y)
-        self.persona.entra(nome_do_fundo)
+        self.persona = Elemento(PERSONAGEM, h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
+        self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
         
         #self.persona.x = self.x
         #self.persona.y = self.y
         
         
-        self.cima = Elemento(MARCADOR_CIMA, h=40 , w=40, x=780, y=450, vai=self.anda_cima)
+        self.cima = Elemento(MARCADOR_CIMA, h=40 , w=40, x=780, y=450, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
         self.cima.entra(nome_do_fundo)
         
-        self.baixo = Elemento(MARCADOR_BAIXO, h=40 , w=40, x=780, y=530, vai=self.anda_baixo)
+        self.baixo = Elemento(MARCADOR_BAIXO, h=40 , w=40, x=780, y=530, vai=self.anda_baixo) #cria um elemento posicionado 'abaixo' no joystick
         self.baixo.entra(nome_do_fundo)
         
-        self.direita = Elemento(MARCADOR_DIREITA, h=40 , w=40, x=720, y=490,vai=self.anda_direita)
+        self.direita = Elemento(MARCADOR_DIREITA, h=40 , w=40, x=720, y=490,vai=self.anda_direita) #cria um elemento posicionado 'à direita' no joystick
         self.direita.entra(nome_do_fundo)
         
-        self.esquerda = Elemento(MARCADOR_ESQUERDA, h=40 , w=40, x=840, y=490, vai=self.anda_esquerda)
+        self.esquerda = Elemento(MARCADOR_ESQUERDA, h=40 , w=40, x=840, y=490, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
         self.esquerda.entra(nome_do_fundo)
 
     def anda_direita(self,*_):
+        """Este método guarda a expressão de movimentação do elemento quando o botão 'direita' é clicado.
         """
-        """
-        self.persona.x = self.x = self.x - 10
+        #self.persona.x = self.x = self.x - 10
+        self.persona.x = self.x -= 10
+        
     def anda_esquerda(self,*_):
+        """Este método guarda a expressão de movimentação do elemento quando o botão 'esquerda' é clicado.
+        """
         self.persona.x = self.x = self.x + 10
         
     def anda_cima(self,*_):
+        """Este método guarda a expressão de movimentação do elemento quando o botão 'em cima' é clicado.
+        """
         self.persona.y = self.y = self.y - 10
         
     def anda_baixo(self,*_):
+        """Este método guarda a expressão de movimentação do elemento quando o botão 'embaixo' é clicado.
+        """
         self.persona.y = self.y = self.y + 10
 
 if __name__ == "__main__":  
