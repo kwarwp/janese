@@ -17,6 +17,7 @@ STYLE["heigth"] = 900
 
 fundo = Cena(FUNDO) 
 fundo.vai()
+
 bonequinha = Persona_control(PERSONAGEM, fundo) 
 
         
@@ -41,7 +42,7 @@ class Persona_control:
         self.w = w # Diz que o w acima é nomeado como self.w abaixo
         
         self.movi = movi # Diz que o movi acima é nomeado como self.movi abaixo
-        self.variavel_personagem = variavel_personagem 
+        #self.variavel_personagem = variavel_personagem 
         
         self.persona = Elemento(self.variavel_personagem, h=self.h , w=self.w, x=self.x, y=self.y) # Cria uma instância da classe elemento
         self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
