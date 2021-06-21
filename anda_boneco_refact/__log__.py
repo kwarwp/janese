@@ -82,3 +82,10 @@ NameError: name 'PERSONAGEM' is not defined
     self.bonequinha = Persona_control(PERSONAGEM, self.fundo)        
 TypeError: __init__ missing 2 positional arguments: 'h' and 'w'
 '''},
+{'date': 'Sun Jun 20 2021 21:22:25.668 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 36
+  def __init__(self, variavel_personagem, nome_do_fundo, h =100, w=100, x=10, y=430 movi= 10):
+                                                                                     ^
+SyntaxError: invalid syntax
+'''},
