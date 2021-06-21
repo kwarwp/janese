@@ -44,7 +44,7 @@ class Persona_control:
         self.movi = movi # Diz que o movi acima é nomeado como self.movi abaixo
         #self.variavel_personagem = variavel_personagem 
         
-        self.persona = Elemento(self.variavel_personagem, h=self.h , w=self.w, x=self.x, y=self.y) # Cria uma instância da classe elemento
+        self.persona = Elemento(variavel_personagem, h=self.h , w=self.w, x=self.x, y=self.y) # Cria uma instância da classe elemento
         self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
         
         #self.persona.x = self.x > Deixar de stand by para futuras averiguações
