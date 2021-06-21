@@ -14,17 +14,7 @@ MARCADOR_BAIXO = "https://imgur.com/hEF8XPG.png"
 STYLE["width"] = 900
 STYLE["heigth"] = 900
 
-"""
-class Fundo_teste:
 
-    def __init__(self,*_):   
-        self.fundo = Cena(FUNDO) 
-        self.bonequinha = Persona_control(PERSONAGEM, self.fundo)        
-        
-    def vai(self):
-        self.fundo.vai()
-"""
- 
 fundo = Cena(FUNDO) 
 fundo.vai()
 bonequinha = Persona_control(PERSONAGEM, fundo) 
