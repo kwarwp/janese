@@ -27,12 +27,15 @@ class Persona_control:
     """ Cria um elemento que anda a partir do clique no joystick
     
         self.nome_do_elemento = Persona_control(nome_do_fundo, movi)
+        :param variavel_personagem:Requisita o nome da variável que guarda o link do personagem
         :param nome_do_fundo: Insere o personagem em um fundo pré-criado
+        :param h:
+        :param w:
         :param movi: Determina a quantidade de movimento do personagem. Por padrão é 10
     """
-    def __init__(self, variavel_personagem, nome_do_fundo, h =100, w=100, movi= 10):
-        self.x = 10
-        self.y = 430
+    def __init__(self, variavel_personagem, nome_do_fundo, h =100, w=100, x=10, y=430, movi= 10):
+        self.x = x
+        self.y = y
         self.h = h 
         self.w = w 
         
