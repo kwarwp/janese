@@ -36,5 +36,3 @@ class inicial():
 
 if name == "main":
     inicial().vai()
-
-   
