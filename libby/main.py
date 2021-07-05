@@ -3,17 +3,17 @@
 # janese.sarah.main.py
 #Helena Pacheco
 
-from_spy.vitollino.main import Cena, Elemento, STYLE
-from brownser import document
+from _spy.vitollino.main import Cena, Elemento, STYLE
+from browser import document 
 
-FUNDO = "https://imgur.com/gallery/SJ4CR6x"
-PERSONAGEM = "https://imgur.com/gallery/kiO6u4F"
+FUNDO = "https://i.imgur.com/73J8HqZ.png"
+PERSONAGEM = "https://imgur.com/0Zyn3IL.png"
 
-STYLE["wedth"]=500
-STYLE["height"]= 200
+STYLE["width"]=500
+STYLE["height"]=120
 
 class inicial():
-    def __init__(self):
+    def init(self):
         self.x1 = 0
         self.y1 = 500
         self.fundo = Cena(FUNDO)
@@ -27,7 +27,7 @@ class inicial():
         teclado = ev.keyCode
 
         if teclado in [37, 39]:
-            teclado = (teclado - 38) * 20 #podem modificar o valor do 10
+            teclado = (teclado - 38) * 10 #podem modificar o valor do 10
             self.personagem.x = self.personagem.x + teclado
 
         elif teclado in [38, 40]:
@@ -36,5 +36,5 @@ class inicial():
 
 
 
-if __name__ == "__main__":
+if name == "main":
     inicial().vai()
