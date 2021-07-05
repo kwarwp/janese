@@ -6,7 +6,7 @@ from _spy.vitollino.main import Cena, Elemento, STYLE
 from browser import document
 
 FUNDO = "https://i.imgur.com/KYKStgT.png"
-PERSONAGEM ANDANDO= "https://i.imgur.com/Jo5Ho94.png"
+PERSONAGEM = "https://i.imgur.com/Jo5Ho94.png"
 
 STYLE["width"]=1200
 STYLE["height"]=520
@@ -17,7 +17,7 @@ class inicial():
         self.x1 = 0
         self.y1 = 500
         self.fundo = Cena(FUNDO)
-        self.personagem = Elemento(img = PERSONAGEM ANDANDO, cena = self.fundo, x=self.x1, y=self.y1, h=50, w=50)
+        self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=50, w=50)
         document.bind("keydown", self.andapersonagem)
         
         
