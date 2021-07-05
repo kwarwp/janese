@@ -6,7 +6,7 @@ from browser import document
 FUNDO = "https://imgur.com/bg1h3oD.png"
 PERSONAGEM = "https://imgur.com/7qQzMJb.png"
 
-STYLE["width"]=500
+STYLE["width"]=700
 STYLE["height"]=120
 
 class inicial():
