@@ -20,7 +20,7 @@ class inicial():
         self.fundo = Cena(FUNDO)
         self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=100)
         document.bind("keydown", self.andapersonagem)
-        self.personagem = Elemento(img = FOLHA, cena = self.fundo, x=self.x1, y=self.y1, h=80, w=80)
+        self.personagem = Elemento(img = FOLHA, cena = self.fundo, x1=self.x1, y1=self.y1, h=80, w=80)
         
         
     def vai(self):
