@@ -17,9 +17,8 @@ class inicial():
         self.fundo = Cena(FUNDO)
 self.personagem=Elemento(img=PERSONAGEM, cena=self.fundo)
 
-def vai(self):
-self.fundo.vai()
-
+  def vai(self):
+  self.fundo.vai()
 
 
 if __name__== "__main__":
