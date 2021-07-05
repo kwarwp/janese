@@ -22,7 +22,7 @@ class inicial():
         self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=100)
         document.bind("keydown", self.andapersonagem)
     def folha(self):    
-        self.x2 = 50
+        self.x2 = 2
         self.y2 = 470
         self.fundo = Cena(FUNDO)
         self.folha = Elemento(img = FOLHA, cena = self.fundo, x2=self.x2, y2=self.y2, h=80, w=80)
