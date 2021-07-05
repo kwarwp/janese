@@ -23,7 +23,7 @@ class inicial():
         self.x2 = 50
         self.y2 = 470
         self.fundo = Cena(FUNDO)
-        self.personagem = Elemento(img = FOLHA, cena = self.fundo, x=self.x2, y=self.y2, h=80, w=80)
+        self.folha = Elemento(img = FOLHA, cena = self.fundo, x=self.x2, y=self.y2, h=80, w=80)
         
         
     def vai(self):
