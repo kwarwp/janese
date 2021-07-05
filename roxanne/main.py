@@ -1,39 +1,35 @@
-# janese.cenas.imix.py
-# SPDX-License-Identifier: GPL-3.0-or-later
-"""     Vitollino na UNESP 2020
+from _spy.vitollino.main import Cena, Elemento, STYLE
+from browser import document 
 
-.. codeauthor:: Equipe Supygirls <supygirls@gmail.com>
+FUNDO = "https://i.imgur.com/73J8HqZ.png"
+PERSONAGEM = "https://imgur.com/0Zyn3IL.png"
 
-Changelog
----------
-.. versionadded::    20.08
-       - Cenas;
-       - Texto de abertura;
-       - Elemento;
-       - Texto ao clicar no elemento;
-       - Importação de classes de MESMO MÓDULO
+STYLE["width"]=500
+STYLE["height"]=120
 
-"""
-from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-#from samantha.main import turmaDireita
-#from kristen.main import inicialesquerda
-#from danae.main import Lago
-
-FUNDO = "https://img.elo7.com.br/product/original/1D27E33/painel-cenario-mundo-encantado-frete-gratis-cenario.jpg"
-LIVRO = "https://comunicamack.files.wordpress.com/2016/12/livro.png"
-TESTE = "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmancilha.files.wordpress.com%2F2008%2F09%2Fteste2.png"
-
-STYLE["width"] = 900
-STYLE["heigth"] = 900
-
-
-#fundo = Cena(FUNDO) 
-#fundo.vai()
-
-def cria_fundo():
-    teste = Cena(TESTE)
-    #fundo = Cena(FUNDO, esquerda=teste, meio=teste) #sem o direita não funciona
-    fundo = Cena(FUNDO, esquerda=teste, meio=teste, direita=teste) # com o direita funciona
-    fundo.vai()
+class inicial():
+    def init(self):
+        self.x1 = 0
+        self.y1 = 500
+        self.fundo = Cena(FUNDO)
+        self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=50, w=50)
+        document.bind("keydown", self.andapersonagem)
+        
+    def vai(self):
+        self.fundo.vai()
+        
+    def andapersonagem(self, ev=None):
+        teclado = ev.keyCode
+        
+        if teclado in [37, 39]:
+            teclado = (teclado - 38) * 10 #podem modificar o valor do 10
+            self.personagem.x = self.personagem.x + teclado
+        
+        elif teclado in [38, 40]:
+            teclado = (teclado - 39) * 10
+            self.personagem.y = self.personagem.y + teclado
     
-cria_fundo()
+        
+        
+if name == "main":
+    inicial().vai()
