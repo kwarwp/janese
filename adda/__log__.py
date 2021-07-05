@@ -31,3 +31,10 @@ SyntaxError: invalid syntax
     self.personagem = Elemento(img = FOLHA, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=100)
 NameError: name 'FOLHA' is not defined
 '''},
+{'date': 'Mon Jul 05 2021 18:09:40.659 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 23
+  self.personagem = Elemento(img = FOLHA, cena = self.fundo, x=self.x1, y=self.y1, h=80, w=80)
+  ^
+IndentationError: unexpected indent
+'''},
