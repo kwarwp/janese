@@ -8,6 +8,7 @@ from browser import document
 FUNDO = "https://i.imgur.com/KYKStgT.png"
 PERSONAGEM1 = "https://i.imgur.com/Sr5zj5S.png"
 PERSONAGEM2 = "https://i.imgur.com/Jo5Ho94.png"
+PERSONAGEM3 = "https://i.imgur.com/CPhpGhM.png"
 
 STYLE["width"]=1150
 STYLE["height"]=520
@@ -20,7 +21,11 @@ class inicial():
         self.fundo = Cena(FUNDO)
         self.personagem1 = Elemento(img = PERSONAGEM1, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=100)
         document.bind("keydown", self.andapersonagem)
-        self.personagem2 = Elemento(img = PERSONAGEM2, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=100)
+    def inicio(self):
+        self.x1 = 0
+        self.y1 = 460
+        self.fundo = Cena(FUNDO)
+        self.personagem3 = Elemento(img = PERSONAGEM3, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=100)
         document.bind("keydown", self.andapersonagem)
         
     def vai(self):
