@@ -11,7 +11,7 @@ STYLE["wedth"]=500
 STYLE["height"]= 200
 
 class inicial():
-def __init__(self):
+  def init(self):
 self.fundo= cena(FUNDO)
 self.personagem=Elemento(img=PERSONAGEM, cena=self.fundo)
 
