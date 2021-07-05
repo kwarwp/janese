@@ -6,9 +6,8 @@ from _spy.vitollino.main import Cena, Elemento, STYLE
 from browser import document
 
 FUNDO = "https://i.imgur.com/KYKStgT.png"
-PERSONAGEM1 = "https://i.imgur.com/Sr5zj5S.png"
-PERSONAGEM2 = "https://i.imgur.com/Jo5Ho94.png"
-PERSONAGEM3 = "https://i.imgur.com/CPhpGhM.png"
+PERSONAGEM = "https://i.imgur.com/Jo5Ho94.png"
+FOLHA = "https://i.imgur.com/upAN1GX.png"
 
 STYLE["width"]=1150
 STYLE["height"]=520
@@ -19,14 +18,11 @@ class inicial():
         self.x1 = 0
         self.y1 = 460
         self.fundo = Cena(FUNDO)
-        self.personagem1 = Elemento(img = PERSONAGEM1, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=100)
+        self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=100)
         document.bind("keydown", self.andapersonagem)
-    def inicio(self):
-        self.x1 = 0
-        self.y1 = 460
-        self.fundo = Cena(FUNDO)
-        self.personagem3 = Elemento(img = PERSONAGEM3, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=100)
-        document.bind("keydown", self.andapersonagem)
+        self.x2 = 20
+        self.y2 = 500
+        self.personagem = Elemento (img = FOLHA, cena = self.fundo, x= self.x2, y= self.y2, h=80, w= 80
         
     def vai(self):
         self.fundo.vai()
@@ -36,11 +32,11 @@ class inicial():
         
         if teclado in [37,39]:
             teclado = (teclado - 38) * 10
-            self.personagem2.x = self.personagem2.x + teclado
+            self.personagem.x = self.personagem.x + teclado
             
         elif teclado in [38, 40]:
             teclado = (teclado - 39) * 10
-            self.personagem2.y = self.personagem2.y + teclado
+            self.personagem.y = self.personagem.y + teclado
         
         
 if __name__ == "__main__":
