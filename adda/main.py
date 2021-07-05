@@ -27,10 +27,8 @@ class inicial():
         self.y1 = 460
         self.fundo = Cena(FUNDO)
         self.FOLHA = Elemento(img = FOLHA, cena = self.fundo, x1=self.x1, y1=self.y1, h=80, w=80)
-        self.x3 = 2
-        self.y3 = 460
         self.fundo = Cena(FUNDO)
-        self.pena = Elemento(img = PENA, cena = self.fundo, x3= self.x1, y3= self.y1, h= 80, w=80)
+        self.pena = Elemento(img = PENA, cena = self.fundo, x1= self.x1, y1= self.y1, h= 80, w=80)
         
         
     def vai(self):
