@@ -12,7 +12,9 @@ STYLE["height"]= 200
 
 class inicial():
   def init(self):
-self.fundo= cena(FUNDO)
+        self.x1 = 0
+        self.y1 = 500
+        self.fundo = Cena(FUNDO)
 self.personagem=Elemento(img=PERSONAGEM, cena=self.fundo)
 
 def vai(self):
