@@ -25,7 +25,7 @@ class inicial():
         teclado = ev.keyCode
 
         if teclado in [37, 39]:
-            teclado = (teclado - 38) * 10 #podem modificar o valor do 10
+            teclado = (teclado - 38) * 20 #podem modificar o valor do 10
             self.personagem.x = self.personagem.x + teclado
 
         elif teclado in [38, 40]:
