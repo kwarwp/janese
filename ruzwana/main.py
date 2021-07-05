@@ -11,7 +11,7 @@ STYLE["width"]=500
 STYLE["height"]=120
 
 class inicial():
-    def init(self):
+    def __init__(self):
         self.x1 = 0
         self.y1 = 500
         self.fundo = Cena(FUNDO)
@@ -34,5 +34,5 @@ class inicial():
 
 
 
-if name == "main":
+if __name__ == "__main__":
     inicial().vai()
