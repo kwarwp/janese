@@ -1,14 +1,14 @@
 # janese.sarah.main.py
 #Helena Pacheco
 
-from _spy.vitollino.main import Cena, Elemento, STYLE
-from browser import document 
+from_spy.vitollino.main import Cena, Elemento, STYLE
+from brownser import document
 
-FUNDO = "https://i.imgur.com/73J8HqZ.png"
-PERSONAGEM = "https://imgur.com/0Zyn3IL.png"
+FUNDO = "https://imgur.com/gallery/SJ4CR6x"
+PERSONAGEM = "https://imgur.com/gallery/kiO6u4F"
 
-STYLE["width"]=500
-STYLE["height"]=120
+STYLE["wedth"]=500
+STYLE["height"]= 200
 
 class inicial():
     def __init__(self):
@@ -25,7 +25,7 @@ class inicial():
         teclado = ev.keyCode
 
         if teclado in [37, 39]:
-            teclado = (teclado - 38) * 10 #podem modificar o valor do 10
+            teclado = (teclado - 38) * 20 #podem modificar o valor do 10
             self.personagem.x = self.personagem.x + teclado
 
         elif teclado in [38, 40]:
