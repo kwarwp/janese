@@ -20,7 +20,6 @@ class inicial():
         self.y = 460
         self.fundo = Cena(FUNDO)
         self.folha()
-        self.pena()
         self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=100)
         document.bind("keydown", self.andapersonagem)
     def folha(self):
@@ -28,7 +27,6 @@ class inicial():
         self.y1 = 460
         self.fundo = Cena(FUNDO)
         self.FOLHA = Elemento(img = FOLHA, cena = self.fundo, x1=self.x1, y1=self.y1, h=80, w=80)
-    def pena(self):
         self.x3 = 2
         self.y3 = 460
         self.fundo = Cena(FUNDO)
