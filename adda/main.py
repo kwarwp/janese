@@ -24,7 +24,7 @@ class inicial():
     def folha(self):    
         self.x2 = 0
         self.y2 = 500
-        self.fundo = Cena(FUNDO)
+        #self.fundo = Cena(FUNDO)
         self.folha = Elemento(img = FOLHA, cena = self.fundo, h=80, w=80)
         
         
