@@ -4,7 +4,7 @@
 from_spy.vitollino.main import Cena, Elemento, STYLE
 from brownser import document
 
-FUNDO = "https://imgur.com/gallery/SJ4CR6x"
+FUNDO = "https://i.imgur.com/gallery/SJ4CR6x"
 PERSONAGEM = "https://imgur.com/gallery/kiO6u4F"
 
 STYLE["wedth"]=500
