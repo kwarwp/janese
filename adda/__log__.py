@@ -6,3 +6,10 @@
               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Jul 05 2021 18:00:16.806 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 25
+  self.personagem = Elemento (img = FOLHA, cena = self.fundo, x= self.x2, y= self.y2, h=80, w= 80
+                                                                                                                ^
+SyntaxError: invalid syntax
+'''},
