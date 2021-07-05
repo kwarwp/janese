@@ -5,7 +5,7 @@ from_spy.vitollino.main import Cena, Elemento, STYLE
 from brownser import document
 
 FUNDO = "https://imgur.com/gallery/SJ4CR6x"
-PERSONAGEM = "https://imgur.com/gallery/kiO6u4F"
+PERSONAGEM = "https://imgur.com/a/9qredOm"
 
 STYLE["wedth"]=500
 STYLE["height"]= 200
