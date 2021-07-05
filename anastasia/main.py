@@ -7,7 +7,7 @@ FUNDO = "https://imgur.com/bg1h3oD.png"
 PERSONAGEM = "https://imgur.com/7qQzMJb.png"
 
 STYLE["width"]=1150
-STYLE["height"]=600
+STYLE["height"]=550
 
 class inicial():
 
