@@ -13,8 +13,8 @@ STYLE["height"]=550
 class inicial():
 
     def __init__(self):
-        self.x1 = 0
-        self.y1 = 300
+        self.x1 = 1000
+        self.y1 = 400
         self.fundo = Cena(FUNDO)
         self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=100)
         document.bind("keydown", self.andapersonagem)
