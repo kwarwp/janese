@@ -17,6 +17,7 @@ class inicial():
         self.y1 = 400
         self.fundo = Cena(FUNDO)
         self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=100)
+        self.personagem_andando = Elemento(img = PERSONAGEM_ANDANDO, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=100)
         document.bind("keydown", self.andapersonagem)
         
         
