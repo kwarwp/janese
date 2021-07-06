@@ -31,7 +31,7 @@ class inicial():
         if teclado in [37,39]:
             teclado = (teclado - 38) * 10
             self.personagem.x = self.personagem.x + teclado
-            self.personagem_andando.x = self.personagem_andando.x
+            self.personagem_andando.x = self.personagem_andando.x + teclado
             
         elif teclado in [38, 40]:
             teclado = (teclado - 39) * 10
