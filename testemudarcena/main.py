@@ -4,7 +4,7 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
 PERSONAGEM = "https://imgur.com/gfe9a1S.png"
-FUNDO = "https://imgur.com/vaUUL1h.jpg"
+FUNDO = "https://imgur.com/vqBDMtH.jpg"
 MARCADOR_ESQUERDA = "https://imgur.com/hEF8XPG.png"
 MARCADOR_DIREITA = "https://imgur.com/hEF8XPG.png"
 MARCADOR_CIMA = "https://imgur.com/hEF8XPG.png"
