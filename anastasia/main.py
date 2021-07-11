@@ -32,7 +32,7 @@ class inicial():
             teclado = (teclado - 38) * 10
             self.personagem.x = self.personagem.x + teclado
             self.personagem_andando.x = self.personagem_andando.x + teclado
-            self.personagem.opacity = 1
+            self.personagem.opacity = 100
             
         elif teclado in [38, 40]:
             teclado = (teclado - 39) * 10
