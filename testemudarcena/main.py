@@ -5,6 +5,8 @@ from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
 PERSONAGEM = "https://imgur.com/gfe9a1S.png"
 FUNDO = "https://imgur.com/vqBDMtH.jpg"
+JOYSTICK_FALSO = "https://imgur.com/KiYDtv2.png"
+MARCADOR_x = "https://imgur.com/kJ2MkuK.png"
 MARCADOR_ESQUERDA = "https://imgur.com/hEF8XPG.png"
 MARCADOR_DIREITA = "https://imgur.com/hEF8XPG.png"
 MARCADOR_CIMA = "https://imgur.com/hEF8XPG.png"
@@ -38,6 +40,11 @@ class Persona_control:
         #self.persona.x = self.x
         #self.persona.y = self.y
         
+        self.cima = Elemento(JOYSTICK_FALSO, h=40 , w=40, x=780, y=450, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
+        self.cima.entra(nome_do_fundo)
+        
+        self.cima = Elemento(MARCADOR_X, h=40 , w=40, x=780, y=450, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
+        self.cima.entra(nome_do_fundo)
         
         self.cima = Elemento(MARCADOR_CIMA, h=40 , w=40, x=780, y=450, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
         self.cima.entra(nome_do_fundo)
