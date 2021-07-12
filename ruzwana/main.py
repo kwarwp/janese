@@ -4,7 +4,7 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE
 from browser import document 
 
-FUNDO = "https://imgur.com/9w0MFNS.png"
+FUNDO = "https://imgur.com/BTvlQpO.png"
 PERSONAGEM = "https://imgur.com/VPutH9b.png"
 
 STYLE["width"]=500
