@@ -7,7 +7,7 @@ from brownser import document
 FUNDO = "https://imgur.com/DPM4HbC.png"
 PERSONAGEM = "https://imgur.com/azAG8JJ.png"
 
-STYLE["wedth"]=500
+STYLE["wedth"]= 500
 STYLE["height"]= 200
 
 class inicial():
