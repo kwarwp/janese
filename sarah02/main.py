@@ -1,6 +1,6 @@
 # janese.sarah02.main.py
 from_spy.vitollino.main import Cena, Elemento, STYLE
-from brownser import document
+from browser import document
 
 FUNDO = "https://imgur.com/DPM4HbC.png"
 PERSONAGEM = "https://imgur.com/azAG8JJ.png"
