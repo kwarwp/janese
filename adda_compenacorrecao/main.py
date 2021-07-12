@@ -26,6 +26,7 @@ class inicial():
         
         
         
+        
     def vai(self):
         self.fundo.vai()
         
