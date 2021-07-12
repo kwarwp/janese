@@ -7,15 +7,15 @@ from browser import document
 FUNDO = "https://imgur.com/DPM4HbC.png"
 PERSONAGEM = "https://imgur.com/azAG8JJ.png"
 
-STYLE["wedth"]= 4000000
-STYLE["height"]= 30000
+STYLE["wedth"]= 500
+STYLE["height"]= 200
 
 class inicial():
     def __init__(self):
         self.x1 = 0
         self.y1 = 500
         self.fundo = Cena(FUNDO)
-        self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=50, w=50)
+        self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=80)
         document.bind("keydown", self.andapersonagem)
 
     def vai(self):
