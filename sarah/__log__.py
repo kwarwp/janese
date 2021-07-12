@@ -229,3 +229,10 @@ Traceback (most recent call last):
   module <module> line 5
     from brownser import document
 '''},
+{'date': 'Mon Jul 12 2021 17:32:45.213 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  STYLE["wedth"]=
+                  ^
+SyntaxError: invalid syntax
+'''},
