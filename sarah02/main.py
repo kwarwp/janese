@@ -1,5 +1,5 @@
 # janese.sarah02.main.py
-from_spy.vitollino.main import Cena, Elemento, STYLE
+from _spy.vitollino.main import Cena, Elemento, STYLE
 from browser import document
 
 FUNDO = "https://imgur.com/DPM4HbC.png"
