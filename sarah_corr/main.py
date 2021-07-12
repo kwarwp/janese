@@ -1,4 +1,3 @@
-# janese.sarah_corr.main.py
 # janese.sarah.main.py
 #Helena Pacheco
 
@@ -12,7 +11,7 @@ STYLE["wedth"]= 40000
 STYLE["height"]= 50000
 
 class inicial():
-    def _init_(self):
+    def __init__(self):
         self.x1 = 0
         self.y1 = 500
         self.fundo = Cena(FUNDO)
@@ -35,5 +34,5 @@ class inicial():
 
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     inicial().vai()
