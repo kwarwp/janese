@@ -1,13 +1,13 @@
 # janese.sarah.main.py
 #Helena Pacheco
 
-from_spy.vitollino.main import Cena, Elemento, STYLE
+from _spy.vitollino.main import Cena, Elemento, STYLE
 from brownser import document
 
 FUNDO = "https://imgur.com/DPM4HbC.png"
 PERSONAGEM = "https://imgur.com/azAG8JJ.png"
 
-STYLE["wedth"]= 500
+STYLE["wedth"]=500
 STYLE["height"]= 200
 
 class inicial():
