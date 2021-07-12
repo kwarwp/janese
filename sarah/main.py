@@ -7,8 +7,8 @@ from browser import document
 FUNDO = "https://imgur.com/DPM4HbC.png"
 PERSONAGEM = "https://imgur.com/azAG8JJ.png"
 
-STYLE["wedth"]=800
-STYLE["height"]= 600
+STYLE["wedth"]=1100
+STYLE["height"]= 900
 
 class inicial():
     def __init__(self):
