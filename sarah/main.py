@@ -8,7 +8,7 @@ FUNDO = "https://imgur.com/DPM4HbC.png"
 PERSONAGEM = "https://imgur.com/azAG8JJ.png"
 
 STYLE["width"]= 1100
-STYLE["height"]= 600
+STYLE["height"]= 400
 
 class inicial():
     def __init__(self):
