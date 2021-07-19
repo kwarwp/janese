@@ -1,6 +1,6 @@
 #Profa Gi :)
 
-from _spy.vitollino.main import Cena, Elemento, STYLE
+from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 from browser import document
 
 FUNDO = "https://imgur.com/bg1h3oD.png"
@@ -26,8 +26,8 @@ def teste():
 class Persona_control():
 
     def __init__(self):
-        self.x1 = 1000
-        self.y1 = 400
+        self.x = 1000
+        self.y = 400
                 
         self.joystickfalso = Elemento(JOYSTICK_FALSO, h=100 , w=100, x=750, y=440) #cria um elemento posicionado 'acima' no joystick
         self.joystickfalso.entra(nome_do_fundo)
@@ -47,7 +47,7 @@ class Persona_control():
         self.esquerda = Elemento(MARCADOR_ESQUERDA, h=40 , w=40, x=840, y=490, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
         self.esquerda.entra(nome_do_fundo)
         
-        self.persona = Elemento(PERSONAGEM, h=170 , w=190, x=self.x1, y=self.y1) # cria Elemento 
+        self.persona = Elemento(PERSONAGEM, h=170 , w=190, x=self.x, y=self.y) # cria Elemento 
         self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control
 
 
