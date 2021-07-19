@@ -41,9 +41,7 @@ class Persona_control:
         #self.persona.x = self.x
         #self.persona.y = self.y
         
-        self.joystickfalso = Elemento(JOYSTICK_FALSO, h=150 , w=170, x=720, y=420) #cria um elemento posicionado 'acima' no joystick
-        self.joystickfalso.entra(nome_do_fundo)
-        
+              
         self.marcadorx = Elemento(MARCADOR_X, h=70 , w=70, x=80, y=450) #cria um elemento posicionado 'acima' no joystick
         self.marcadorx.entra(nome_do_fundo)
         
@@ -58,6 +56,9 @@ class Persona_control:
         
         self.esquerda = Elemento(MARCADOR_ESQUERDA, h=50 , w=50, x=840, y=500, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
         self.esquerda.entra(nome_do_fundo)
+        
+        self.joystickfalso = Elemento(JOYSTICK_FALSO, h=150 , w=170, x=720, y=420) #cria um elemento posicionado 'acima' no joystick
+        self.joystickfalso.entra(nome_do_fundo)
 
     def anda_direita(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'direita' é clicado.
