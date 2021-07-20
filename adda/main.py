@@ -6,7 +6,7 @@ from _spy.vitollino.main import Cena, Elemento, STYLE
 from browser import document
 
 FUNDO = "https://i.imgur.com/KYKStgT.png"
-PERSONAGEM = "https://i.imgur.com/Jo5Ho94.png"
+PERSONAGEM = "https://i.imgur.com/A6wdCYS.gif"
 FOLHA = "https://i.imgur.com/upAN1GX.png"
 PENA = "https://i.imgur.com/916QFLA.png"
 
