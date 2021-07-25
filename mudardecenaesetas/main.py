@@ -31,7 +31,7 @@ class Persona_control:
         
     """
     def __init__(self, nome_do_fundo):
-        self.x = 500 # valor pré-estabelecido do x
+        self.x = 700 # valor pré-estabelecido do x
         self.y = 200 # valor pré-estabelecido do y
         
         #self.persona.x = self.x
