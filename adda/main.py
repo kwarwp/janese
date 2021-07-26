@@ -11,7 +11,7 @@ FOLHA = "https://i.imgur.com/upAN1GX.png"
 PENA = "https://i.imgur.com/916QFLA.png"
 
 STYLE["width"]=1150
-STYLE["height"]=520
+STYLE["height"]=720
 
 class inicial():
 
