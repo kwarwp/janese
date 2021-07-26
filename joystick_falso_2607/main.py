@@ -11,7 +11,7 @@ PERSONAGEM = "https://imgur.com/0gdXZn8.gif"
 
 JOYSTICK_FALSO = "https://imgur.com/KiYDtv2.png"
 MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
-MARCADOR_ESQUERDA = "https://imgur.com/X4QqhWj.png"
+MARCADOR_ESQUERDA = "https://imgur.com/yJ5KrkJ.png"
 MARCADOR_DIREITA = "https://imgur.com/hEF8XPG.png"
 MARCADOR_CIMA = "https://imgur.com/hEF8XPG.png"
 MARCADOR_BAIXO = "https://imgur.com/hEF8XPG.png"
