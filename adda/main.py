@@ -51,10 +51,10 @@ class Persona_control:
         self.baixo = Elemento(MARCADOR_BAIXO, h=80 , w=80, x=1180, y=560, vai=self.anda_baixo) #cria um elemento posicionado 'abaixo' no joystick
         self.baixo.entra(nome_do_fundo)
         
-        self.direita = Elemento(MARCADOR_DIREITA, h=80 , w=80, x=1150, y=490,vai=self.anda_direita) #cria um elemento posicionado 'à direita' no joystick
+        self.direita = Elemento(MARCADOR_DIREITA, h=80 , w=80, x=1100, y=490,vai=self.anda_direita) #cria um elemento posicionado 'à direita' no joystick
         self.direita.entra(nome_do_fundo)
         
-        self.esquerda = Elemento(MARCADOR_ESQUERDA, h=80 , w=80, x=1200, y=490, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
+        self.esquerda = Elemento(MARCADOR_ESQUERDA, h=80 , w=80, x=1250, y=490, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
         self.esquerda.entra(nome_do_fundo)
         
         self.persona = Elemento(PERSONAGEM, h=170 , w=190, x=self.x, y=self.y) # cria Elemento 
