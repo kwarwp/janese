@@ -34,4 +34,4 @@ class inicial():
             self.personagem.y = self.personagem.y + teclado
 
 if __name__ == "__main__":  
-    inicial.vai()
+    inicial().vai()
