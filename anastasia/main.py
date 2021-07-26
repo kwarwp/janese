@@ -1,7 +1,7 @@
 #Profa Gi :)
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-rom browser import document 
+from browser import document 
 
 
 FUNDO = "https://imgur.com/bg1h3oD.png"
