@@ -5,8 +5,8 @@
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
-PERSONAGEM = "https://blog.sympla.com.br/wp-content/uploads/2018/11/giphy-3.gif"
-FUNDO = "https://imgur.com/vqBDMtH.jpg"
+PERSONAGEM = "https://pa1.narvii.com/6941/092caf303fe02d05cf6cb140493cdddc95f2c2c1r1-498-537_hq.gif"
+FUNDO = "https://www.ufmg.br/espacodoconhecimento/wp-content/uploads/2019/07/espa%C3%A7o-estrelas.jpg"
 JOYSTICK_FALSO = "https://imgur.com/KiYDtv2.png"
 MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
 MARCADOR_ESQUERDA = "https://imgur.com/hEF8XPG.png"
