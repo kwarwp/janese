@@ -5,7 +5,7 @@
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
-PERSONAGEM = "https://imgur.com/gfe9a1S.png"
+PERSONAGEM = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.sympla.com.br%2Fcomo-fazer-gifs%2F&psig=AOvVaw3gr97CTc9puCcr-6i6MQP0&ust=1627418594442000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKjplu3MgfICFQAAAAAdAAAAABAY"
 FUNDO = "https://imgur.com/vqBDMtH.jpg"
 JOYSTICK_FALSO = "https://imgur.com/KiYDtv2.png"
 MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
