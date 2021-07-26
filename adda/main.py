@@ -45,7 +45,7 @@ class Persona_control:
         self.marcadorx = Elemento(MARCADOR_X, h=70 , w=70, x=80, y=450) #cria um elemento posicionado 'acima' no joystick
         self.marcadorx.entra(nome_do_fundo)
         
-        self.cima = Elemento(MARCADOR_CIMA, h=80 , w=80, x=1180, y=450, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
+        self.cima = Elemento(MARCADOR_CIMA, h=80 , w=80, x=1180, y=550, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
         self.cima.entra(nome_do_fundo)
         
         self.baixo = Elemento(MARCADOR_BAIXO, h=80 , w=80, x=1180, y=600, vai=self.anda_baixo) #cria um elemento posicionado 'abaixo' no joystick
