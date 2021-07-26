@@ -5,7 +5,7 @@
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
-PERSONAGEM = "https://s.yimg.com/ny/api/res/1.2/7HR8tjLTuku6dbTUr1SE5g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MA--/https://media.zenfs.com/pt-br/canal_tech_990/32e2e79cb01a2d286b347dddfe7328ef"
+PERSONAGEM = "https://media.giphy.com/media/JPxPiV7UrswSE1XyFu/giphy.gif"
 FUNDO = "https://www.ufmg.br/espacodoconhecimento/wp-content/uploads/2019/07/espa%C3%A7o-estrelas.jpg"
 JOYSTICK_FALSO = "https://imgur.com/KiYDtv2.png"
 MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
