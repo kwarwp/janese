@@ -10,7 +10,7 @@ PERSONAGEM = "https://imgur.com/E6lSl7l.gif"
 FOLHA = "https://i.imgur.com/upAN1GX.png"
 PENA = "https://i.imgur.com/916QFLA.png"
 
-STYLE["width"]=1150
+STYLE["width"]=1350
 STYLE["height"]=720
 
 class inicial():
