@@ -24,9 +24,19 @@ STYLE["height"]=550
 
 
 def teste():
-    fundo = Cena(FUNDO) 
+    fundo = Cena(FUNDO, score=2) 
     fundo.vai()
-    bonequinha = Persona_control( fundo) 
+    bonequinha = Persona_control(fundo) 
+    
+    
+class Colecionavel:
+
+    def __init__(self, nome_do_fundo, x, y):
+        self.x = x # valor pré-estabelecido do x
+        self.y = y # valor pré-estabelecido do y
+        
+        self.elemento = Elemento(Colecionavel, h=50 , w=50, x=self.x, y=self.y) 
+        self.elemento.entra(nome_do_fundo) 
         
 class Persona_control:
     """ Cria um elemento que anda a partir do clique no joystick
@@ -60,6 +70,9 @@ class Persona_control:
         
         self.esquerda = Elemento(MARCADOR_ESQUERDA, h=50 , w=50, x=840, y=500, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
         self.esquerda.entra(nome_do_fundo)
+        
+        
+        
 
     def anda_direita(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'direita' é clicado.
