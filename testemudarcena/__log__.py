@@ -86,3 +86,10 @@ NameError: name 'MARCADOR_X' is not defined
          ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 02 2021 17:57:07.573 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  class = Eventos:
+         ^
+SyntaxError: invalid syntax
+'''},
