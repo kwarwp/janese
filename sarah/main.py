@@ -25,7 +25,7 @@ STYLE["width"] = 900
 STYLE["heigth"] = 900
 
 
-def INICIAL():
+def inicial():
     fundo = Cena(FUNDO) 
     fundo.vai()
     bonequinha = Persona_control( fundo) 
