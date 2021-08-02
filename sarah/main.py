@@ -6,18 +6,14 @@ from browser import document
 
 FUNDO = "https://imgur.com/DPM4HbC.png"
 PERSONAGEM = "https://imgur.com/azAG8JJ.png"
-
-STYLE["width"]= 1000
-STYLE["height"]= 400
 MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
 MARCADOR_ESQUERDA = "https://imgur.com/a/Mm8b0x5.png"
 MARCADOR_DIREITA = "https://imgur.com/a/nDuDQDr.png"
 MARCADOR_CIMA = "https://imgur.com/a/6PPmdTs.png"
 MARCADOR_BAIXO = "https://imgur.com/a/fopc47P.png"
 
-
-STYLE["width"] = 900
-STYLE["heigth"] = 900
+STYLE["width"] = 1400
+STYLE["heigth"] = 400
 
 
 def inicial():
