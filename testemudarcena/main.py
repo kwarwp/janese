@@ -22,7 +22,7 @@ class = Eventos:
                  CENA_06,
                  CENA_07,
                  CENA_08,
-                 CENA_09]
+                 CENA_09,]
                   
     PERSONAGEM = "https://imgur.com/gfe9a1S.png"
     FUNDO = "https://imgur.com/vqBDMtH.jpg"
