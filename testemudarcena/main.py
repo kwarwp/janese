@@ -117,4 +117,4 @@ class Persona_control:
         self.persona.y = self.y = self.y + 10
 
 if __name__ == "__main__":  
-    teste()
+    Eventos()
