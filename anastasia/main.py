@@ -26,7 +26,8 @@ STYLE["height"]=550
 def teste():
     elemento1 = Elemento(Colecionavel, h=50 , w=50, x=100, y=430) 
     elemento2 = Elemento(Colecionavel, h=50 , w=50, x=150, y=430) 
-    fundo = Cena(FUNDO, dentro=[elemento1, elemento2]) 
+    lista = [elemento1, elemento2]
+    fundo = Cena(FUNDO, dentro=lista) 
     fundo.vai()
     bonequinha = Persona_control(fundo) 
     
