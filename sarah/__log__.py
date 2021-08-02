@@ -307,3 +307,23 @@ NameError: name 'inicial' is not defined
     inicial().vai()
 NameError: name 'inicial' is not defined
 '''},
+{'date': 'Mon Aug 02 2021 18:11:13.558 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 180
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 310
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 282
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 299
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 98
+    inicial().vai()
+  module <module> line 31
+    bonequinha = Persona_control( fundo) 
+  module <module> line 48
+    self.joystickfalso = Elemento(JOYSTICK, h=100 , w=100, x=750, y=440) #cria um elemento posicionado 'acima' no joystick
+NameError: name 'JOYSTICK' is not defined
+'''},
