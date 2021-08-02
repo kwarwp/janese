@@ -19,7 +19,7 @@ STYLE["heigth"] = 400
 def inicial():
     fundo = Cena(FUNDO) 
     fundo.vai()
-    bonequinha = Persona_control( fundo) 
+    persona = Persona_control( fundo) 
         
 class Persona_control:
     """ Cria um elemento que anda a partir do clique no joystick
