@@ -8,14 +8,14 @@ FUNDO = "https://imgur.com/AU7K7D4.png"
 PERSONAGEM = "https://imgur.com/d6FSzPZ.png"
 
 STYLE["width"]=1000
-STYLE["height"]=400
+STYLE["height"]=600
 
 class inicial():
     def __init__(self):
         self.x1 = 0
         self.y1 = 500
         self.fundo = Cena(FUNDO)
-        self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=400, w=150)
+        self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=130, w=110)
         document.bind("keydown", self.andapersonagem)
 
     def vai(self):
