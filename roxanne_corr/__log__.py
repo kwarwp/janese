@@ -13,3 +13,10 @@ SyntaxError: invalid syntax
                      ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 02 2021 17:56:25.505 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 71
+  if self.persona.x = self.x = self.x - 10
+                     ^
+SyntaxError: invalid syntax
+'''},
