@@ -4,7 +4,7 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
 cont = 0
-class = Eventos:
+class Eventos:
     CENA_01 = "https://imgur.com/Yemi2Ln.png"
     CENA_02 = "https://imgur.com/D3HMo5Y.png"
     CENA_03 = "https://imgur.com/4EvUuOb.png"
