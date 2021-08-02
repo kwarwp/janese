@@ -6,9 +6,15 @@ from browser import document
 
 FUNDO = "https://imgur.com/AU7K7D4.png"
 PERSONAGEM = "https://imgur.com/d6FSzPZ.png"
+MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
+MARCADOR_DIREITA = "https://imgur.com/GTnLEnS.png"
+MARCADOR_ESQUERDA = "https://imgur.com/Nl7Qy9h.png"
+MARCADOR_CIMA = "https://imgur.com/f2zfcvx.png"
+MARCADOR_BAIXO = "https://imgur.com/QDx4zgx.png"
 
-STYLE["width"]=1100
-STYLE["height"]=2000
+
+STYLE["width"]=1350
+STYLE["height"]=720
 
 class inicial():
     def __init__(self):
