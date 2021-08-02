@@ -29,9 +29,9 @@ def teste():
     fundo = Cena(FUNDO) 
     fundo.bota(elemento2)
     fundo.vai()
+    bonequinha = Persona_control(fundo) 
     Texto = Texto(fundo, txt= "Oie, teste!")
     Texto.vai()
-    bonequinha = Persona_control(fundo) 
     
     
 
