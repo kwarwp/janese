@@ -13,7 +13,7 @@ MARCADOR_CIMA = "https://imgur.com/f2zfcvx.png"
 MARCADOR_BAIXO = "https://imgur.com/QDx4zgx.png"
 
 
-STYLE["width"]=1350
+STYLE["width"]=1150
 STYLE["height"]=720
 
 class inicial():
@@ -21,7 +21,7 @@ class inicial():
         self.x1 = 0
         self.y1 = 500
         self.fundo = Cena(FUNDO)
-        self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=130, w=90)
+        self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=130, w=110)
         document.bind("keydown", self.andapersonagem)
 
     def vai(self):
