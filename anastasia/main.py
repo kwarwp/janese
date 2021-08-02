@@ -24,19 +24,16 @@ STYLE["height"]=550
 
 
 def teste():
-    fundo = Cena(FUNDO, score=2) 
+    elemento1 = Elemento(Colecionavel, h=50 , w=50, x=100, y=430) 
+    elemento2 = Elemento(Colecionavel, h=50 , w=50, x=150, y=430) 
+    fundo = Cena(FUNDO, dentro[elemento1, elemento2]) 
     fundo.vai()
     bonequinha = Persona_control(fundo) 
     
     
-class Colecionavel:
 
-    def __init__(self, nome_do_fundo, x, y):
-        self.x = x # valor pré-estabelecido do x
-        self.y = y # valor pré-estabelecido do y
         
-        self.elemento = Elemento(Colecionavel, h=50 , w=50, x=self.x, y=self.y) 
-        self.elemento.entra(nome_do_fundo) 
+
         
 class Persona_control:
     """ Cria um elemento que anda a partir do clique no joystick
