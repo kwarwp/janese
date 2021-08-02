@@ -12,7 +12,7 @@ MARCADOR_DIREITA = "https://imgur.com/a/nDuDQDr.png"
 MARCADOR_CIMA = "https://imgur.com/a/6PPmdTs.png"
 MARCADOR_BAIXO = "https://imgur.com/a/fopc47P.png"
 
-STYLE["width"] = 1400
+STYLE["width"] = 1000
 STYLE["heigth"] = 400
 
 
