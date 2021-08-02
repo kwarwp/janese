@@ -7,8 +7,8 @@ from browser import document
 FUNDO = "https://imgur.com/AU7K7D4.png"
 PERSONAGEM = "https://imgur.com/d6FSzPZ.png"
 MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
-MARCADOR_DIREITA = "https://i.imgur.com/2Txcphm.png"
-MARCADOR_ESQUERDA = "https://i.imgur.com/7rrWpVz.png"
+MARCADOR_DIREITA = "https://i.imgur.com/7rrWpVz.png"
+MARCADOR_ESQUERDA = "https://i.imgur.com/2Txcphm.png"
 MARCADOR_CIMA = "https://i.imgur.com/adPIWF6.png"
 MARCADOR_BAIXO = "https://i.imgur.com/5jrFiDp.png"
 
