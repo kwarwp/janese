@@ -69,6 +69,9 @@ class Persona_control:
         self.esquerda = Elemento(MARCADOR_ESQUERDA, h=50 , w=50, x=840, y=500, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
         self.esquerda.entra(nome_do_fundo)
         
+        self.Texto = Texto(nome_do_fundo, "Oie, teste!")
+        self.Texto.vai = self.persona.vai
+        
         
         
 
