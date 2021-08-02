@@ -3,19 +3,51 @@
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
-PERSONAGEM = "https://imgur.com/gfe9a1S.png"
-FUNDO = "https://imgur.com/vqBDMtH.jpg"
-JOYSTICK_FALSO = "https://imgur.com/KiYDtv2.png"
-MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
-MARCADOR_ESQUERDA = "https://imgur.com/hEF8XPG.png"
-MARCADOR_DIREITA = "https://imgur.com/hEF8XPG.png"
-MARCADOR_CIMA = "https://imgur.com/hEF8XPG.png"
-MARCADOR_BAIXO = "https://imgur.com/hEF8XPG.png"
+cont = 0
+class = Eventos:
+    CENA_01 = "https://imgur.com/Yemi2Ln.png"
+    CENA_02 = "https://imgur.com/D3HMo5Y.png"
+    CENA_03 = "https://imgur.com/4EvUuOb.png"
+    CENA_04 = "https://imgur.com/lVWFf30.png"
+    CENA_05 = "https://imgur.com/uy6TbIK.png"
+    CENA_06 = "https://imgur.com/v8WAwmK.png"
+    CENA_07 = "https://imgur.com/BMFvkll.png"
+    CENA_08 = "https://imgur.com/PvLmT3r.png"
+    CENA_09 = "https://imgur.com/9YzRfCk.png"
+    
+    listaFase = [CENA_02,    #listaFase = [local_imagem_fase,...]
+                 CENA_03,
+                 CENA_04,
+                 CENA_05,
+                 CENA_06,
+                 CENA_07,
+                 CENA_08,
+                 CENA_09]
+                  
+    PERSONAGEM = "https://imgur.com/gfe9a1S.png"
+    FUNDO = "https://imgur.com/vqBDMtH.jpg"
+    JOYSTICK_FALSO = "https://imgur.com/KiYDtv2.png"
+    MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
+    MARCADOR_ESQUERDA = "https://imgur.com/hEF8XPG.png"
+    MARCADOR_DIREITA = "https://imgur.com/hEF8XPG.png"
+    MARCADOR_CIMA = "https://imgur.com/hEF8XPG.png"
+    MARCADOR_BAIXO = "https://imgur.com/hEF8XPG.png"
 
 
-STYLE["width"] = 900
-STYLE["heigth"] = 900
 
+    STYLE["width"] = 900
+    STYLE["heigth"] = 900
+    
+    def __init__(self):
+        self.x1 = 100
+        self.y1 = 40
+        self.ambiente = Cena(self.CENA_corredor_1)
+        self.boneco = Elemento(self.PERSONAGEM, x=self.x1, y=self.y1, cena=self.ambiente)
+        document.bind("keydown", self.anda_boneco)  # captura o evento de teclado
+           
+    def vai(self):
+        """ mostra corredor do labirinto """
+        self.ambiente.vai()
 
 def teste():
     fundo = Cena(FUNDO) 
@@ -57,6 +89,7 @@ class Persona_control:
         
         self.persona = Elemento(PERSONAGEM, h=170 , w=190, x=self.x, y=self.y) # cria Elemento 
         self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
+        
         
 
 
