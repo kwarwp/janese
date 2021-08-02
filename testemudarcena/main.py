@@ -39,8 +39,8 @@ class Eventos:
     STYLE["heigth"] = 900
     
     def __init__(self):
-        self.x1 = 100
-        self.y1 = 40
+        self.x = 10
+        self.y = 430
         self.ambiente = Cena(self.CENA_01)
         self.boneco = Elemento(self.PERSONAGEM, x=self.x1, y=self.y1, cena=self.ambiente)
         document.bind("keydown", self.anda_boneco)  # captura o evento de teclado
