@@ -1,38 +1,87 @@
+# janese.joystick_falso_2607.main.py
+
 #Profa Gi :)
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
-from browser import document 
 
 
 FUNDO = "https://imgur.com/bg1h3oD.png"
 PERSONAGEM = "https://imgur.com/0gdXZn8.gif"
+Colecionavel = "https://imgur.com/ZWKf0Dr.png"
+Mochila = "https://imgur.com/8GZoEo9.png"
+
+
+JOYSTICK_FALSO = "https://imgur.com/KiYDtv2.png"
+MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
+MARCADOR_ESQUERDA = "https://imgur.com/ZcpVq0n.png"
+MARCADOR_DIREITA = "https://imgur.com/sSY0YbN.png"
+MARCADOR_CIMA = "https://imgur.com/yx81myE.png"
+MARCADOR_BAIXO = "https://imgur.com/AQC44RP.png"
 
 
 STYLE["width"]=1150
 STYLE["height"]=550
 
 
-class inicial():
-    def __init__(self):
-        self.x1 = 0
-        self.y1 = 500
-        self.fundo = Cena(FUNDO)
-        self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=100)
-        document.bind("keydown", self.andapersonagem)
+def teste():
+    fundo = Cena(FUNDO) 
+    fundo.vai()
+    bonequinha = Persona_control( fundo) 
+        
+class Persona_control:
+    """ Cria um elemento que anda a partir do clique no joystick
+    
+        self.nome_do_elemento = Persona_control( nome_do_fundo)
+        
+        :param nome_do_fundo: Insere o personagem em um fundo pré-criado
+        
+    """
+    def __init__(self, nome_do_fundo):
+        self.x = 10 # valor pré-estabelecido do x
+        self.y = 430 # valor pré-estabelecido do y
+        
+        self.persona = Elemento(PERSONAGEM, h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
+        self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
+        
+        #self.persona.x = self.x
+        #self.persona.y = self.y
+        
+        self.marcadorx = Elemento(MARCADOR_X, h=70 , w=70, x=80, y=450) #cria um elemento posicionado 'acima' no joystick
+        self.marcadorx.entra(nome_do_fundo)
+        
+        self.cima = Elemento(MARCADOR_CIMA, h=50 , w=50, x=780, y=440, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
+        self.cima.entra(nome_do_fundo)
+        
+        self.baixo = Elemento(MARCADOR_BAIXO, h=50 , w=50, x=780, y=500, vai=self.anda_baixo) #cria um elemento posicionado 'abaixo' no joystick
+        self.baixo.entra(nome_do_fundo)
+        
+        self.direita = Elemento(MARCADOR_DIREITA, h=50 , w=50, x=720, y=500,vai=self.anda_direita) #cria um elemento posicionado 'à direita' no joystick
+        self.direita.entra(nome_do_fundo)
+        
+        self.esquerda = Elemento(MARCADOR_ESQUERDA, h=50 , w=50, x=840, y=500, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
+        self.esquerda.entra(nome_do_fundo)
 
-    def vai(self):
-        self.fundo.vai()
-
-    def andapersonagem(self, ev=None):
-        teclado = ev.keyCode
-
-        if teclado in [37, 39]:
-            teclado = (teclado - 38) * 10 #podem modificar o valor do 10
-            self.personagem.x = self.personagem.x + teclado
-
-        elif teclado in [38, 40]:
-            teclado = (teclado - 39) * 10
-            self.personagem.y = self.personagem.y + teclado
+    def anda_direita(self,*_):
+        """Este método guarda a expressão de movimentação do elemento quando o botão 'direita' é clicado.
+        """
+        self.persona.x = self.x = self.x - 10
+        #self.persona.x = self.x - 10 > Deixar para averiguações posteriores
+        #self.persona.x = self.x -= 10 > Deixar para averiguações posteriores
+        
+    def anda_esquerda(self,*_):
+        """Este método guarda a expressão de movimentação do elemento quando o botão 'esquerda' é clicado.
+        """
+        self.persona.x = self.x = self.x + 10
+        
+    def anda_cima(self,*_):
+        """Este método guarda a expressão de movimentação do elemento quando o botão 'em cima' é clicado.
+        """
+        self.persona.y = self.y = self.y - 10
+        
+    def anda_baixo(self,*_):
+        """Este método guarda a expressão de movimentação do elemento quando o botão 'embaixo' é clicado.
+        """
+        self.persona.y = self.y = self.y + 10
 
 if __name__ == "__main__":  
-    inicial().vai()
+    teste()
