@@ -1,9 +1,10 @@
 # janese.testemudarcena.main.py
 # janese.anda_bonecoo.main.py
 
-from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
+from _spy.vitollino.main import Cena, Elemento, STYLE
 
 cont = 0
+
 class Eventos:
     CENA_01 = "https://imgur.com/Yemi2Ln.png"
     CENA_02 = "https://imgur.com/D3HMo5Y.png"
@@ -25,7 +26,7 @@ class Eventos:
                  CENA_09,]
                   
     PERSONAGEM = "https://imgur.com/gfe9a1S.png"
-    FUNDO = "https://imgur.com/vqBDMtH.jpg"
+    #FUNDO = "https://imgur.com/vqBDMtH.jpg"
     JOYSTICK_FALSO = "https://imgur.com/KiYDtv2.png"
     MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
     MARCADOR_ESQUERDA = "https://imgur.com/hEF8XPG.png"
@@ -42,8 +43,8 @@ class Eventos:
         self.x = 10
         self.y = 430
         self.ambiente = Cena(self.CENA_01)
-        self.boneco = Elemento(self.PERSONAGEM, x=self.x1, y=self.y1, cena=self.ambiente)
-        document.bind("keydown", self.anda_boneco)  # captura o evento de teclado
+        self.boneco = Elemento(self.PERSONAGEM, x=self.x, y=self.y, cena=self.ambiente)
+        #document.bind("keydown", self.anda_boneco)  # captura o evento de teclado
            
     def vai(self):
         """ mostra corredor do labirinto """
