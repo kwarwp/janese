@@ -9,13 +9,12 @@ PERSONAGEM = "https://imgur.com/d6FSzPZ.png"
 MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
 MARCADOR_DIREITA = "https://imgur.com/GTnLEnS.png"
 MARCADOR_ESQUERDA = "https://imgur.com/Nl7Qy9h.png"
-MARCADOR_CIMA = "https://imgur.com/f2zfcvx.png"
-MARCADOR_BAIXO = "https://imgur.com/QDx4zgx.png"
+MARCADOR_CIMA = "https://imgur.com/adPIWF6"
+MARCADOR_BAIXO = "https://i.imgur.com/5jrFiDp.png"
 
 
 STYLE["width"]=1150
 STYLE["height"]=720
-
 def teste():
     fundo = Cena(FUNDO) 
     fundo.vai()
