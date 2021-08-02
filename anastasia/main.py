@@ -27,11 +27,10 @@ def teste():
     elemento1 = Elemento(Colecionavel, h=50 , w=50, x=100, y=430) 
     elemento2 = Elemento(Colecionavel, h=50 , w=50, x=150, y=430) 
     fundo = Cena(FUNDO) 
-    fundo.bota(elemento2)
+    #fundo.bota(elemento2)
     fundo.vai()
     bonequinha = Persona_control(fundo) 
-    Texto = Texto(fundo, txt= "Oie, teste!")
-    Texto.vai()
+    
     
     
 
@@ -70,6 +69,9 @@ class Persona_control:
         
         self.esquerda = Elemento(MARCADOR_ESQUERDA, h=50 , w=50, x=840, y=500, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
         self.esquerda.entra(nome_do_fundo)
+        
+        Texto = Texto(nome_fundo, txt= "Oie, teste!")
+        Texto.vai()
         
         
         
