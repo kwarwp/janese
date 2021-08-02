@@ -79,3 +79,10 @@ NameError: name 'MARCADOR_X' is not defined
     self.marcadorx = Elemento(MARCADOR_X, h=80 , w=80, x=280, y=450) #cria um elemento posicionado 'acima' no joystick
 NameError: name 'MARCADOR_X' is not defined
 '''},
+{'date': 'Mon Aug 02 2021 17:56:15.549 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  class = Eventos:
+         ^
+SyntaxError: invalid syntax
+'''},
