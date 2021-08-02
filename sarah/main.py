@@ -12,7 +12,8 @@ STYLE["height"]= 400
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
-
+#PERSONAGEM = "https://imgur.com/gfe9a1S.png"
+#FUNDO = "https://imgur.com/vqBDMtH.jpg"
 MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
 MARCADOR_ESQUERDA = "https://imgur.com/a/Mm8b0x5.png"
 MARCADOR_DIREITA = "https://imgur.com/a/nDuDQDr.png"
