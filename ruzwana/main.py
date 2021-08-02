@@ -13,7 +13,7 @@ MARCADOR_CIMA = "https://imgur.com/f2zfcvx.png"
 MARCADOR_BAIXO = "https://imgur.com/QDx4zgx.png"
 
 
-STYLE["width"]=1350
+STYLE["width"]=1250
 STYLE["height"]=720
 
 class inicial():
