@@ -93,7 +93,7 @@ def cena1():
     texto_ = Texto(c11, txt = "Primeira Cena")
     texto_.vai()
     bonequinha = Persona_control(c11)
-    pega = Elemento(MARCADOR_MEIO, h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+    pega = Elemento(MARCADOR_MEIO, tit = "Não funciona", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c11,
                            vai = pega)
     proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
@@ -115,7 +115,7 @@ class Persona_control:
         self.x = 10 # valor pré-estabelecido do x
         self.y = 430 # valor pré-estabelecido do y
         
-        self.persona = Elemento(PERSONAGEM, h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
+        self.persona = Elemento(PERSONAGEM, tit = "Menina", h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
         self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
                 
         self.cima = Elemento(MARCADOR_CIMA, h=50 , w=50, x=1000, y=420, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
