@@ -423,3 +423,10 @@ UnboundLocalError: local variable 'Texto' referenced before assignment
     Texto = Texto(nome_fundo, txt= "Oie, teste!")
 UnboundLocalError: local variable 'Texto' referenced before assignment
 '''},
+{'date': 'Mon Aug 02 2021 22:13:02.983 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 31
+  def vai_cena_2()
+                   ^
+SyntaxError: invalid syntax
+'''},
