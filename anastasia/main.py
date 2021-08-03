@@ -20,7 +20,7 @@ MARCADOR_BAIXO = "https://imgur.com/AQC44RP.png"
 
 
 STYLE["width"]=1150
-STYLE["height"]=550
+STYLE["height"]=400
 
 
 def teste():
