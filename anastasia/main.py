@@ -2,7 +2,7 @@
 
 #Profa Gi :)
 
-from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
+from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala, Labirinto
 
 
 FUNDO_CENA1 = "https://i.imgur.com/WAjioMk.png"
@@ -30,9 +30,23 @@ STYLE["width"]=1150
 STYLE["height"]=400
 
 
-def teste():
-    fundo = Cena(FUNDO_CENA1) 
-    fundo.vai()
+c11 = Cena(FUNDO_CENA1)
+c12 = Cena(FUNDO_CENA2)
+c13 = Cena(FUNDO_CENA3)
+c14 = Cena(FUNDO_CENA4)
+
+c21 = Cena(FUNDO_CENA5)
+c22 = Cena(FUNDO_CENA6)
+c23 = Cena(FUNDO_CENA7)
+
+
+s1 = Sala(n = c11, s = c12, l = c13, o = c14)
+s2 = Sala(n = c21, s = c22, l = c23)
+
+la = Labirinto(c=s1,n=s2)
+
+def cena1():
+    la.centro.norte.vai()
     bonequinha = Persona_control(fundo) 
      
     
@@ -92,4 +106,4 @@ class Persona_control:
         self.persona.y = self.y = self.y + 20
 
 if __name__ == "__main__":  
-    teste()
+    cena1()
