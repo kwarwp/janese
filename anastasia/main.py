@@ -39,7 +39,7 @@ c14 = Cena(FUNDO_CENA4)
 c21 = Cena(FUNDO_CENA5)
 c22 = Cena(FUNDO_CENA6)
 c23 = Cena(FUNDO_CENA7)
-
+'''
 # Cria Salas
 # n = norte, s = sul, l = leste, o = oeste
 # Mas serve só para se localizar, dá pra usar de outras formas
@@ -51,9 +51,13 @@ s2 = Sala(n = c21, s = c22, l = c23)
 # Cria o labirinto de Salas
 # c = centro, n = norte
 la = Labirinto(c=s1,n=s2)
+'''
+
+cenas = [c11, c12, c13, c14, c21, c22, c23]
 
 def cena3(event = None):
-    la.centro.leste.vai()
+    #la.centro.leste.vai()
+    cenas[2].vai()
     texto_ = Texto(c13, txt = "Terceira Cena")
     texto_.vai()
     bonequinha = Persona_control(c13)
@@ -63,7 +67,8 @@ def cena3(event = None):
                            vai = cena4)
 
 def cena2(event = None):
-    la.centro.sul.vai()
+    #la.centro.sul.vai()
+    cenas[1].vai()
     texto_ = Texto(c12, txt = "Segunda Cena")
     texto_.vai()
     bonequinha = Persona_control(c12)
@@ -74,7 +79,8 @@ def cena2(event = None):
     
 
 def cena1():
-    la.centro.norte.vai()
+    #la.centro.norte.vai()
+    cenas[0].vai()
     #Para inserir pop up
     texto_ = Texto(c11, txt = "Primeira Cena")
     texto_.vai()
