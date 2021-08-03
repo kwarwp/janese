@@ -2,7 +2,7 @@
 
 #Profa Gi :)
 
-from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala
+from _spy.vitollino.main import Cena, Elemento, STYLE, Texto
 
 
 FUNDO_CENA1 = "https://i.imgur.com/WAjioMk.png"
@@ -36,9 +36,6 @@ def teste():
     bonequinha = Persona_control(fundo) 
      
     
-    
-       
-
         
 class Persona_control:
     """ Cria um elemento que anda a partir do clique no joystick
@@ -54,13 +51,7 @@ class Persona_control:
         
         self.persona = Elemento(PERSONAGEM, h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
         self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
-        
-        #self.persona.x = self.x
-        #self.persona.y = self.y
-        
-        self.marcadorx = Elemento(MARCADOR_X, h=70 , w=70, x=80, y=450) #cria um elemento posicionado 'acima' no joystick
-        self.marcadorx.entra(nome_do_fundo)
-        
+                
         self.cima = Elemento(MARCADOR_CIMA, h=50 , w=50, x=780, y=440, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
         self.cima.entra(nome_do_fundo)
         
