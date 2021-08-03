@@ -5,38 +5,39 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala
 
 
-FUNDO = "https://imgur.com/bg1h3oD.png"
-PERSONAGEM = "https://imgur.com/0gdXZn8.gif"
+FUNDO_CENA1 = "https://i.imgur.com/WAjioMk.png"
+FUNDO_CENA2 = "https://i.imgur.com/j9lBVbC.png"
+FUNDO_CENA3 = "https://i.imgur.com/1LqdljV.png"
+FUNDO_CENA4 = "https://i.imgur.com/vSSZBm0.png"
+FUNDO_CENA5 = "https://i.imgur.com/36Eobvt.png"
+FUNDO_CENA6 = "https://i.imgur.com/gsNVduh.png"
+FUNDO_CENA7 = "https://i.imgur.com/n2NElc8.png"
+
+
+MARCADOR_ESQUERDA = "https://i.imgur.com/S7yT60m.png"
+MARCADOR_DIREITA = "https://i.imgur.com/ihnkAEk.png"
+MARCADOR_CIMA = "https://i.imgur.com/0wQ4x2L.png"
+MARCADOR_BAIXO = "https://i.imgur.com/MJtWXUb.png"
+
+PERSONAGEM = "https://imgur.com/3Im5DeO.gif"
+
 Colecionavel = "https://imgur.com/ZWKf0Dr.png"
 Mochila = "https://imgur.com/8GZoEo9.png"
-
-
-JOYSTICK_FALSO = "https://imgur.com/KiYDtv2.png"
-MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
-MARCADOR_ESQUERDA = "https://imgur.com/ZcpVq0n.png"
-MARCADOR_DIREITA = "https://imgur.com/sSY0YbN.png"
-MARCADOR_CIMA = "https://imgur.com/yx81myE.png"
-MARCADOR_BAIXO = "https://imgur.com/AQC44RP.png"
 
 
 STYLE["width"]=1150
 STYLE["height"]=400
 
+def vai_cena_2()
+
 
 def teste():
-    elemento1 = Elemento(Colecionavel, h=50 , w=50, x=100, y=430) 
-    elemento2 = Elemento(Colecionavel, h=50 , w=50, x=150, y=430) 
-    fundo = Cena(FUNDO) 
-    fundo.bota(elemento2)
-    fundo2 = Cena(FUNDO)
+    fundo = Cena(FUNDO_CENA1) 
+    fundo.vai()
     bonequinha = Persona_control(fundo) 
-    Inicial = Sala(n= fundo, s=fundo2)
-    Inicial.norte.vai()
     
     
-    
-
-        
+           
 
         
 class Persona_control:
