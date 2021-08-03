@@ -45,7 +45,9 @@ s2 = Sala(n = c21, s = c22, l = c23)
 
 la = Labirinto(c=s1,n=s2)
 
-def cena2():
+
+
+def cena2(event = None):
     la.centro.sul.vai()
     bonequinha = Persona_control(c12) 
 
