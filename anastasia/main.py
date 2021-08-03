@@ -121,7 +121,7 @@ class Persona_control:
     def anda_direita(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'direita' é clicado.
         """
-        if (self.x != 0):
+        if (self.persona.x != 0):
             self.persona.x = self.x = self.x - 20
         #self.persona.x = self.x - 10 > Deixar para averiguações posteriores
         #self.persona.x = self.x -= 10 > Deixar para averiguações posteriores
