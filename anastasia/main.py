@@ -56,9 +56,11 @@ la = Labirinto(c=s1,n=s2)
 
 cenas = [c11, c12, c13, c14, c21, c22, c23]
 tam = 1
-
+'''
+Teste que deu errado :/
 def pega(event = None):
-    
+    mochila = Elemento(MOCHILA, h=30 , w=30, x=1050, y=10)
+'''    
     
 
 def cena3(event = None):
@@ -93,8 +95,7 @@ def cena1():
     texto_.vai()
     bonequinha = Persona_control(c11)
     pega = Elemento(MARCADOR_MEIO, tit = "Não funciona", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                           cena = c11,
-                           vai = pega)
+                           cena = c11)
     proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c11,
