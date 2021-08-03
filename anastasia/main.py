@@ -47,7 +47,7 @@ la = Labirinto(c=s1,n=s2)
 
 def cena1():
     la.centro.norte.vai()
-    bonequinha = Persona_control(fundo) 
+    bonequinha = Persona_control(c11) 
      
     
         
