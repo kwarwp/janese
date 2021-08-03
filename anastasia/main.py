@@ -56,8 +56,8 @@ la = Labirinto(c=s1,n=s2)
 
 cenas = [c11, c12, c13, c14, c21, c22, c23]
 
-def pega(event = None, ind_cena):
-    cenas[ind_cena].tira()
+def pega(event = None):
+    cenas[0].tira()
     
 
 def cena3(event = None):
