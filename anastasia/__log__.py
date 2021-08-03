@@ -578,3 +578,21 @@ UnboundLocalError: local variable 'pega' referenced before assignment
     pega = Elemento(MARCADOR_MEIO, h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
 UnboundLocalError: local variable 'pega' referenced before assignment
 '''},
+{'date': 'Tue Aug 03 2021 15:39:34.711 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 180
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 310
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 282
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 299
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 172
+    cena1()
+  module <module> line 99
+    pega = Elemento(MARCADOR_MEIO, h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+UnboundLocalError: local variable 'pega' referenced before assignment
+'''},
