@@ -5,13 +5,13 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala
 
 
-FUNDO_CENA1 = ""
-FUNDO_CENA2 = ""
-FUNDO_CENA3 = ""
-FUNDO_CENA4 = ""
-FUNDO_CENA5 = ""
-FUNDO_CENA6 = ""
-FUNDO_CENA7 = ""
+FUNDO_CENA1 = "https://i.imgur.com/WAjioMk.png"
+FUNDO_CENA2 = "https://i.imgur.com/j9lBVbC.png"
+FUNDO_CENA3 = "https://i.imgur.com/1LqdljV.png"
+FUNDO_CENA4 = "https://i.imgur.com/vSSZBm0.png"
+FUNDO_CENA5 = "https://i.imgur.com/36Eobvt.png"
+FUNDO_CENA6 = "https://i.imgur.com/gsNVduh.png"
+FUNDO_CENA7 = "https://i.imgur.com/n2NElc8.png"
 
 
 JOYSTICK_FALSO = "https://imgur.com/KiYDtv2.png"
