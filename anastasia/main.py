@@ -22,7 +22,7 @@ MARCADOR_MEIO = "https://i.imgur.com/2pwjrxD.png"
 
 PERSONAGEM = "https://i.imgur.com/3Im5DeO.png"
 ITEM = "https://i.imgur.com/ZWKf0Dr.png"
-Mochila = "https://imgur.com/8GZoEo9.png"
+MOCHILA = "https://imgur.com/8GZoEo9.png"
 
 
 
@@ -55,9 +55,12 @@ la = Labirinto(c=s1,n=s2)
 '''
 
 cenas = [c11, c12, c13, c14, c21, c22, c23]
+tam = 1
 
 def pega(event = None):
-    cenas[0].tira()
+    mochila = Elemento(MOCHILA, h=tam*30 , w=tam*30, x=500, y=480)
+    tam = tam + 0.2
+    cenas[0].bota(mochila)
     
 
 def cena3(event = None):
@@ -92,13 +95,7 @@ def cena1():
     texto_.vai()
     bonequinha = Persona_control(c11)
     
-    posx_item = []
-    posy_item = []
-    item1 = Elemento(ITEM, h=30 , w=30, x=500, y=480)
-    posx_item.append(500)
-    posy_item.append(480)
-    cenas[0].bota(item1)
-    
+       
     pega = Elemento(MARCADOR_MEIO, h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c11,
                            vai = pega)
