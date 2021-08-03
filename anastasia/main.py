@@ -141,7 +141,7 @@ class Persona_control:
     def anda_baixo(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'embaixo' é clicado.
         """
-        if (self.persona.y < 550):
+        if (self.persona.y < 500):
             self.persona.y = self.y = self.y + 20
 
 if __name__ == "__main__":  
