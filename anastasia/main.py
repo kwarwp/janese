@@ -29,6 +29,7 @@ Mochila = "https://imgur.com/8GZoEo9.png"
 STYLE["width"]=1150
 STYLE["height"]=400
 
+#Cria Cenas
 
 c11 = Cena(FUNDO_CENA1)
 c12 = Cena(FUNDO_CENA2)
@@ -39,17 +40,34 @@ c21 = Cena(FUNDO_CENA5)
 c22 = Cena(FUNDO_CENA6)
 c23 = Cena(FUNDO_CENA7)
 
+# Cria Salas
+# n = norte, s = sul, l = leste, o = oeste
+# Mas serve só para se localizar, dá pra usar de outras formas
+# Acho que dá pra fazer com lista também, mas to seguindo o que tava naquela documentação
 
 s1 = Sala(n = c11, s = c12, l = c13, o = c14)
 s2 = Sala(n = c21, s = c22, l = c23)
 
+# Cria o labirinto de Salas
+# c = centro, n = norte
 la = Labirinto(c=s1,n=s2)
 
-
+def cena3(event = None):
+    la.centro.leste.vai()
+    bonequinha = Persona_control(c13)
+    botao = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
+                           h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                           cena = c13,
+                           vai = cena4)
 
 def cena2(event = None):
     la.centro.sul.vai()
-    bonequinha = Persona_control(c12) 
+    bonequinha = Persona_control(c12)
+    botao = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
+                           h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                           cena = c12,
+                           vai = cena3)
+    
 
 def cena1():
     la.centro.norte.vai()
