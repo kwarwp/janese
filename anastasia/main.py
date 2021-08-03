@@ -14,14 +14,12 @@ FUNDO_CENA6 = "https://i.imgur.com/gsNVduh.png"
 FUNDO_CENA7 = "https://i.imgur.com/n2NElc8.png"
 
 
-JOYSTICK_FALSO = "https://imgur.com/KiYDtv2.png"
-MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
 MARCADOR_ESQUERDA = "https://imgur.com/0wQ4x2L.png"
 MARCADOR_DIREITA = "https://imgur.com/MJtWXUb.png"
 MARCADOR_CIMA = "https://imgur.com/S7yT60m.png"
 MARCADOR_BAIXO = "https://imgur.com/ihnkAEk.png"
 
-PERSONAGEM = "https://imgur.com/0gdXZn8.gif"
+PERSONAGEM = "https://i.imgur.com/3Im5DeO.png"
 Colecionavel = "https://imgur.com/ZWKf0Dr.png"
 Mochila = "https://imgur.com/8GZoEo9.png"
 
@@ -33,19 +31,13 @@ STYLE["height"]=400
 
 
 def teste():
-    elemento1 = Elemento(Colecionavel, h=50 , w=50, x=100, y=430) 
-    elemento2 = Elemento(Colecionavel, h=50 , w=50, x=150, y=430) 
-    fundo = Cena(FUNDO) 
-    fundo.bota(elemento2)
-    fundo2 = Cena(FUNDO)
+    fundo = Cena(FUNDO_CENA1) 
+    fundo.vai()
     bonequinha = Persona_control(fundo) 
-    Inicial = Sala(n= fundo, s=fundo2)
-    Inicial.norte.vai()
+     
     
     
-    
-
-        
+       
 
         
 class Persona_control:
