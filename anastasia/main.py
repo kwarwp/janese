@@ -58,7 +58,7 @@ cenas = [c11, c12, c13, c14, c21, c22, c23]
 tam = 1
 
 def pega(event = None):
-    mochila = Elemento(MOCHILA, h=30 , w=30, x=1050, y=10, cena = c11)
+    mochila = Elemento(MOCHILA, h=30 , w=30, x=1050, y=10)
     
     
 
