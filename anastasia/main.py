@@ -54,8 +54,8 @@ def cena2(event = None):
 def cena1():
     la.centro.norte.vai()
     bonequinha = Persona_control(c11) 
-    botao = Elemento(MARCADOR_DIREITA, tit="Próxima Cena",
-                           h=30 , w=30, x=1100, y=200, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+    botao = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
+                           h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c11,
                            vai = cena2)
      
