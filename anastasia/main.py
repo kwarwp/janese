@@ -21,7 +21,7 @@ MARCADOR_BAIXO = "https://i.imgur.com/MJtWXUb.png"
 MARCADOR_MEIO = "https://i.imgur.com/2pwjrxD.png"
 
 PERSONAGEM = "https://i.imgur.com/3Im5DeO.png"
-Colecionavel = "https://imgur.com/ZWKf0Dr.png"
+ITEM = "https://i.imgur.com/ZWKf0Dr.png"
 Mochila = "https://imgur.com/8GZoEo9.png"
 
 
@@ -80,12 +80,21 @@ def cena2(event = None):
     
 
 def cena1():
+    
     #la.centro.norte.vai()
     cenas[0].vai()
     #Para inserir pop up
     texto_ = Texto(c11, txt = "Primeira Cena")
     texto_.vai()
-    bonequinha = Persona_control(c11) 
+    bonequinha = Persona_control(c11)
+    
+    posx_item = []
+    posy_item = []
+    item1 = Elemento(ITEM, h=30 , w=30, x=500, y=480)
+    posx_item.append(500)
+    posy_item.append(480)
+    cenas[0].bota(item1)
+    
     pega = Elemento(MARCADOR_MEIO, h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c11,
                            vai = cena2)
