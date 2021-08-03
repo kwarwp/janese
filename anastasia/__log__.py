@@ -506,3 +506,21 @@ NameError: name 'MARCADOR_X' is not defined
     la = Labirinto(c=nome_da_sala1,n=nome_da_sala2)
 NameError: name 'nome_da_sala1' is not defined
 '''},
+{'date': 'Mon Aug 02 2021 22:37:56.948 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 180
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 310
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 282
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 299
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 109
+    cena1()
+  module <module> line 50
+    bonequinha = Persona_control(fundo) 
+NameError: name 'fundo' is not defined
+'''},
