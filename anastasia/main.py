@@ -54,6 +54,8 @@ la = Labirinto(c=s1,n=s2)
 
 def cena3(event = None):
     la.centro.leste.vai()
+    texto_ = Texto(c13, txt = "Terceira Cena")
+    texto_.vai()
     bonequinha = Persona_control(c13)
     botao = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
@@ -62,6 +64,8 @@ def cena3(event = None):
 
 def cena2(event = None):
     la.centro.sul.vai()
+    texto_ = Texto(c12, txt = "Segunda Cena")
+    texto_.vai()
     bonequinha = Persona_control(c12)
     botao = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
@@ -71,7 +75,8 @@ def cena2(event = None):
 
 def cena1():
     la.centro.norte.vai()
-    texto_ = Texto(c11, txt = "Mensagem desejada")
+    #Para inserir pop up
+    texto_ = Texto(c11, txt = "Primeira Cena")
     texto_.vai()
     bonequinha = Persona_control(c11) 
     botao = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
