@@ -91,11 +91,6 @@ def cena1():
                            cena = c11,
                            vai = cena2)
 
-
-class Item:
-    def __init__(self):
-    
-
     
         
 class Persona_control:
