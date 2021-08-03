@@ -13,6 +13,8 @@ FUNDO_CENA5 = "https://i.imgur.com/36Eobvt.png"
 FUNDO_CENA6 = "https://i.imgur.com/gsNVduh.png"
 FUNDO_CENA7 = "https://i.imgur.com/n2NElc8.png"
 
+MUSICA = "https://prosearch.tribeofnoise.com/artists/show/38406/15424"
+
 
 MARCADOR_ESQUERDA = "https://i.imgur.com/ihnkAEk.png"
 MARCADOR_DIREITA = "https://i.imgur.com/S7yT60m.png"
@@ -100,6 +102,7 @@ def cena1():
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c11,
                            vai = cena2)
+    nome_da_musica = Musica(MUSICA, loop = True, autoplay = True)
 
     
         
