@@ -121,20 +121,22 @@ class Persona_control:
     def anda_direita(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'direita' é clicado.
         """
-        if (self.persona.x > 0):
-            self.persona.x = self.x = self.x - 100
+        if (self.persona.x > 10):
+            self.persona.x = self.x = self.x - 20
         #self.persona.x = self.x - 10 > Deixar para averiguações posteriores
         #self.persona.x = self.x -= 10 > Deixar para averiguações posteriores
         
     def anda_esquerda(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'esquerda' é clicado.
         """
-        self.persona.x = self.x = self.x + 20
+        if (self.persona.x < 1130):
+            self.persona.x = self.x = self.x + 20
         
     def anda_cima(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'em cima' é clicado.
         """
-        self.persona.y = self.y = self.y - 20
+        if (self.persona.y > 500):
+            self.persona.y = self.y = self.y - 20
         
     def anda_baixo(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'embaixo' é clicado.
