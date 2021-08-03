@@ -668,3 +668,10 @@ UnboundLocalError: local variable 'pega' referenced before assignment
     pega = Elemento(MARCADOR_MEIO, tit = "Não funciona", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
 UnboundLocalError: local variable 'pega' referenced before assignment
 '''},
+{'date': 'Tue Aug 03 2021 15:49:02.736 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 64
+  def cena3(event = None):
+  ^
+IndentationError: expected an indented block
+'''},
