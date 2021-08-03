@@ -14,8 +14,8 @@ FUNDO_CENA6 = "https://i.imgur.com/gsNVduh.png"
 FUNDO_CENA7 = "https://i.imgur.com/n2NElc8.png"
 
 
-MARCADOR_ESQUERDA = "https://i.imgur.com/S7yT60m.png"
-MARCADOR_DIREITA = "https://i.imgur.com/ihnkAEk.png"
+MARCADOR_ESQUERDA = "https://i.imgur.com/ihnkAEk.png"
+MARCADOR_DIREITA = "https://i.imgur.com/S7yT60m.png"
 MARCADOR_CIMA = "https://i.imgur.com/0wQ4x2L.png"
 MARCADOR_BAIXO = "https://i.imgur.com/MJtWXUb.png"
 
@@ -52,16 +52,16 @@ class Persona_control:
         self.persona = Elemento(PERSONAGEM, h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
         self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
                 
-        self.cima = Elemento(MARCADOR_CIMA, h=50 , w=50, x=780, y=440, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
+        self.cima = Elemento(MARCADOR_CIMA, h=50 , w=50, x=1000, y=440, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
         self.cima.entra(nome_do_fundo)
         
-        self.baixo = Elemento(MARCADOR_BAIXO, h=50 , w=50, x=780, y=500, vai=self.anda_baixo) #cria um elemento posicionado 'abaixo' no joystick
+        self.baixo = Elemento(MARCADOR_BAIXO, h=50 , w=50, x=1000, y=500, vai=self.anda_baixo) #cria um elemento posicionado 'abaixo' no joystick
         self.baixo.entra(nome_do_fundo)
         
-        self.direita = Elemento(MARCADOR_DIREITA, h=50 , w=50, x=720, y=500,vai=self.anda_direita) #cria um elemento posicionado 'à direita' no joystick
+        self.direita = Elemento(MARCADOR_DIREITA, h=50 , w=50, x=720, y=480,vai=self.anda_direita) #cria um elemento posicionado 'à direita' no joystick
         self.direita.entra(nome_do_fundo)
         
-        self.esquerda = Elemento(MARCADOR_ESQUERDA, h=50 , w=50, x=840, y=500, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
+        self.esquerda = Elemento(MARCADOR_ESQUERDA, h=50 , w=50, x=840, y=480, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
         self.esquerda.entra(nome_do_fundo)
         
                
