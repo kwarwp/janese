@@ -14,10 +14,10 @@ FUNDO_CENA6 = "https://i.imgur.com/gsNVduh.png"
 FUNDO_CENA7 = "https://i.imgur.com/n2NElc8.png"
 
 
-MARCADOR_ESQUERDA = "https://imgur.com/0wQ4x2L.png"
-MARCADOR_DIREITA = "https://imgur.com/MJtWXUb.png"
-MARCADOR_CIMA = "https://imgur.com/S7yT60m.png"
-MARCADOR_BAIXO = "https://imgur.com/ihnkAEk.png"
+MARCADOR_ESQUERDA = "https://i.imgur.com/S7yT60m.png"
+MARCADOR_DIREITA = "https://i.imgur.com/ihnkAEk.png"
+MARCADOR_CIMA = "https://i.imgur.com/0wQ4x2L.png"
+MARCADOR_BAIXO = "https://i.imgur.com/MJtWXUb.png"
 
 PERSONAGEM = "https://i.imgur.com/3Im5DeO.png"
 Colecionavel = "https://imgur.com/ZWKf0Dr.png"
