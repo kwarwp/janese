@@ -45,9 +45,17 @@ s2 = Sala(n = c21, s = c22, l = c23)
 
 la = Labirinto(c=s1,n=s2)
 
+def cena2():
+    la.centro.sul.vai()
+    bonequinha = Persona_control(c12) 
+
 def cena1():
     la.centro.norte.vai()
     bonequinha = Persona_control(c11) 
+    botao = Elemento(MARCADOR_DIREITA, tit="Próxima Cena",
+                           style=dict(height=30,widht=30, left=600, top=20), # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                           cena = c11,
+                           vai = cena2)
      
     
         
