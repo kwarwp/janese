@@ -58,8 +58,7 @@ cenas = [c11, c12, c13, c14, c21, c22, c23]
 tam = 1
 
 def pega(event = None):
-    mochila = Elemento(MOCHILA, h=tam*30 , w=tam*30, x=500, y=480)
-    tam = tam + 0.2
+    mochila = Elemento(MOCHILA, h=30 , w=30, x=1050, y=10)
     cenas[0].bota(mochila)
     
 
@@ -93,7 +92,10 @@ def cena1():
     #Para inserir pop up
     texto_ = Texto(c11, txt = "Primeira Cena")
     texto_.vai()
-    bonequinha = Persona_control(c11)    
+    bonequinha = Persona_control(c11)           
+    pega = Elemento(MARCADOR_MEIO, h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                           cena = c11,
+                           vai = pega)
     proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c11,
