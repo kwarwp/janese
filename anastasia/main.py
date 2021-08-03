@@ -5,18 +5,27 @@
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala
 
 
-FUNDO = "https://imgur.com/bg1h3oD.png"
+FUNDO_CENA1 = ""
+FUNDO_CENA2 = ""
+FUNDO_CENA3 = ""
+FUNDO_CENA4 = ""
+FUNDO_CENA5 = ""
+FUNDO_CENA6 = ""
+FUNDO_CENA7 = ""
+
+
+JOYSTICK_FALSO = "https://imgur.com/KiYDtv2.png"
+MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
+MARCADOR_ESQUERDA = "https://imgur.com/0wQ4x2L.png"
+MARCADOR_DIREITA = "https://imgur.com/MJtWXUb.png"
+MARCADOR_CIMA = "https://imgur.com/S7yT60m.png"
+MARCADOR_BAIXO = "https://imgur.com/ihnkAEk.png"
+
 PERSONAGEM = "https://imgur.com/0gdXZn8.gif"
 Colecionavel = "https://imgur.com/ZWKf0Dr.png"
 Mochila = "https://imgur.com/8GZoEo9.png"
 
 
-JOYSTICK_FALSO = "https://imgur.com/KiYDtv2.png"
-MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
-MARCADOR_ESQUERDA = "https://imgur.com/ZcpVq0n.png"
-MARCADOR_DIREITA = "https://imgur.com/sSY0YbN.png"
-MARCADOR_CIMA = "https://imgur.com/yx81myE.png"
-MARCADOR_BAIXO = "https://imgur.com/AQC44RP.png"
 
 
 STYLE["width"]=1150
