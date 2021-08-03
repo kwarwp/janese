@@ -86,7 +86,7 @@ def cena1():
     texto_ = Texto(c11, txt = "Primeira Cena")
     texto_.vai()
     bonequinha = Persona_control(c11) 
-    pega = Elemento(MARCADOR_MEIO, h=40 , w=40, x=1000, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+    pega = Elemento(MARCADOR_MEIO, h=40 , w=40, x=1010, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c11,
                            vai = cena2)
     proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
