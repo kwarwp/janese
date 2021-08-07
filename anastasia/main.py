@@ -128,7 +128,7 @@ class Persona_control:
         
     """
     def __init__(self, nome_do_fundo):
-        self.x = 10 # valor pré-estabelecido do x
+        self.x = 1000 # valor pré-estabelecido do x
         self.y = 430 # valor pré-estabelecido do y
         
         self.persona = Elemento(PERSONAGEM, tit = "Menina", h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
@@ -166,7 +166,7 @@ class Persona_control:
     def anda_esquerda(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'esquerda' é clicado.
         """
-        if (self.persona.x + 20 < 1150):
+        if (self.persona.x + 20 < 1100):
             self.persona.x = self.x = self.x + 20
         
     def anda_cima(self,*_):
