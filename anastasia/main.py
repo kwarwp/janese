@@ -102,15 +102,22 @@ def cena2(event = None):
     
 #Função que cria a cena 1
 def cena1():
-    
+    #Código se fosse usar o sistema de labirinto
     #la.centro.norte.vai()
+    
+    #Código usando lista
+    #Lembrando que lista em python começa sempre da posição 0
     cenas[0].vai()
+    
     #Para inserir pop up
     texto_ = Texto(c11, txt = "Primeira Cena")
     texto_.vai()
+    #Inserindo a boneca
     bonequinha = Persona_control(c11)
+    '''
     pega = Elemento(MARCADOR_MEIO, tit = "Não funciona", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                           cena = c11)
+                           cena = c11)'''
+    #Inserindo o botão que muda de cena                       
     proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c11,
