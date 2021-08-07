@@ -13,9 +13,6 @@ FUNDO_CENA5 = "https://i.imgur.com/36Eobvt.png"
 FUNDO_CENA6 = "https://i.imgur.com/gsNVduh.png"
 FUNDO_CENA7 = "https://i.imgur.com/n2NElc8.png"
 
-MUSICA = "https://prosearch.tribeofnoise.com/artists/show/38406/15424"
-
-
 MARCADOR_ESQUERDA = "https://i.imgur.com/ihnkAEk.png"
 MARCADOR_DIREITA = "https://i.imgur.com/S7yT60m.png"
 MARCADOR_CIMA = "https://i.imgur.com/0wQ4x2L.png"
@@ -42,7 +39,10 @@ c14 = Cena(FUNDO_CENA4)
 c21 = Cena(FUNDO_CENA5)
 c22 = Cena(FUNDO_CENA6)
 c23 = Cena(FUNDO_CENA7)
-'''
+
+'''Uma forma de fazer a passagem de cenas é criando salas - que permitem 4 cenas
+e depois criando o labirinto, adicionando as salas nele.
+
 # Cria Salas
 # n = norte, s = sul, l = leste, o = oeste
 # Mas serve só para se localizar, dá pra usar de outras formas
@@ -54,17 +54,29 @@ s2 = Sala(n = c21, s = c22, l = c23)
 # Cria o labirinto de Salas
 # c = centro, n = norte
 la = Labirinto(c=s1,n=s2)
+
+
+Essa é a forma descrita na documentação da biblioteca que usamos para criar o jogo, ela funciona, 
+porém como cada sala espera 4 cenas, e o labirinto várias salas, quando algumas delas fica vazia, 
+pode acontecer de um clique na tela direcionar para uma sala nula = que não existe. 
+Para arrumar isso seria necessário criar uma ação que não faz nada, e 
+na posição da sala que não existe adicionar uma sala que 'não faz nada'
 '''
+
+'''
+Pelo o que entendi da ideia de jogo de vocês, as cenas seriam todas sequenciais, então esse esquema de 
+salas e labirinto seria um pouco confuso de implementar.
+Por isso, outra maneira seria criando uma lista de cenas.
+Essa lista tem que ser criada aqui em cima no código, pq ela vai ser uma variável global, ou seja,
+essa lista existe, e vai ser possível acessar ela em qualquer função abaixo.
+'''
+
 
 cenas = [c11, c12, c13, c14, c21, c22, c23]
-tam = 1
-'''
-Teste que deu errado :/
-def pega(event = None):
-    mochila = Elemento(MOCHILA, h=30 , w=30, x=1050, y=10)
-'''    
-    
 
+
+
+#Função para ir para a cena 3    
 def cena3(event = None):
     #la.centro.leste.vai()
     cenas[2].vai()
@@ -75,7 +87,8 @@ def cena3(event = None):
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c13,
                            vai = cena4)
-
+                           
+#Função para ir para a cena 2
 def cena2(event = None):
     #la.centro.sul.vai()
     cenas[1].vai()
@@ -87,7 +100,7 @@ def cena2(event = None):
                            cena = c12,
                            vai = cena3)
     
-
+#Função que cria a cena 1
 def cena1():
     
     #la.centro.norte.vai()
@@ -102,7 +115,7 @@ def cena1():
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c11,
                            vai = cena2)
-    nome_da_musica = Musica(MUSICA, loop = True, autoplay = True)
+
 
     
         
@@ -165,7 +178,7 @@ class Persona_control:
     def anda_baixo(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'embaixo' é clicado.
         """
-        if (self.persona.y < 490):
+        if (self.persona.y + 20 < 500):
             self.persona.y = self.y = self.y + 20
 
 if __name__ == "__main__":  
