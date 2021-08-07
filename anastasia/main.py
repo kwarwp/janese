@@ -128,7 +128,7 @@ class Persona_control:
         
     """
     def __init__(self, nome_do_fundo):
-        self.x = 1000 # valor pré-estabelecido do x
+        self.x = 10 # valor pré-estabelecido do x
         self.y = 430 # valor pré-estabelecido do y
         
         self.persona = Elemento(PERSONAGEM, tit = "Menina", h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
