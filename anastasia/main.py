@@ -57,7 +57,7 @@ la = Labirinto(c=s1,n=s2)
 
 
 Essa é a forma descrita na documentação da biblioteca que usamos para criar o jogo, ela funciona, 
-porém como cada sala espera 4 cenas, e o labirinto várias salas, quando algumas delas fica vazia, 
+porém como cada sala espera 4 cenas, e o labirinto várias salas, quando alguma delas fica vazia, 
 pode acontecer de um clique na tela direcionar para uma sala nula = que não existe. 
 Para arrumar isso seria necessário criar uma ação que não faz nada, e 
 na posição da sala que não existe adicionar uma sala que 'não faz nada'
