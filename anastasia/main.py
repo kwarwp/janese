@@ -75,8 +75,7 @@ essa lista existe, e vai ser possível acessar ela em qualquer função abaixo.
 cenas = [c11, c12, c13, c14, c21, c22, c23]
 
 def pega(event = None):
-    texto_ = Texto(c11, txt = "Pega")
-    texto_.vai()
+    print("OI")
 
 #Função para ir para a cena 3    
 def cena3(event = None):
