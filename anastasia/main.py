@@ -3,6 +3,7 @@
 #Profa Gi :)
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala, Labirinto
+from browser import document
 
 
 FUNDO_CENA1 = "https://i.imgur.com/WAjioMk.png"
