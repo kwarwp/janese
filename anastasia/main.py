@@ -76,8 +76,8 @@ cenas = [c11, c12, c13, c14, c21, c22, c23]
 
 def pega(event = None):
     mochila = Elemento(MOCHILA, tit="Mochila",
-                           h=30 , w=30, x=1100, y=20)
-    c11.bota(mochila)
+                           h=30 , w=30, x=1100, y=20, cena= c11)
+
     
 
 #Função para ir para a cena 3    
