@@ -74,11 +74,11 @@ essa lista existe, e vai ser possível acessar ela em qualquer função abaixo.
 
 
 cenas = [c11, c12, c13, c14, c21, c22, c23]
-tam = 1
+tam = 1.5
 
 def pega_acao(event = None):
-    mochila = Elemento(MOCHILA, tit="Mochila",
-                           h=30 , w=30, x=1100, y=20, cena= c11)
+    self.mochila.siz = tam*30
+    tam = tam + 0.5
 
 
     
@@ -125,7 +125,9 @@ def cena1():
     pega = Elemento(MARCADOR_MEIO, tit = "Não funciona", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c11)
     pega.elt.bind("click", pega_acao)
-    #Inserindo o botão que muda de cena                       
+    #Inserindo o botão que muda de cena
+    self.mochila = Elemento(MOCHILA, tit="Mochila",
+                           h=30 , w=30, x=1100, y=20, cena= c11)
     proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c11,
