@@ -74,10 +74,12 @@ essa lista existe, e vai ser possível acessar ela em qualquer função abaixo.
 
 
 cenas = [c11, c12, c13, c14, c21, c22, c23]
+tam = 1
 
 def pega_acao(event = None):
     mochila = Elemento(MOCHILA, tit="Mochila",
-                           h=30 , w=30, x=1100, y=20, cena= c11)
+                           h=tam*30 , w=tam*30, x=1100, y=20, cena= c11)
+    tam = tam*0.5
 
     
 
