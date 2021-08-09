@@ -27,7 +27,7 @@ MOCHILA = "https://imgur.com/8GZoEo9.png"
 
 
 STYLE["width"]=1150
-STYLE["height"]=400
+STYLE["height"]=500
 
 #Cria Cenas
 
