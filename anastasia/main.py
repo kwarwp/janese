@@ -78,8 +78,8 @@ tam = 1
 
 def pega_acao(event = None):
     mochila = Elemento(MOCHILA, tit="Mochila",
-                           h=tam*30 , w=tam*30, x=1100, y=20, cena= c11)
-    tam = tam*0.5
+                           h=30 , w=30, x=1100, y=20, cena= c11)
+
 
     
 
