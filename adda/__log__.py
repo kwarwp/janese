@@ -99,3 +99,10 @@ AttributeError: 'inicial' object has no attribute 'folha'
     self.personagem = Elemento(img = PERSONAGEM, cena = self.fundo, x=self.x1, y=self.y1, h=100, w=100)
 AttributeError: 'inicial' object has no attribute 'x1'
 '''},
+{'date': 'Mon Aug 16 2021 17:23:11.775 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  FUNDO_CENA12 =
+                 ^
+SyntaxError: invalid syntax
+'''},
