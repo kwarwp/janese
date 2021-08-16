@@ -117,12 +117,13 @@ def cena1():
     #Código se fosse usar o sistema de labirinto
     #la.centro.norte.vai()
     
-    item = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=450, cena = c11,
-                           vai = self.coloca_no_inventario)
+    
     #Código usando lista
     #Lembrando que lista em python começa sempre da posição 0
     cenas[0].vai()
     
+    item = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=450, cena = c11,
+                           vai = coloca_no_inventario)
     
     #Para inserir pop up
     texto_ = Texto(c11, txt = "Primeira Cena")
