@@ -23,7 +23,6 @@ MARCADOR_BAIXO = "https://i.imgur.com/MJtWXUb.png"
 MARCADOR_MEIO = "https://i.imgur.com/2pwjrxD.png"
 
 PERSONAGEM = "https://i.imgur.com/3Im5DeO.png"
-PERSONAGEM1 = "https://i.imgur.com/1b13SPC.png"
 ITEM = "https://i.imgur.com/ZWKf0Dr.png"
 MOCHILA = "https://imgur.com/8GZoEo9.png"
 
@@ -154,11 +153,11 @@ class Persona_control:
         self.y = 430 # valor pré-estabelecido do y
         
         self.persona = Elemento(PERSONAGEM, tit = "Menina", h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
-        nome_do_fundo.bota(self.persona) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
-                
-        self.persona1 = Elemento(PERSONAGEM1, tit = "Menina", h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
-        #nome_do_fundo.bota(self.persona1)
-        
+        self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
+               
+        self.persona = Elemento(PERSONAGEM, tit = "Menina", h=100 , w=100, x=self.x+10, y=self.y) # cria Elemento 
+        self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que cria
+               
         self.cima = Elemento(MARCADOR_CIMA, h=50 , w=50, x=1000, y=420, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
         self.cima.entra(nome_do_fundo)
         
@@ -183,10 +182,8 @@ class Persona_control:
     def anda_direita(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'direita' é clicado.
         """
-        nome_do_fundo.tira()
-        nome_do_fundo.bota(self.persona1)
-        if (self.persona1.x - 20 > 0):
-            self.persona1.x = self.x = self.x - 20
+        if (self.persona.x - 20 > 0):
+            self.persona.x = self.x = self.x - 20
         #self.persona.x = self.x - 10 > Deixar para averiguações posteriores
         #self.persona.x = self.x -= 10 > Deixar para averiguações posteriores
         
