@@ -156,7 +156,7 @@ class Persona_control:
         self.persona = Elemento(PERSONAGEM, tit = "Menina", h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
         self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
                
-        self.persona1 = Elemento(P2, tit = "Menina1", h=0 , w=0, x=self.x+10, y=self.y) # cria Elemento 
+        self.persona1 = Elemento(P2, tit = "Menina", h=0 , w=0, x=self.x+10, y=self.y) # cria Elemento 
         self.persona1.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que cria
                
         
@@ -185,14 +185,25 @@ class Persona_control:
     def anda_direita(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'direita' é clicado.
         """
+        
+        self.persona1.h = 100
+        self.persona1.w = 100
+        
+        self.persona.h = 0
+        self.persona.w = 0
+        
         if (self.persona.x - 20 > 0):
             self.persona.x = self.x = self.x - 20
+            self.persona1.x = self.x = self.x - 20
         #self.persona.x = self.x - 10 > Deixar para averiguações posteriores
         #self.persona.x = self.x -= 10 > Deixar para averiguações posteriores
         
     def anda_esquerda(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'esquerda' é clicado.
         """
+        self.persona1.h = 0
+        self.persona1.w = 0
+        
         
         if (self.persona.x + 20 < 1100):
             self.persona.x = self.x = self.x + 20
