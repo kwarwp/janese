@@ -7,7 +7,7 @@ from browser import document
 
 FUNDO = "https://i.imgur.com/KYKStgT.png"
 PERSONAGEM = "https://imgur.com/E6lSl7l.gif"
-PERSONAGEM1= "https://imgur.com/A6wdCYS"
+PERSONAGEM1= "https://imgur.com/A6wdCYS.gif"
 FOLHA = "https://i.imgur.com/upAN1GX.png"
 PENA = "https://i.imgur.com/916QFLA.png"
 MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
@@ -25,8 +25,8 @@ FUNDO_CENA6 = "https://i.imgur.com/s0cX4Bg.jpg"
 FUNDO_CENA7 = "https://i.imgur.com/s0cX4Bg.jpg"
 FUNDO_CENA8 = "https://i.imgur.com/uoIYxmz.jpg"
 FUNDO_CENA9 = "https://i.imgur.com/9TrrFXl.jpg"
-FUNDO_CENA10 =
-FUNDO_CENA11 =
+FUNDO_CENA10 = "https://i.imgur.com/8wD3w9e.jpg"
+FUNDO_CENA11 = "https://i.imgur.com/ZvBi2gh.jpg"
 FUNDO_CENA12 =
 FUNDO_CENA13 =
 FUNDO_CENA14 =
@@ -78,8 +78,8 @@ class Persona_control:
         
         self.persona = Elemento(PERSONAGEM, h=170 , w=190, x=self.x, y=self.y) # cria Elemento 
         self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
-       # self.persona1 = Elemento(PERSONAGEM1, h=170 , w=190, x=self.x, y=self.y) # cria Elemento
-       # self.persona1.entra(nome_do_fundo)
+       self.persona1 = Elemento(PERSONAGEM1, h=170 , w=190, x=self.x, y=self.y) # cria Elemento
+        self.persona1.entra(nome_do_fundo)
 
 
 
