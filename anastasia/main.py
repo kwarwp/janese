@@ -118,8 +118,7 @@ def cena1():
     #Lembrando que lista em python começa sempre da posição 0
     cenas[0].vai()
     
-    item = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=470, cena = c11,
-                           vai = coloca_no_inventario)
+    item = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=470)
     
     #Para inserir pop up
     texto_ = Texto(c11, txt = "Primeira Cena")
@@ -154,7 +153,7 @@ class Persona_control:
         self.y = 430 # valor pré-estabelecido do y
         
         self.persona = Elemento(PERSONAGEM, tit = "Menina", h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
-        self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
+        nome_do_fundo.bota(self.persona) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
                 
         self.cima = Elemento(MARCADOR_CIMA, h=50 , w=50, x=1000, y=420, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
         self.cima.entra(nome_do_fundo)
