@@ -158,7 +158,7 @@ class Persona_control:
         self.persona1 = Elemento(PERSONAGEM, tit = "Menina", h=0 , w=0, x=self.x+10, y=self.y) # cria Elemento 
         self.persona1.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que cria
                
-        #self.persona1.siz(0,0)       
+        
                
         self.cima = Elemento(MARCADOR_CIMA, h=50 , w=50, x=1000, y=420, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
         self.cima.entra(nome_do_fundo)
@@ -192,6 +192,7 @@ class Persona_control:
     def anda_esquerda(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'esquerda' é clicado.
         """
+        self.persona1.siz(10,10)
         if (self.persona.x + 20 < 1100):
             self.persona.x = self.x = self.x + 20
         
