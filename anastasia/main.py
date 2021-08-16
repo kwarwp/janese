@@ -192,7 +192,8 @@ class Persona_control:
     def anda_esquerda(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'esquerda' é clicado.
         """
-        self.persona1.siz(10,10)
+        self.persona1.h = 100
+        self.persona1.w = 100
         if (self.persona.x + 20 < 1100):
             self.persona.x = self.x = self.x + 20
         
