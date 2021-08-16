@@ -15,6 +15,7 @@ MARCADOR_DIREITA = "https://imgur.com/GTnLEnS.png"
 MARCADOR_ESQUERDA = "https://imgur.com/Nl7Qy9h.png"
 MARCADOR_CIMA = "https://imgur.com/f2zfcvx.png"
 MARCADOR_BAIXO = "https://imgur.com/QDx4zgx.png"
+MAECADOR_PLAY = "https://i.imgur.com/qEbkWNJ.png"
 
 FUNDO_CENA1 = "https://i.imgur.com/kJBS3k9.jpg"
 FUNDO_CENA2 = "https://i.imgur.com/92LwWM9.jpg"
@@ -39,7 +40,7 @@ STYLE["width"]=1350
 STYLE["height"]=720
 
 def teste():
-    fundo = Cena(FUNDO) 
+    fundo = Cena(FUNDO_CENA1) 
     fundo.vai()
     bonequinha = Persona_control( fundo) 
         
