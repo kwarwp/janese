@@ -127,3 +127,10 @@ SyntaxError: invalid syntax
                  ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 16 2021 17:28:59.281 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 81
+  self.persona1 = Elemento(PERSONAGEM1, h=170 , w=190, x=self.x, y=self.y) # cria Elemento
+  ^
+IndentationError: unexpected indent
+'''},
