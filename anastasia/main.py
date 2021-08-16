@@ -3,6 +3,8 @@
 #Profa Gi :)
 
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala, Labirinto
+from _spy.vitollino.main import INVENTARIO as inv
+
 from browser import document
 
 
