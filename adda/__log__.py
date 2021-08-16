@@ -113,3 +113,10 @@ SyntaxError: invalid syntax
                  ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 16 2021 17:26:47.867 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  FUNDO_CENA12 =
+                 ^
+SyntaxError: invalid syntax
+'''},
