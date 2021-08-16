@@ -117,9 +117,7 @@ def cena1():
     #Código se fosse usar o sistema de labirinto
     #la.centro.norte.vai()
     
-    item = Elemento(ITEM, tit="Item",
-                            h=30 , w=30, x=400, y=450, # ou ,x=eixo_x, y=eixo_y, w=largura, h=altura,
-                           cena = c11,
+    item = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=450, cena = c11,
                            vai = self.coloca_no_inventario)
     #Código usando lista
     #Lembrando que lista em python começa sempre da posição 0
