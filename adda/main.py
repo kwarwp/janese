@@ -22,16 +22,16 @@ FUNDO_CENA3 = "https://i.imgur.com/j70TEwA.jpg"
 FUNDO_CENA4 = "https://i.imgur.com/ELVLnWr.jpg"
 FUNDO_CENA5 = "https://i.imgur.com/eQGB5Yi.jpg"
 FUNDO_CENA6 = "https://i.imgur.com/s0cX4Bg.jpg"
-FUNDO_CENA7 = "https://i.imgur.com/s0cX4Bg.jpg"
-FUNDO_CENA8 = "https://i.imgur.com/uoIYxmz.jpg"
-FUNDO_CENA9 = "https://i.imgur.com/9TrrFXl.jpg"
-FUNDO_CENA10 = "https://i.imgur.com/8wD3w9e.jpg"
-FUNDO_CENA11 = "https://i.imgur.com/ZvBi2gh.jpg"
-FUNDO_CENA12 =
-FUNDO_CENA13 =
-FUNDO_CENA14 =
-FUNDO_CENA15 =
-FUNDO_CENA16 =
+FUNDO_CENA7 = "https://i.imgur.com/uoIYxmz.jpg"
+FUNDO_CENA8 = "https://i.imgur.com/9TrrFXl.jpg"
+FUNDO_CENA9 = "https://i.imgur.com/8wD3w9e.jpg"
+FUNDO_CENA10 = "https://i.imgur.com/ZvBi2gh.jpg"
+FUNDO_CENA11 = "https://i.imgur.com/EBbuTmf.jpg"
+FUNDO_CENA12 = "https://i.imgur.com/3v5X9Pk.jpg"
+FUNDO_CENA13 = "https://i.imgur.com/NODyC2J.jpg"
+FUNDO_CENA14 = "https://i.imgur.com/59WeDzm.jpg"
+FUNDO_CENA15 = "https://i.imgur.com/et23kI0.jpg"
+
 
 
 
