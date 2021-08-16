@@ -40,7 +40,7 @@ STYLE["width"]=1350
 STYLE["height"]=720
 
 def teste():
-    fundo = Cena(FUNDO_CENA1) 
+    fundo = Cena(FUNDO_CENA2) 
     fundo.vai()
     bonequinha = Persona_control( fundo) 
         
