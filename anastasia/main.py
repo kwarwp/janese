@@ -2,8 +2,8 @@
 
 #Profa Gi :)
 
-from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala, Labirinto
-from _spy.vitollino.main import INVENTARIO as inv
+from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala, Labirinto, INVENTARIO
+
 
 from browser import document
 
@@ -116,7 +116,7 @@ def cena2(event = None):
 def cena1():
     #Código se fosse usar o sistema de labirinto
     #la.centro.norte.vai()
-    inv.inicia() 
+    INVENTARIO.inicia() 
     item = Elemento(ITEM, tit="Item",
                             h=30 , w=30, x=400, y=450, # ou ,x=eixo_x, y=eixo_y, w=largura, h=altura,
                            cena = c11,
