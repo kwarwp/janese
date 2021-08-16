@@ -16,6 +16,24 @@ MARCADOR_ESQUERDA = "https://imgur.com/Nl7Qy9h.png"
 MARCADOR_CIMA = "https://imgur.com/f2zfcvx.png"
 MARCADOR_BAIXO = "https://imgur.com/QDx4zgx.png"
 
+FUNDO_CENA1 = "https://i.imgur.com/kJBS3k9.jpg"
+FUNDO_CENA2 = "https://i.imgur.com/92LwWM9.jpg"
+FUNDO_CENA3 = "https://i.imgur.com/j70TEwA.jpg"
+FUNDO_CENA4 = "https://i.imgur.com/ELVLnWr.jpg"
+FUNDO_CENA5 = "https://i.imgur.com/eQGB5Yi.jpg"
+FUNDO_CENA6 = "https://i.imgur.com/s0cX4Bg.jpg"
+FUNDO_CENA7 = "https://i.imgur.com/s0cX4Bg.jpg"
+FUNDO_CENA8 = "https://i.imgur.com/uoIYxmz.jpg"
+FUNDO_CENA9 = "https://i.imgur.com/9TrrFXl.jpg"
+FUNDO_CENA10 =
+FUNDO_CENA11 =
+FUNDO_CENA12 =
+FUNDO_CENA13 =
+FUNDO_CENA14 =
+FUNDO_CENA15 =
+FUNDO_CENA16 =
+
+
 
 STYLE["width"]=1350
 STYLE["height"]=720
