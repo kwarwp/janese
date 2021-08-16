@@ -223,7 +223,7 @@ class Persona_control:
         """
         if (self.persona.y + 20 < 500):
             self.persona.y = self.y = self.y + 20
-            self.persona.y1 = self.y = self.y + 20
+            self.persona1.y = self.y = self.y + 20
 
 if __name__ == "__main__":  
     cena1()
