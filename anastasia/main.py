@@ -23,6 +23,7 @@ MARCADOR_BAIXO = "https://i.imgur.com/MJtWXUb.png"
 MARCADOR_MEIO = "https://i.imgur.com/2pwjrxD.png"
 
 PERSONAGEM = "https://i.imgur.com/3Im5DeO.png"
+PERSONAGEM1 = "https://i.imgur.com/1b13SPC.png"
 ITEM = "https://i.imgur.com/ZWKf0Dr.png"
 MOCHILA = "https://imgur.com/8GZoEo9.png"
 
@@ -155,6 +156,9 @@ class Persona_control:
         self.persona = Elemento(PERSONAGEM, tit = "Menina", h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
         nome_do_fundo.bota(self.persona) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
                 
+        self.persona1 = Elemento(PERSONAGEM, tit = "Menina", h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
+        nome_do_fundo.bota(self.persona)
+        
         self.cima = Elemento(MARCADOR_CIMA, h=50 , w=50, x=1000, y=420, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
         self.cima.entra(nome_do_fundo)
         
