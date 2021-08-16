@@ -33,7 +33,7 @@ STYLE["width"]=1150
 STYLE["height"]=500
 
 #Cria Cenas
-
+INVENTARIO.inicia() 
 c11 = Cena(FUNDO_CENA1)
 c12 = Cena(FUNDO_CENA2)
 c13 = Cena(FUNDO_CENA3)
@@ -116,7 +116,7 @@ def cena2(event = None):
 def cena1():
     #Código se fosse usar o sistema de labirinto
     #la.centro.norte.vai()
-    INVENTARIO.inicia() 
+    
     item = Elemento(ITEM, tit="Item",
                             h=30 , w=30, x=400, y=450, # ou ,x=eixo_x, y=eixo_y, w=largura, h=altura,
                            cena = c11,
