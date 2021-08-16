@@ -106,3 +106,10 @@ AttributeError: 'inicial' object has no attribute 'x1'
                  ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 16 2021 17:26:40.944 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 30
+  FUNDO_CENA12 =
+                 ^
+SyntaxError: invalid syntax
+'''},
