@@ -204,6 +204,8 @@ class Persona_control:
         self.persona1.h = 0
         self.persona1.w = 0
         
+        self.persona.h = 100
+        self.persona.w = 100
         
         if (self.persona.x + 20 < 1100):
             self.persona.x = self.x = self.x + 20
