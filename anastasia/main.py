@@ -2,7 +2,7 @@
 
 #Profa Gi :)
 
-from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala, Labirinto, INVENTARIO
+from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala, Labirinto
 
 
 from browser import document
@@ -33,7 +33,6 @@ STYLE["width"]=1150
 STYLE["height"]=500
 
 #Cria Cenas
-INVENTARIO.inicia() 
 c11 = Cena(FUNDO_CENA1)
 c12 = Cena(FUNDO_CENA2)
 c13 = Cena(FUNDO_CENA3)
@@ -83,9 +82,6 @@ def pega_acao(event = None):
     tam = tam + 0.5
 
 
-def coloca_no_inventario(self, *_):
-    inv.bota(nome_do_elemento, True)
-
     
 
 #Função para ir para a cena 3    
@@ -122,7 +118,7 @@ def cena1():
     #Lembrando que lista em python começa sempre da posição 0
     cenas[0].vai()
     
-    item = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=450, cena = c11,
+    item = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=470, cena = c11,
                            vai = coloca_no_inventario)
     
     #Para inserir pop up
