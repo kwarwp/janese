@@ -86,7 +86,7 @@ class Jogo:
 
 
     def pega_acao(event = None):
-        print(self.bonequinha.get_x)
+        #print(self.bonequinha.get_x)
         for i in self.itens:
         
             i.h = 0
