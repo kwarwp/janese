@@ -85,6 +85,7 @@ y_personagem = 0
 
 
 def pega_acao(event = None):
+    print("Oi")
     for i in itens:
         i.h = 0
         i.w = 0
@@ -131,13 +132,11 @@ def cena1():
     #Lembrando que lista em python começa sempre da posição 0
     cenas[0].vai()
     
-    item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=300, y=500)
-    item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480)
-    item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490)
+    item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=300, y=500, cena = c11)
+    item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = c11)
+    item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = c11)
     itens = [item1, item2, item3]
-    cenas[0].bota(item1)
-    cenas[0].bota(item2)
-    cenas[0].bota(item3)
+
     
     #Para inserir pop up
     texto_ = Texto(c11, txt = "Primeira Cena")
