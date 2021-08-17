@@ -80,13 +80,14 @@ class Jogo:
         self.c23 = Cena(FUNDO_CENA7)
         
         self.cenas = [self.c11, self.c12, self.c13, self.c14, self.c21, self.c22, self.c23]
+        self.bonequinha = Persona_control(self.c11)
         self.itens = []
         self.score = 0
         self.ind_cenas= 0
 
 
     def pega_acao(self, event = None):
-        #print(self.bonequinha.get_x)
+        print(self.bonequinha.get_x)
         for i in self.itens:
         
             i.h = 0
@@ -106,7 +107,7 @@ class Jogo:
         self.cenas[2].vai()
         texto_ = Texto(self.c13, txt = "Terceira Cena")
         texto_.vai()
-        bonequinha = Persona_control(self.c13)
+        self.bonequinha = Persona_control(self.c13)
         botao = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.c13,
@@ -118,7 +119,7 @@ class Jogo:
         self.cenas[1].vai()
         texto_ = Texto(self.c12, txt = "Segunda Cena")
         texto_.vai()
-        bonequinha = Persona_control(self.c12)
+        self.bonequinha = Persona_control(self.c12)
         botao = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.c12,
