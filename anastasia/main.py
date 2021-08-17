@@ -132,7 +132,7 @@ class Jogo:
     
     #Código usando lista
     #Lembrando que lista em python começa sempre da posição 0
-        cenas[0].vai()
+        self.cenas[0].vai()
     
         item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=300, y=500, cena = self.c11)
         item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
