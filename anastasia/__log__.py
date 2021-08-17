@@ -911,3 +911,10 @@ NameError: name 'pega_acao' is not defined
     pega.elt.bind("click", pega_acao)
 NameError: name 'pega_acao' is not defined
 '''},
+{'date': 'Tue Aug 17 2021 16:00:29.429 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 101
+  self.itens = del(self.itens[0])
+                ^
+SyntaxError: invalid syntax
+'''},
