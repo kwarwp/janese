@@ -85,7 +85,7 @@ class Jogo:
         self.ind_cenas= 0
 
 
-    def pega_acao(event = None):
+    def pega_acao(self, event = None):
         #print(self.bonequinha.get_x)
         for i in self.itens:
         
@@ -101,7 +101,7 @@ class Jogo:
     
 
 #Função para ir para a cena 3    
-    def cena3(event = None):
+    def cena3(self, event = None):
     #la.centro.leste.vai()
         self.cenas[2].vai()
         texto_ = Texto(self.c13, txt = "Terceira Cena")
@@ -113,7 +113,7 @@ class Jogo:
                            vai = self.cena4)
                            
 #Função para ir para a cena 2
-    def cena2(event = None):
+    def cena2(self, event = None):
     #la.centro.sul.vai()
         self.cenas[1].vai()
         texto_ = Texto(self.c12, txt = "Segunda Cena")
