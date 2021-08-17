@@ -84,7 +84,7 @@ ind_cenas= [0]
 
 
 def pega_acao(event = None):
-    print(bonequinha.get_x)
+    print(self.bonequinha.get_x)
     for i in itens:
         
         i.h = 0
