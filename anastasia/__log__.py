@@ -918,3 +918,10 @@ NameError: name 'pega_acao' is not defined
                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Aug 17 2021 17:15:54.471 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 159
+  if x=300 & y=500  or x=400 & y=480 or x= 550 & y=490
+       ^
+SyntaxError: invalid syntax
+'''},
