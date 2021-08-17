@@ -135,7 +135,7 @@ def cena1():
     item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=300, y=500, cena = c11)
     item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = c11)
     item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = c11)
-    itens = [item1, item2, item3]
+    itens.append(item1)
 
     
     #Para inserir pop up
