@@ -98,6 +98,7 @@ class Jogo:
             self.cenas[self.ind_cenas].bota(carga)
             break
         self.pos_carga = self.pos_carga + 10
+        del(self.itens[0])
             
     
 
