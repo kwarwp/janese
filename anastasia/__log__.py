@@ -989,3 +989,10 @@ SyntaxError: invalid syntax
     if x==300 and y==500:
 NameError: name 'x' is not defined
 '''},
+{'date': 'Tue Aug 17 2021 17:24:04.392 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 162
+  elif x == 300 and y == 500:
+   ^
+SyntaxError: invalid syntax
+'''},
