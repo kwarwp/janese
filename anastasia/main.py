@@ -86,7 +86,7 @@ class Jogo:
         self.ind_cenas= 0
         self.pos_carga = 0
 
-
+#Função para pegar o item
     def pega_acao(self, event = None):
         
         for i in self.itens:
@@ -98,7 +98,7 @@ class Jogo:
             self.cenas[self.ind_cenas].bota(carga)
             break
         self.pos_carga = self.pos_carga + 10
-        del(self.itens[0])
+        self.itens = del(self.itens[0])
         print(self.itens)
         
             
