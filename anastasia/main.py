@@ -77,9 +77,9 @@ essa lista existe, e vai ser possível acessar ela em qualquer função abaixo.
 
 
 cenas = [c11, c12, c13, c14, c21, c22, c23]
-ind_cenas = 0
 itens = []
-self.score = 0
+score = []
+
 
 
 def pega_acao(event = None):
@@ -87,7 +87,7 @@ def pega_acao(event = None):
     for i in itens:
         i.h = 0
         i.w = 0
-        self.score = score + 1
+        score.append(1)
         carga = Elemento(CARGA, w = 50, h = 50, x=1050, y=20)
         cenas[ind_cenas].bota()
             
