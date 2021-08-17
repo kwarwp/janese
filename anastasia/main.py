@@ -170,8 +170,8 @@ class Persona_control:
         
     """
     def __init__(self, nome_do_fundo):
-        self.x = 10 # valor pré-estabelecido do x
-        self.y = 430 # valor pré-estabelecido do y
+        self.x = 300 # valor pré-estabelecido do x
+        self.y = 500 # valor pré-estabelecido do y
         
         '''Para criar um persogem que muda de direita para esquerda: Crie dois personagens e um deles tem tamanho zerado,
         ou seja, h=0 e w=0.
