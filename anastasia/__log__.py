@@ -959,3 +959,10 @@ NameError: name 'y' is not defined
     if x==300 & y==500:
 NameError: name 'y' is not defined
 '''},
+{'date': 'Tue Aug 17 2021 17:19:17.549 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 159
+  if x=300 & y=500:
+       ^
+SyntaxError: invalid syntax
+'''},
