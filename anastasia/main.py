@@ -25,7 +25,8 @@ MARCADOR_MEIO = "https://i.imgur.com/2pwjrxD.png"
 PERSONAGEM = "https://i.imgur.com/3Im5DeO.png"
 PERSONAGEM1 = "https://i.imgur.com/ab8mN5s.png"
 ITEM = "https://i.imgur.com/ZWKf0Dr.png"
-MOCHILA = "https://imgur.com/8GZoEo9.png"
+BATERIA = "https://imgur.com/0kcOVwk.png"
+CARGA = "https://imgur.com/dipQTCT.png"
 
 
 
@@ -76,7 +77,7 @@ essa lista existe, e vai ser possível acessar ela em qualquer função abaixo.
 
 
 cenas = [c11, c12, c13, c14, c21, c22, c23]
-tam = 1.5
+score = 0
 
 def pega_acao(event = None):
     self.mochila.siz = tam*30
@@ -119,7 +120,10 @@ def cena1():
     #Lembrando que lista em python começa sempre da posição 0
     cenas[0].vai()
     
-    item = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=470)
+    item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=300, y=470)
+    item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480)
+    item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=430)
+    itens = [item1, item2, item3]
     
     #Para inserir pop up
     texto_ = Texto(c11, txt = "Primeira Cena")
@@ -131,8 +135,8 @@ def cena1():
                            cena = c11)
     pega.elt.bind("click", pega_acao)
     #Inserindo o botão que muda de cena
-    self.mochila = Elemento(MOCHILA, tit="Mochila",
-                           h=30 , w=30, x=1100, y=20, cena= c11)
+    bateria = Elemento(BATERIA, tit="Bateria",
+                           h=50 , w=50, x=1050, y=20, cena= c11)
     proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c11,
@@ -153,6 +157,9 @@ class Persona_control:
         self.x = 10 # valor pré-estabelecido do x
         self.y = 430 # valor pré-estabelecido do y
         
+        '''Para criar um persogem que muda de direita para esquerda: Crie dois personagens e um deles tem tamanho zerado,
+        ou seja, h=0 e w=0.
+        Para mudar de personagem veja as funções de andar'''
         self.persona = Elemento(PERSONAGEM, tit = "Menina", h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
         self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
                
@@ -174,17 +181,15 @@ class Persona_control:
         self.esquerda.entra(nome_do_fundo)
         
                
-    def get_x(self):
-        return self.persona.x
-        
-    def get_y(self):
-        return self.persona.y
-        
+
         
 
     def anda_direita(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'direita' é clicado.
         """
+        '''Quando necessário os personagens devem ser trocados - Um será zerado e o outro volta ao tamanho normal
+        porém ambos devem ser atualizados nas posições para andarem sincronizados, isto para todas as funções 
+        que alterem a posição do personagem'''
         
         self.persona1.h = 100
         self.persona1.w = 100
