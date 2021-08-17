@@ -89,7 +89,7 @@ def pega_acao(event = None):
         i.w = 0
         score.append(1)
         carga = Elemento(CARGA, w = 50, h = 50, x=1050, y=20)
-        cenas[0].bota()
+        cenas[0].bota(carga)
             
     
 
