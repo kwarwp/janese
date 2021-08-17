@@ -110,7 +110,7 @@ class Jogo:
         botao = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.c13,
-                           vai = cena4)
+                           vai = self.cena4)
                            
 #Função para ir para a cena 2
     def cena2(event = None):
@@ -122,7 +122,7 @@ class Jogo:
         botao = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.c12,
-                           vai = cena3)
+                           vai = self.cena3)
     
 #Função que cria a cena 1
     def cena1(self):
@@ -152,14 +152,14 @@ class Jogo:
     
         pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.c11)
-        pega.elt.bind("click", pega_acao)
+        pega.elt.bind("click", self.pega_acao)
     #Inserindo o botão que muda de cena
         bateria = Elemento(BATERIA, tit="Bateria",
                            h=50 , w=50, x=1050, y=20, cena= self.c11)
         proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.c11,
-                           vai = cena2)
+                           vai = self.cena2)
 
 
     
