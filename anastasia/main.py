@@ -79,17 +79,19 @@ essa lista existe, e vai ser possível acessar ela em qualquer função abaixo.
 cenas = [c11, c12, c13, c14, c21, c22, c23]
 itens = []
 score = []
+ind_cenas= [0]
 
 
 
 def pega_acao(event = None):
-    print(itens)
+    print(bonequinha.get_x)
     for i in itens:
+        
         i.h = 0
         i.w = 0
         score.append(1)
         carga = Elemento(CARGA, w = 50, h = 50, x=1050, y=20)
-        cenas[0].bota(carga)
+        cenas[ind_cenas[0]].bota(carga)
             
     
 
