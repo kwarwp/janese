@@ -80,7 +80,7 @@ class Jogo:
         self.c23 = Cena(FUNDO_CENA7)
         
         self.cenas = [self.c11, self.c12, self.c13, self.c14, self.c21, self.c22, self.c23]
-        self.bonequinha = Persona_control(self.c11)
+        self.bonequinha = 0
         self.itens = []
         self.score = 0
         self.ind_cenas= 0
