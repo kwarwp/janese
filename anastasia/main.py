@@ -96,7 +96,8 @@ class Jogo:
             self.score = self.score + 1
             carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
             self.cenas[self.ind_cenas].bota(carga)
-            self.pos_carga = self.pos_carga + 20
+            break
+        self.pos_carga = self.pos_carga + 10
             
     
 
