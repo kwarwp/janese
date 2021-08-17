@@ -124,6 +124,9 @@ def cena1():
     item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480)
     item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=430)
     itens = [item1, item2, item3]
+    c11.bota(item1)
+    c11.bota(item2)
+    c11.bota(item3)
     
     #Para inserir pop up
     texto_ = Texto(c11, txt = "Primeira Cena")
