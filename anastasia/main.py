@@ -88,7 +88,7 @@ class Jogo:
 
 
     def pega_acao(self, event = None):
-        print(self.pos_carga)
+        
         for i in self.itens:
         
             i.h = 0
@@ -99,6 +99,8 @@ class Jogo:
             break
         self.pos_carga = self.pos_carga + 10
         del(self.itens[0])
+        print(self.itens)
+        
             
     
 
