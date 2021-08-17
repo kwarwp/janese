@@ -156,7 +156,7 @@ class Persona_control:
         self.persona = Elemento(PERSONAGEM, tit = "Menina", h=100 , w=100, x=self.x, y=self.y) # cria Elemento 
         self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
                
-        self.persona1 = Elemento(PERSONAGEM1, tit = "Menina", h=0 , w=0, x=self.x+10, y=self.y) # cria Elemento 
+        self.persona1 = Elemento(PERSONAGEM1, tit = "Menina", h=0 , w=0, x=self.x, y=self.y) # cria Elemento 
         self.persona1.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que cria
                
         
