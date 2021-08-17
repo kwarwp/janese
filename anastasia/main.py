@@ -84,17 +84,17 @@ class Jogo:
         self.itens = []
         self.score = 0
         self.ind_cenas= 0
-        self.pos_carga = 1
+        self.pos_carga = 0
 
 
     def pega_acao(self, event = None):
-        print(self.bonequinha.get_x)
+        print(self.pos_carga)
         for i in self.itens:
         
             i.h = 0
             i.w = 0
             self.score = self.score + 1
-            carga = Elemento(CARGA, w = 50, h = 50, x=1050*self.pos_carga, y=20)
+            carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
             self.cenas[self.ind_cenas].bota(carga)
             self.pos_carga = self.pos_carga + 20
             
