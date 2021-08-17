@@ -160,6 +160,7 @@ if (x==300 and y==500):
         pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.c11)                          
         pega.elt.bind("click", self.pega_acao)
+        
     #Inserindo o botão que muda de cena
         bateria = Elemento(BATERIA, tit="Bateria",
                            h=50 , w=50, x=1050, y=20, cena= self.c11)
