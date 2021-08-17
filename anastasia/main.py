@@ -77,11 +77,23 @@ essa lista existe, e vai ser possível acessar ela em qualquer função abaixo.
 
 
 cenas = [c11, c12, c13, c14, c21, c22, c23]
+ind_cenas = 0
+itens = []
 score = 0
+x_personagem = 0
+y_personagem = 0
+
 
 def pega_acao(event = None):
-    self.mochila.siz = tam*30
-    tam = tam + 0.5
+    for i in itens:
+        if(self.bonequinha.get_x == i.x):
+            i.h = 0
+            i.w = 0
+            score = score + 1
+            carga = Elemento(CARGA, w = 50, h = 50, x=1050, y=20)
+            cenas[ind_cenas].bota()
+            
+    
 
 
     
@@ -120,19 +132,20 @@ def cena1():
     #Lembrando que lista em python começa sempre da posição 0
     cenas[0].vai()
     
-    item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=300, y=470)
+    item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=300, y=500)
     item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480)
-    item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=430)
+    item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490)
     itens = [item1, item2, item3]
-    c11.bota(item1)
-    c11.bota(item2)
-    c11.bota(item3)
+    cenas[0].bota(item1)
+    cenas[0].bota(item2)
+    cenas[0].bota(item3)
     
     #Para inserir pop up
     texto_ = Texto(c11, txt = "Primeira Cena")
     texto_.vai()
     #Inserindo a boneca
-    bonequinha = Persona_control(c11)
+    self.bonequinha = Persona_control(c11)
+    
     
     pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c11)
@@ -185,7 +198,11 @@ class Persona_control:
         
                
 
+    def get_x(self):
+        return self.persona.x
         
+    def get_y(self):
+        return self.persona.y
 
     def anda_direita(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'direita' é clicado.
