@@ -1051,3 +1051,10 @@ NameError: name 'x' is not defined
                                                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Aug 17 2021 17:41:20.696 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 163
+  if x=550, y=490:               
+       ^
+SyntaxError: invalid syntax
+'''},
