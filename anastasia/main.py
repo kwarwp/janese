@@ -136,6 +136,9 @@ def cena1():
     item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = c11)
     item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = c11)
     itens.append(item1)
+    itens.append(item2)
+    itens.append(item3)
+    score = 0
 
     
     #Para inserir pop up
