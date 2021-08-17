@@ -85,7 +85,7 @@ y_personagem = 0
 
 
 def pega_acao(event = None):
-    print("Oi")
+    print(itens)
     for i in itens:
         i.h = 0
         i.w = 0
