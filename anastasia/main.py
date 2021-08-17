@@ -131,7 +131,7 @@ def cena1():
     #Inserindo a boneca
     bonequinha = Persona_control(c11)
     
-    pega = Elemento(MARCADOR_MEIO, tit = "Não funciona", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+    pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = c11)
     pega.elt.bind("click", pega_acao)
     #Inserindo o botão que muda de cena
