@@ -104,6 +104,10 @@ class Jogo:
         else:
             texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você pegou todos os itens!")
             texto_.vai()
+            proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
+                           h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                           cena = self.cenas[self.ind_cenas],
+                           vai = self.cena2)
         
             
     
@@ -168,10 +172,7 @@ class Jogo:
     #Inserindo o botão que muda de cena
         bateria = Elemento(BATERIA, tit="Bateria",
                            h=50 , w=50, x=1050, y=20, cena= self.c11)
-        proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
-                           h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                           cena = self.c11,
-                           vai = self.cena2)
+        
 
 
     
