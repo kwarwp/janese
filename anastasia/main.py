@@ -89,7 +89,7 @@ class Jogo:
 #Função para pegar o item
     def pega_acao(self, event = None):
         
-        if (len(itens) > 0):
+        if (len(self.itens) > 0):
             for i in self.itens:
         
                 i.h = 0
