@@ -141,7 +141,7 @@ class Jogo:
     #Lembrando que lista em python começa sempre da posição 0
         self.cenas[0].vai()
     
-        item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=300, y=500, cena = self.c11)
+        item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=10, y=430, cena = self.c11)
         item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
         item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c11)
         self.itens.append(item1)
@@ -156,7 +156,7 @@ class Jogo:
     #Inserindo a boneca
         self.bonequinha = Persona_control(self.c11)
     
-if (bonequinha = x=300 and y=500): 
+#if (bonequinha = x=300 and y=500): 
         pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.c11)                          
         pega.elt.bind("click", self.pega_acao)
