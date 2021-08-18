@@ -141,6 +141,7 @@ class Jogo:
     #la.centro.sul.vai()
         self.cenas[1].vai()
         self.ind_cenas = 1
+        self.pos_carga = 0
         
         item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=330, y=500, cena = self.c12)
         #item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
