@@ -82,7 +82,7 @@ class Jogo:
         self.cenas = [self.c11, self.c12, self.c13, self.c14, self.c21, self.c22, self.c23]
         self.bonequinha = 0
         self.itens = []
-        self.score = 0
+        
         self.ind_cenas= 0
         self.pos_carga = 0
 
@@ -94,7 +94,7 @@ class Jogo:
                 if(self.verifica_proximidade(i.x, i.y)):
                     i.h = 0
                     i.w = 0
-                    self.score = self.score + 1
+                    
                     carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
                     self.cenas[self.ind_cenas].bota(carga)
                     self.pos_carga = self.pos_carga + 10
@@ -140,13 +140,28 @@ class Jogo:
     def cena2(self, event = None):
     #la.centro.sul.vai()
         self.cenas[1].vai()
+        self.ind_cenas = 1
+        
+        item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=330, y=500, cena = self.c11)
+        #item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
+        item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c11)
+        self.itens.append(item1)
+        #self.itens.append(item2)
+        self.itens.append(item3)
+        
+        
         texto_ = Texto(self.c12, txt = "Segunda Cena")
         texto_.vai()
         self.bonequinha = Persona_control(self.c12)
-        botao = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
-                           h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                           cena = self.c12,
-                           vai = self.cena3)
+        
+        pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                           cena = self.c12)                          
+        pega.elt.bind("click", self.pega_acao)
+        
+    #Inserindo o botão que muda de cena
+        bateria = Elemento(BATERIA, tit="Bateria",
+                           h=50 , w=50, x=1050, y=20, cena= self.c12)
+                           
     
 #Função que cria a cena 1
     def cena1(self):
@@ -164,7 +179,7 @@ class Jogo:
         self.itens.append(item1)
         self.itens.append(item2)
         self.itens.append(item3)
-        self.score = 0
+        
 
     
     #Para inserir pop up
