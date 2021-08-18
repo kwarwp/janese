@@ -153,7 +153,7 @@ class Jogo:
                            cena = self.cenas[self.ind_cenas],
                            vai = self.cena4)
         else:
-            texto_ = Texto(self.c13, txt = "Você ainda não terminou de explorar essa cena!")
+            texto_ = Texto(self.c12, txt = "Você ainda não terminou de explorar essa cena!")
             texto_.vai()
             
             
@@ -190,7 +190,7 @@ class Jogo:
                            cena = self.cenas[self.ind_cenas],
                            vai = self.cena3)
         else:
-            texto_ = Texto(self.c12, txt = "Você ainda não terminou de explorar essa cena!")
+            texto_ = Texto(self.c11, txt = "Você ainda não terminou de explorar essa cena!")
             texto_.vai()
                            
     
