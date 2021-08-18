@@ -98,7 +98,7 @@ class Jogo:
                     carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
                     self.cenas[self.ind_cenas].bota(carga)
                     self.pos_carga = self.pos_carga + 10
-                    del self.itens[0]
+                    self.itens.remove(i)
                     break
                 else:
                     texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você não está próxima de nenhum item!")
