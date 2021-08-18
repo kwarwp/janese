@@ -89,17 +89,21 @@ class Jogo:
 #Função para pegar o item
     def pega_acao(self, event = None):
         
-        for i in self.itens:
+        if (len(itens) > 0):
+            for i in self.itens:
         
-            i.h = 0
-            i.w = 0
-            self.score = self.score + 1
-            carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
-            self.cenas[self.ind_cenas].bota(carga)
-            break
-        self.pos_carga = self.pos_carga + 10
-        del self.itens[0]
-        print(self.itens)
+                i.h = 0
+                i.w = 0
+                self.score = self.score + 1
+                carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
+                self.cenas[self.ind_cenas].bota(carga)
+                break
+            self.pos_carga = self.pos_carga + 10
+            del self.itens[0]
+            print(self.itens)
+        else:
+            texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você pegou todos os itens!")
+            texto_.vai()
         
             
     
@@ -141,7 +145,7 @@ class Jogo:
     #Lembrando que lista em python começa sempre da posição 0
         self.cenas[0].vai()
     
-        item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=10, y=430, cena = self.c11)
+        item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=300, y=500, cena = self.c11)
         item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
         item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c11)
         self.itens.append(item1)
