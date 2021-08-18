@@ -1127,3 +1127,10 @@ SyntaxError: invalid syntax
                   ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Aug 18 2021 10:45:18.701 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 159
+  if (bonequinha = x=300 and y=500): 
+                  ^
+SyntaxError: invalid syntax
+'''},
