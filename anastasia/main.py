@@ -108,10 +108,7 @@ class Jogo:
         else:
             texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você pegou todos os itens!")
             texto_.vai()
-            proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
-                           h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                           cena = self.cenas[self.ind_cenas],
-                           vai = self.cena2)
+            
         
             
     
@@ -139,29 +136,37 @@ class Jogo:
 #Função para ir para a cena 2
     def cena2(self, event = None):
     #la.centro.sul.vai()
-        self.cenas[1].vai()
-        self.ind_cenas = 1
-        self.pos_carga = 0
+        if(len(self.itens) == 0):
+            self.cenas[1].vai()
+            self.ind_cenas = 1
+            self.pos_carga = 0
         
-        item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=330, y=500, cena = self.c12)
-        #item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
-        item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c12)
-        self.itens.append(item1)
-        #self.itens.append(item2)
-        self.itens.append(item3)
+            item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=330, y=500, cena = self.c12)
+            #item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
+            item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c12)
+            self.itens.append(item1)
+            #self.itens.append(item2)
+            self.itens.append(item3)
         
         
-        texto_ = Texto(self.c12, txt = "Segunda Cena")
-        texto_.vai()
-        self.bonequinha = Persona_control(self.c12)
+            texto_ = Texto(self.c12, txt = "Segunda Cena")
+            texto_.vai()
+            self.bonequinha = Persona_control(self.c12)
         
-        pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+            pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.c12)                          
-        pega.elt.bind("click", self.pega_acao)
+            pega.elt.bind("click", self.pega_acao)
         
-    #Inserindo o botão que muda de cena
-        bateria = Elemento(BATERIA, tit="Bateria",
+            #Inserindo o botão que muda de cena
+            bateria = Elemento(BATERIA, tit="Bateria",
                            h=50 , w=50, x=1050, y=20, cena= self.c12)
+            proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
+                           h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                           cena = self.cenas[self.ind_cenas],
+                           vai = self.cena3)
+        else:
+            texto_ = Texto(self.c12, txt = "Você ainda não terminou de explorar essa cena!")
+            texto_.vai()
                            
     
 #Função que cria a cena 1
@@ -197,6 +202,10 @@ class Jogo:
     #Inserindo o botão que muda de cena
         bateria = Elemento(BATERIA, tit="Bateria",
                            h=50 , w=50, x=1050, y=20, cena= self.c11)
+        proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
+                           h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                           cena = self.cenas[self.ind_cenas],
+                           vai = self.cena2)
         
 
 
