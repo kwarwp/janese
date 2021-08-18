@@ -142,9 +142,9 @@ class Jogo:
         self.cenas[1].vai()
         self.ind_cenas = 1
         
-        item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=330, y=500, cena = self.c11)
+        item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=330, y=500, cena = self.c12)
         #item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
-        item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c11)
+        item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c12)
         self.itens.append(item1)
         #self.itens.append(item2)
         self.itens.append(item3)
