@@ -91,16 +91,20 @@ class Jogo:
         
         if (len(self.itens) > 0):
             for i in self.itens:
-        
-                i.h = 0
-                i.w = 0
-                self.score = self.score + 1
-                carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
-                self.cenas[self.ind_cenas].bota(carga)
-                break
-            self.pos_carga = self.pos_carga + 10
-            del self.itens[0]
-            print(self.itens)
+                if(self.verifica_proximidade(i.x, i.y)):
+                    i.h = 0
+                    i.w = 0
+                    self.score = self.score + 1
+                    carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
+                    self.cenas[self.ind_cenas].bota(carga)
+                    self.pos_carga = self.pos_carga + 10
+                    del self.itens[0]
+                    break
+                else:
+                    texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você não está próxima de nenhum item!")
+                    texto_.vai()
+            
+
         else:
             texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você pegou todos os itens!")
             texto_.vai()
@@ -111,7 +115,12 @@ class Jogo:
         
             
     
-
+    def verifica_proximidade(self, item_x, item_y):
+        if((item_x >= self.bonequinha.x and item_x <= self.bonequinha.x + 100) and
+        (item_y >= self.bonequinha.y and item_y <= self.bonequinha.y + 100)):
+            return True
+        else:
+            return False
 
     
 
