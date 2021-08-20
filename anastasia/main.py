@@ -56,6 +56,8 @@ MARCADOR_MEIO = "https://i.imgur.com/2pwjrxD.png"
 PERSONAGEM = "https://i.imgur.com/3Im5DeO.png"
 PERSONAGEM1 = "https://i.imgur.com/ab8mN5s.png"
 ITEM = "https://i.imgur.com/ZWKf0Dr.png"
+ITEM_FALSO = "https://i.imgur.com/D4hzi7R.png"
+
 BATERIA = "https://imgur.com/0kcOVwk.png"
 CARGA = "https://imgur.com/dipQTCT.png"
 
@@ -180,7 +182,9 @@ class Jogo:
     def cena2(self, event = None):
     #la.centro.sul.vai()
         if(len(self.itens) == 0):
+            
             self.cenas[1].vai()
+            #Atualiza o indíce da cena e a posição da carga da bateria
             self.ind_cenas = 1
             self.pos_carga = 0
         
