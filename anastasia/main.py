@@ -244,7 +244,7 @@ class Jogo:
 
     
     #Para inserir pop up
-        texto_ = Texto(self.c11, txt = "Primeira Cena")
+        texto_ = Texto(self.c11, txt = "Primeira Cena - Descubra quais são as estrelas verdadeiras e colete-as")
         texto_.vai()
     #Inserindo a boneca
         self.bonequinha = Persona_control(self.c11)
