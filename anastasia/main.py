@@ -234,6 +234,10 @@ class Jogo:
         self.itens.append(item2)
         self.itens.append(item3)
         
+        #Pra dificultar :)
+        item_falso1 = Elemento(ITEM_FALSO, tit="Item", h=30 , w=30, x=330, y=500, cena = self.c11)
+        item_falso1 = Elemento(ITEM_FALSO, tit="Item", h=30 , w=30, x=600, y=500, cena = self.c11)
+        
         #bateria vazia
         bateria = Elemento(BATERIA, tit="Bateria",
                            h=50 , w=50, x=1050, y=20, cena= self.c11)
