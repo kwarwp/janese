@@ -65,6 +65,7 @@ CARGA = "https://imgur.com/dipQTCT.png"
 STYLE["width"]=1150
 STYLE["height"]=500
 
+#Classe para implementar jogo
 class Jogo:
 
     
@@ -80,32 +81,45 @@ class Jogo:
         self.c23 = Cena(FUNDO_CENA7)
         
         self.cenas = [self.c11, self.c12, self.c13, self.c14, self.c21, self.c22, self.c23]
+        #Criação das variáveis globais
         self.bonequinha = 0
+        #Lista de itens para cada cena
         self.itens = []
-        
+        #Indíce para indicar a cena em que a personagem está no momento
         self.ind_cenas= 0
+        #Variável para auxiliar o 'aumento' da bateria
         self.pos_carga = 0
 
 #Função para pegar o item
     def pega_acao(self, event = None):
-        
+         aux = True #Variável auxiliar para exibir a mensagem de erro de proximidade
+        #Verifica se ainda existe algum item na cena - se a lista de itens está vazia        
         if (len(self.itens) > 0):
+            #Percorre a lista de itens para encontrar se tem algum próximo
             for i in self.itens:
                 if(self.verifica_proximidade(i.x, i.y)):
+                    #Se exisitir um item próximo a personagem ele será 'apagado' da cena
                     i.h = 0
                     i.w = 0
-                    
+                    #E a bateria irá encher
                     carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
                     self.cenas[self.ind_cenas].bota(carga)
+                    #Aumenta a posição para o próximo item
                     self.pos_carga = self.pos_carga + 10
+                    #Remove o item encontrado da lista
                     self.itens.remove(i)
+                    #Atualiza a variável
+                    aux = False
                     break
-                else:
-                    texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você não está próxima de nenhum item!")
-                    texto_.vai()
+                    
+            if (aux):
+                #Se nenhum item estiver próximo
+                texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você não está próxima de nenhum item!")
+                texto_.vai()
             
 
         else:
+            #Se a lista estiver vazia
             texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você pegou todos os itens!")
             texto_.vai()
             
