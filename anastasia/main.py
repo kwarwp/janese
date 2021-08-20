@@ -95,7 +95,7 @@ class Jogo:
          
         #Verifica se ainda existe algum item na cena - se a lista de itens está vazia        
         if (len(self.itens) > 0):
-        aux = True #Variável auxiliar para exibir a mensagem de erro de proximidade
+            aux = True #Variável auxiliar para exibir a mensagem de erro de proximidade
             #Percorre a lista de itens para encontrar se tem algum próximo
             for i in self.itens:
                 if(self.verifica_proximidade(i.x, i.y)):
