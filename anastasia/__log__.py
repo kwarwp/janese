@@ -1141,3 +1141,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Fri Aug 20 2021 14:52:34.513 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 97
+  if (len(self.itens) > 0):
+  ^
+IndentationError: unexpected indent
+'''},
