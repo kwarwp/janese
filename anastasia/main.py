@@ -126,8 +126,11 @@ class Jogo:
             
         
             
-    
+    #Verifica se a bonequinha está próxima de algum item
     def verifica_proximidade(self, item_x, item_y):
+        #A verificação é feita atravé das posições x,y e x + largura e y + altura da bonequinha em relação 
+        #as posições x, y do item
+        
         if((item_x >= self.bonequinha.x and item_x <= self.bonequinha.x + 100) and
         (item_y >= self.bonequinha.y and item_y <= self.bonequinha.y + 100)):
             return True
@@ -209,7 +212,7 @@ class Jogo:
             texto_.vai()
                            
     
-#Função que cria a cena 1
+#Função que cria a cena 1 - tem que adicionar o self pois agora estamos dentro de uma classe
     def cena1(self):
     #Código se fosse usar o sistema de labirinto
     #la.centro.norte.vai()
@@ -218,7 +221,8 @@ class Jogo:
     #Código usando lista
     #Lembrando que lista em python começa sempre da posição 0
         self.cenas[0].vai()
-    
+        
+        #Cria itens e os adiciona na lista de itens    
         item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=300, y=500, cena = self.c11)
         item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
         item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c11)
@@ -226,6 +230,9 @@ class Jogo:
         self.itens.append(item2)
         self.itens.append(item3)
         
+        #bateria vazia
+        bateria = Elemento(BATERIA, tit="Bateria",
+                           h=50 , w=50, x=1050, y=20, cena= self.c11)
 
     
     #Para inserir pop up
@@ -234,14 +241,13 @@ class Jogo:
     #Inserindo a boneca
         self.bonequinha = Persona_control(self.c11)
     
-#if (bonequinha = x=300 and y=500): 
+#Botão de pegar elemento
         pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.c11)                          
         pega.elt.bind("click", self.pega_acao)
         
     #Inserindo o botão que muda de cena
-        bateria = Elemento(BATERIA, tit="Bateria",
-                           h=50 , w=50, x=1050, y=20, cena= self.c11)
+        
         proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.cenas[self.ind_cenas],
