@@ -39,6 +39,8 @@ from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala, Labirinto
 from browser import document
 
 
+#MINHA_MUSICA = "string_correspondente_a_url_e_extensao_da_musica" # Extensões aceitas: mp3, mp4
+
 FUNDO_CENA1 = "https://i.imgur.com/WAjioMk.png"
 FUNDO_CENA2 = "https://i.imgur.com/j9lBVbC.png"
 FUNDO_CENA3 = "https://i.imgur.com/1LqdljV.png"
@@ -249,6 +251,8 @@ class Jogo:
         texto_.vai()
     #Inserindo a boneca
         self.bonequinha = Persona_control(self.c11)
+        
+        #nome_da_musica = Musica(MINHA_MUSICA, loop = True, autoplay = True)
     
 #Botão de pegar elemento
         pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
