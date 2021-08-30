@@ -103,14 +103,6 @@ class Persona_control:
         self.persona1 = Elemento(PERSONAGEM1, h=150 , w=150, x=self.x, y=self.y) # cria Elemento
         #self.persona1.entra(nome_do_fundo)
 
-
-
-    def get_x(self):
-        return self.persona.x
-        
-    def get_y(self):
-        return self.persona.y
-
     def anda_direita(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'direita' é clicado.
         """
