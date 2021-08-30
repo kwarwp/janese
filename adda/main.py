@@ -139,7 +139,7 @@ class Persona_control:
         self.persona.h = 150
         self.persona.w = 150
         
-        if (self.persona.x + 20 < 1100):
+        if (self.persona.x + 120 ):
             self.persona.x = self.x = self.x + 20
             self.persona1.x = self.x = self.x + 20
         
