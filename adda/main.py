@@ -100,8 +100,8 @@ class Persona_control:
         
         self.persona = Elemento(PERSONAGEM, h=150 , w=150, x=self.x, y=self.y) # cria Elemento 
         self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
-        self.persona1 = Elemento(PERSONAGEM1, h=150 , w=150, x=self.x, y=self.y) # cria Elemento
-        #self.persona1.entra(nome_do_fundo)
+        self.persona1 = Elemento(PERSONAGEM1, h=0 , w=0, x=self.x, y=self.y) # cria Elemento
+        self.persona1.entra(nome_do_fundo) 
 
     def anda_direita(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'direita' é clicado.
