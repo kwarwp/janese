@@ -98,9 +98,9 @@ class Persona_control:
         self.esquerda = Elemento(MARCADOR_ESQUERDA, h=50 , w=50, x=1050, y=460, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
         self.esquerda.entra(nome_do_fundo)
         
-        self.persona = Elemento(PERSONAGEM, h=170 , w=190, x=self.x, y=self.y) # cria Elemento 
+        self.persona = Elemento(PERSONAGEM, h=150 , w=150, x=self.x, y=self.y) # cria Elemento 
         self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
-        self.persona1 = Elemento(PERSONAGEM1, h=170 , w=190, x=self.x, y=self.y) # cria Elemento
+        self.persona1 = Elemento(PERSONAGEM1, h=150 , w=150, x=self.x, y=self.y) # cria Elemento
         #self.persona1.entra(nome_do_fundo)
 
 
@@ -118,8 +118,8 @@ class Persona_control:
         porém ambos devem ser atualizados nas posições para andarem sincronizados, isto para todas as funções 
         que alterem a posição do personagem'''
         
-        self.persona1.h = 100
-        self.persona1.w = 100
+        self.persona1.h = 150
+        self.persona1.w = 150
         
         self.persona.h = 0
         self.persona.w = 0
@@ -136,8 +136,8 @@ class Persona_control:
         self.persona1.h = 0
         self.persona1.w = 0
         
-        self.persona.h = 100
-        self.persona.w = 100
+        self.persona.h = 150
+        self.persona.w = 150
         
         if (self.persona.x + 20 < 1100):
             self.persona.x = self.x = self.x + 20
