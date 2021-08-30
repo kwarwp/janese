@@ -194,3 +194,10 @@ NameError: name 'PERSONAGEM' is not defined
     self.persona = Elemento(PERSONAGEM, h=170 , w=190, x=self.x, y=self.y) # cria Elemento 
 NameError: name 'PERSONAGEM' is not defined
 '''},
+{'date': 'Mon Aug 30 2021 18:06:00.568 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 134
+  if (self.persona.x > 0 && self.persona < 1350):
+                           ^
+SyntaxError: invalid syntax
+'''},
