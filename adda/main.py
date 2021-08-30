@@ -131,14 +131,14 @@ class Persona_control:
         self.persona.h = 150
         self.persona.w = 150
         
-        if (self.persona.x  < 1350):
+        if (self.persona.x + 20 < 1350):
             self.persona.x = self.x = self.x + 20
             self.persona1.x = self.x = self.x + 20
         
     def anda_cima(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'em cima' é clicado.
         """
-        if (self.persona.y  > 100):
+        if (self.persona.y -20 > 100):
             self.persona.y = self.y = self.y - 20
             self.persona1.y = self.y = self.y - 20
         
