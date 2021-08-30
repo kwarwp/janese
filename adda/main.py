@@ -116,7 +116,7 @@ class Persona_control:
         self.persona.h = 0
         self.persona.w = 0
         
-        if (self.persona.x - 20 > 0):
+        if (self.persona.x > 0):
             self.persona.x = self.x = self.x - 20
             self.persona1.x = self.x = self.x - 20
         #self.persona.x = self.x - 10 > Deixar para averiguações posteriores
