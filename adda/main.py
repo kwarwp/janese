@@ -138,7 +138,7 @@ class Persona_control:
     def anda_cima(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'em cima' é clicado.
         """
-        if (self.persona.y - 20 > 400):
+        if (self.persona.y  > 150):
             self.persona.y = self.y = self.y - 20
             self.persona1.y = self.y = self.y - 20
         
