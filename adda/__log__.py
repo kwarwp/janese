@@ -201,3 +201,10 @@ NameError: name 'PERSONAGEM' is not defined
                            ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Aug 30 2021 18:06:11.454 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 134
+  if (self.persona.x > 0 && self.persona.x < 1350):
+                           ^
+SyntaxError: invalid syntax
+'''},
