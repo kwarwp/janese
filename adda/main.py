@@ -38,8 +38,8 @@ FUNDO_CENA15 = "https://i.imgur.com/et23kI0.jpg"
 
 
 
-STYLE["width"]=1350
-STYLE["height"]=720
+STYLE["width"]=1150
+STYLE["height"]=500
 
 def teste():
     fundo = Cena(FUNDO_CENA2) 
