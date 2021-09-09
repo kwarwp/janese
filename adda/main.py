@@ -38,7 +38,7 @@ FUNDO_CENA15 = "https://i.imgur.com/et23kI0.jpg"
 
 
 
-STYLE["width"]=1150
+STYLE["width"]=1250
 STYLE["height"]=700
 
 def teste():
