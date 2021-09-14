@@ -176,8 +176,6 @@ class Jogo:
                            h=50 , w=50, x=1050, y=20, cena= self.c13)
             carga = Elemento(CARGA, w = 50, h = 50, x=1050, y=20)
             self.cenas[self.ind_cenas].bota(carga)
-            #Aumenta a posição para o próximo item
-            self.pos_carga = self.pos_carga + 10
             carga1 = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
             self.cenas[self.ind_cenas].bota(carga1)
             #Aumenta a posição para o próximo item
