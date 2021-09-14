@@ -10,13 +10,13 @@ PERSONAGEM = "https://imgur.com/E6lSl7l.gif"
 PERSONAGEM1= "https://imgur.com/A6wdCYS.gif"
 FOLHA = "https://i.imgur.com/upAN1GX.png"
 PENA = "https://i.imgur.com/916QFLA.png"
-MARCADOR_PROXIMO = "https://imgur.com/B9njEbl.png"
-#MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
+MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
 MARCADOR_DIREITA = "https://imgur.com/GTnLEnS.png"
 MARCADOR_ESQUERDA = "https://imgur.com/Nl7Qy9h.png"
 MARCADOR_CIMA = "https://imgur.com/f2zfcvx.png"
 MARCADOR_BAIXO = "https://imgur.com/QDx4zgx.png"
 MARCADOR_PLAY = "https://i.imgur.com/qEbkWNJ.png"
+
 #fase um
 FUNDO_CENA1 = "https://i.imgur.com/kJBS3k9.jpg"
 FUNDO_CENA2 = "https://imgur.com/wlXw3Xq.jpg"
@@ -30,7 +30,8 @@ FUNDO_CENA11 = "https://i.imgur.com/EBbuTmf.jpg"
 FUNDO_CENA12 = "https://imgur.com/XQhy1Yo.jpg"
 
 
-
+BATERIA = "https://imgur.com/0PGuq9q.png"
+CARGA = "https://imgur.com/mw9hsBq.png"
 
 
 STYLE["width"]=1350
@@ -55,21 +56,19 @@ class Persona_control:
         
         self.c11 = Cena(FUNDO_CENA1)
         self.c12 = Cena(FUNDO_CENA2)
-        self.c13 = Cena(FUNDO_CENA3)
-        self.c14 = Cena(FUNDO_CENA4)
 
         self.c21 = Cena(FUNDO_CENA5)
         self.c22 = Cena(FUNDO_CENA6)
-        self.c23 = Cena(FUNDO_CENA7)
-        self.c24 = Cena(FUNDO_CENA8)
-        self.c25 = Cena(FUNDO_CENA9)
-        self.c26 = Cena(FUNDO_CENA10)
+
         
         self.c31 = Cena(FUNDO_CENA11)
         self.c32 = Cena(FUNDO_CENA12)
-        self.c33 = Cena(FUNDO_CENA13)
-        self.c34 = Cena(FUNDO_CENA14)
-        self.c35 = Cena(FUNDO_CENA15)
+        
+        self.cenas = [self.c11, self.c12, self.c21, self.c22, self.c31, self.c32]
+        self.bonequinha = 0
+        self.itens = []
+        self.ind_cenas= 0
+        self.pos_carga = 0
 
         #self.persona.x = self.x
         #self.persona.y = self.y
