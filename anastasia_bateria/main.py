@@ -106,11 +106,7 @@ class Jogo:
                     #Se exisitir um item próximo a personagem ele será 'apagado' da cena
                     i.h = 0
                     i.w = 0
-                    #E a bateria irá encher
-                    carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
-                    self.cenas[self.ind_cenas].bota(carga)
-                    #Aumenta a posição para o próximo item
-                    self.pos_carga = self.pos_carga + 10
+                    
                     #Remove o item encontrado da lista
                     self.itens.remove(i)
                     #Atualiza a variável
@@ -124,6 +120,11 @@ class Jogo:
             
 
         else:
+            #E a bateria irá encher
+            carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
+            self.cenas[self.ind_cenas].bota(carga)
+            #Aumenta a posição para o próximo item
+            self.pos_carga = self.pos_carga + 10
             #Se a lista estiver vazia
             texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você pegou todos os itens!")
             texto_.vai()
