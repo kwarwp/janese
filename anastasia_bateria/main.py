@@ -150,7 +150,7 @@ class Jogo:
         if(len(self.itens) == 0):
             self.cenas[2].vai()
             self.ind_cenas = 2
-            self.pos_carga = 0
+            #self.pos_carga = 0
         
             item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=330, y=500, cena = self.c13)
             #item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
@@ -189,7 +189,7 @@ class Jogo:
             self.cenas[1].vai()
             #Atualiza o indíce da cena e a posição da carga da bateria
             self.ind_cenas = 1
-            self.pos_carga = 0
+            #self.pos_carga = 0
         
             item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=330, y=500, cena = self.c12)
             #item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
