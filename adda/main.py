@@ -10,30 +10,25 @@ PERSONAGEM = "https://imgur.com/E6lSl7l.gif"
 PERSONAGEM1= "https://imgur.com/A6wdCYS.gif"
 FOLHA = "https://i.imgur.com/upAN1GX.png"
 PENA = "https://i.imgur.com/916QFLA.png"
-MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
+MARCADOR_PROXIMO = "https://imgur.com/B9njEbl.png"
+#MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
 MARCADOR_DIREITA = "https://imgur.com/GTnLEnS.png"
 MARCADOR_ESQUERDA = "https://imgur.com/Nl7Qy9h.png"
 MARCADOR_CIMA = "https://imgur.com/f2zfcvx.png"
 MARCADOR_BAIXO = "https://imgur.com/QDx4zgx.png"
-MAECADOR_PLAY = "https://i.imgur.com/qEbkWNJ.png"
+MARCADOR_PLAY = "https://i.imgur.com/qEbkWNJ.png"
 #fase um
 FUNDO_CENA1 = "https://i.imgur.com/kJBS3k9.jpg"
-FUNDO_CENA2 = "https://i.imgur.com/92LwWM9.jpg"
-FUNDO_CENA3 = "https://i.imgur.com/j70TEwA.jpg"
-FUNDO_CENA4 = "https://i.imgur.com/ELVLnWr.jpg"
+FUNDO_CENA2 = "https://imgur.com/wlXw3Xq.jpg"
+
 #fase dois
 FUNDO_CENA5 = "https://i.imgur.com/eQGB5Yi.jpg"
-FUNDO_CENA6 = "https://i.imgur.com/s0cX4Bg.jpg"
-FUNDO_CENA7 = "https://i.imgur.com/uoIYxmz.jpg"
-FUNDO_CENA8 = "https://i.imgur.com/9TrrFXl.jpg"
-FUNDO_CENA9 = "https://i.imgur.com/8wD3w9e.jpg"
-FUNDO_CENA10 = "https://i.imgur.com/ZvBi2gh.jpg"
+FUNDO_CENA6 = "https://imgur.com/BEyvnvd.jpg"
+
 #fase 3
 FUNDO_CENA11 = "https://i.imgur.com/EBbuTmf.jpg"
-FUNDO_CENA12 = "https://i.imgur.com/3v5X9Pk.jpg"
-FUNDO_CENA13 = "https://i.imgur.com/NODyC2J.jpg"
-FUNDO_CENA14 = "https://i.imgur.com/59WeDzm.jpg"
-FUNDO_CENA15 = "https://i.imgur.com/et23kI0.jpg"
+FUNDO_CENA12 = "https://imgur.com/XQhy1Yo.jpg"
+
 
 
 
