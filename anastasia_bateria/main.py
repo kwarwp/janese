@@ -116,7 +116,7 @@ class Jogo:
                         carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
                         self.cenas[self.ind_cenas].bota(carga)
                         #Aumenta a posição para o próximo item
-                        self.pos_carga = self.pos_carga + 10
+                        #self.pos_carga = self.pos_carga + 10
                         #Se a lista estiver vazia
                     
                     break
@@ -174,6 +174,15 @@ class Jogo:
             #Inserindo o botão que muda de cena
             bateria = Elemento(BATERIA, tit="Bateria",
                            h=50 , w=50, x=1050, y=20, cena= self.c13)
+            carga = Elemento(CARGA, w = 50, h = 50, x=1050, y=20)
+            self.cenas[self.ind_cenas].bota(carga)
+            #Aumenta a posição para o próximo item
+            self.pos_carga = self.pos_carga + 10
+            carga1 = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
+            self.cenas[self.ind_cenas].bota(carga1)
+            #Aumenta a posição para o próximo item
+            self.pos_carga = self.pos_carga + 10
+                           
             proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
                            h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                            cena = self.cenas[self.ind_cenas],
@@ -213,7 +222,7 @@ class Jogo:
             #Inserindo o botão que muda de cena
             bateria = Elemento(BATERIA, tit="Bateria",
                            h=50 , w=50, x=1050, y=20, cena= self.c12)
-            carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
+            carga = Elemento(CARGA, w = 50, h = 50, x=1050, y=20)
             self.cenas[self.ind_cenas].bota(carga)
             #Aumenta a posição para o próximo item
             self.pos_carga = self.pos_carga + 10
