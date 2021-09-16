@@ -94,6 +94,9 @@ class Persona_control:
         self.esquerda = Elemento(MARCADOR_ESQUERDA, h=70 , w=70, x=1250, y=460, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
         self.esquerda.entra(nome_do_fundo)
         
+        self.play = Elemento(MARCADOR_PLAY, h=70 , w=70, x=1250, y=860, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
+        self.play.entra(nome_do_fundo)
+        
         self.persona = Elemento(PERSONAGEM, h=150 , w=150, x=self.x, y=self.y) # cria Elemento 
         self.persona.entra(nome_do_fundo) # utiliza o método entra() da classe Elemento para não ter que criar um atributo cena para a classe persona_control 
         self.persona1 = Elemento(PERSONAGEM1, h=0 , w=0, x=self.x, y=self.y) # cria Elemento
