@@ -39,8 +39,9 @@ STYLE["height"]=700
 
 def teste():
     inicio = Cena(FUNDO_CENA1)
+    inicio.vai()
     fundo = Cena(FUNDO_CENA2) 
-    fundo.vai()
+    #fundo.vai()
     bonequinha = Persona_control( fundo) 
         
 class Persona_control:
