@@ -54,53 +54,53 @@ class cenas:
         self.ind_cenas= 0
         self.pos_carga = 0  
 
-        def pega_acao(self, event = None):
+    def pega_acao(self, event = None):
 
-                #Verifica se ainda existe algum item na cena - se a lista de itens está vazia        
-                if (len(self.itens) > 0):
-                    aux = True #Variável auxiliar para exibir a mensagem de erro de proximidade
+             #Verifica se ainda existe algum item na cena - se a lista de itens está vazia        
+        if (len(self.itens) > 0):
+            aux = True #Variável auxiliar para exibir a mensagem de erro de proximidade
                     #Percorre a lista de itens para encontrar se tem algum próximo
-                    for i in self.itens:
-                        if(self.verifica_proximidade(i.x, i.y)):
+            for i in self.itens:
+                if(self.verifica_proximidade(i.x, i.y)):
                             #Se exisitir um item próximo a personagem ele será 'apagado' da cena
-                            i.h = 0
-                            i.w = 0
+                    i.h = 0
+                    i.w = 0
                             #E a bateria irá encher
-                            carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
-                            self.cenas[self.ind_cenas].bota(carga)
+                    carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
+                    self.cenas[self.ind_cenas].bota(carga)
                             #Aumenta a posição para o próximo item
-                            self.pos_carga = self.pos_carga + 10
+                    self.pos_carga = self.pos_carga + 10
                             #Remove o item encontrado da lista
-                            self.itens.remove(i)
+                    self.itens.remove(i)
                             #Atualiza a variável
-                            aux = False
-                            break
+                    aux = False
+                    break
 
-                    if (aux):
+                if (aux):
                         #Se nenhum item estiver próximo
-                        texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você não está próxima de nenhum item!")
-                        texto_.vai()
-
-
-                else:
-                    #Se a lista estiver vazia
-                    texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você pegou todos os itens!")
+                    texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você não está próxima de nenhum item!")
                     texto_.vai()
+
+
+        else:
+                    #Se a lista estiver vazia
+            texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você pegou todos os itens!")
+            texto_.vai()
 
 
 
         #Verifica se a bonequinha está próxima de algum item
-        def verifica_proximidade(self, item_x, item_y):
+    def verifica_proximidade(self, item_x, item_y):
             #A verificação é feita atravé das posições x,y e x + largura e y + altura da bonequinha em relação 
             #as posições x, y do item
 
-            if((item_x >= self.bonequinha.x and item_x <= self.bonequinha.x + 100) and
-            (item_y >= self.bonequinha.y and item_y <= self.bonequinha.y + 100)):
-                return True
-            else:
-                return False
+        if((item_x >= self.bonequinha.x and item_x <= self.bonequinha.x + 100) and
+          (item_y >= self.bonequinha.y and item_y <= self.bonequinha.y + 100)):
+             return True
+        else:
+             return False
 
-        def cena1(self):
+    def cena1(self):
         #Código se fosse usar o sistema de labirinto
         #la.centro.norte.vai()
 
@@ -127,7 +127,7 @@ class cenas:
 
 
         #Para inserir pop up
-            texto_ = Texto(self.c11, txt = "Primeira Cena - Descubra quais são as estrelas verdadeiras e colete-as")
+            texto_ = Texto(self.c11)
             texto_.vai()
         #Inserindo a boneca
             self.bonequinha = Persona_control(self.c11)
@@ -148,7 +148,7 @@ class cenas:
 
 
         #Função para ir para a cena 2
-        def cena2(self, event = None):
+    def cena2(self, event = None):
         #la.centro.sul.vai()
             if(len(self.itens) == 0):
 
