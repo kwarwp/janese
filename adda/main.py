@@ -65,16 +65,15 @@ class cenas:
                     #Se exisitir um item próximo a personagem ele será 'apagado' da cena
                     i.h = 0
                     i.w = 0
-                    
+                    #E a bateria irá encher
+                    carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
+                    self.cenas[self.ind_cenas].bota(carga)
+                    #Aumenta a posição para o próximo item
+                    self.pos_carga = self.pos_carga + 10
                     #Remove o item encontrado da lista
                     self.itens.remove(i)
                     #Atualiza a variável
                     aux = False
-                    if (len(self.itens) == 0):
-                        #Se eu peguei o último item - adiciona a barrinha da bateria
-                        carga = Elemento(CARGA, w = 50, h = 70, x=1070+self.pos_carga, y=20)
-                        self.cenas[self.ind_cenas].bota(carga)
-                                           
                     break
                     
             if (aux):
@@ -84,7 +83,7 @@ class cenas:
             
 
         else:
-            
+            #Se a lista estiver vazia
             texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você pegou todos os itens!")
             texto_.vai()
             
@@ -150,8 +149,20 @@ class cenas:
 
         #Função para ir para a cena 2
     def cena3(self, event = None):
+        if(len(self.itens) == 0):
+            self.cenas[2].vai()
+            self.ind_cenas = 2
+            proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
+                               h=60 , w=60, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.cenas[self.ind_cenas],
+                               vai = self.cena3) 
+      #  else:
+       #     texto_ = Texto(self.c11)
+        #    texto_.vai()
+            
+    def cena4(self, event = None):
         #la.centro.sul.vai()
-            if(len(self.itens) == 0):
+            
 
                 self.cenas[1].vai()
                 #Atualiza o indíce da cena e a posição da carga da bateria
@@ -181,9 +192,7 @@ class cenas:
                                h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.cenas[self.ind_cenas],
                                vai = self.cena3)
-            else:
-                texto_ = Texto(self.c11, txt = "Você ainda não terminou de explorar essa cena!")
-                texto_.vai()
+
 
 class Persona_control:
     """ Cria um elemento que anda a partir do clique no joystick
