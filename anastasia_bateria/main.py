@@ -2,37 +2,6 @@
 
 #Profa Gi :)
 
-'''Uma forma de fazer a passagem de cenas é criando salas - que permitem 4 cenas
-e depois criando o labirinto, adicionando as salas nele.
-
-# Cria Salas
-# n = norte, s = sul, l = leste, o = oeste
-# Mas serve só para se localizar, dá pra usar de outras formas
-# Acho que dá pra fazer com lista também, mas to seguindo o que tava naquela documentação
-
-s1 = Sala(n = c11, s = c12, l = c13, o = c14)
-s2 = Sala(n = c21, s = c22, l = c23)
-
-# Cria o labirinto de Salas
-# c = centro, n = norte
-la = Labirinto(c=s1,n=s2)
-
-
-Essa é a forma descrita na documentação da biblioteca que usamos para criar o jogo, ela funciona, 
-porém como cada sala espera 4 cenas, e o labirinto várias salas, quando alguma delas fica vazia, 
-pode acontecer de um clique na tela direcionar para uma sala nula = que não existe. 
-Para arrumar isso seria necessário criar uma ação que não faz nada, e 
-na posição da sala que não existe adicionar uma sala que 'não faz nada'
-'''
-
-'''
-Pelo o que entendi da ideia de jogo de vocês, as cenas seriam todas sequenciais, então esse esquema de 
-salas e labirinto seria um pouco confuso de implementar.
-Por isso, outra maneira seria criando uma lista de cenas.
-Essa lista tem que ser criada aqui em cima no código, pq ela vai ser uma variável global, ou seja,
-essa lista existe, e vai ser possível acessar ela em qualquer função abaixo.
-'''
-
 from _spy.vitollino.main import Cena, Elemento, STYLE, Texto, Sala, Labirinto
 
 
@@ -112,13 +81,10 @@ class Jogo:
                     #Atualiza a variável
                     aux = False
                     if (len(self.itens) == 0):
-                        #E a bateria irá encher
+                        #Se eu peguei o último item - adiciona a barrinha da bateria
                         carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
                         self.cenas[self.ind_cenas].bota(carga)
-                        #Aumenta a posição para o próximo item
-                        #self.pos_carga = self.pos_carga + 10
-                        #Se a lista estiver vazia
-                    
+                                           
                     break
                     
             if (aux):
@@ -174,8 +140,10 @@ class Jogo:
             #Inserindo o botão que muda de cena
             bateria = Elemento(BATERIA, tit="Bateria",
                            h=50 , w=50, x=1050, y=20, cena= self.c13)
+            #Posição Inicial               
             carga = Elemento(CARGA, w = 50, h = 50, x=1050, y=20)
             self.cenas[self.ind_cenas].bota(carga)
+            #Inicial + 10
             carga1 = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
             self.cenas[self.ind_cenas].bota(carga1)
             #Aumenta a posição para o próximo item
