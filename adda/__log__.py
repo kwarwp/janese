@@ -235,3 +235,10 @@ NameError: name 'FUNDO_CENA3' is not defined
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Mon Sep 20 2021 17:16:53.474 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 72
+  def __init__(self, nome_do_fundo):
+  ^
+IndentationError: unexpected indent
+'''},
