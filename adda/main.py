@@ -103,12 +103,12 @@ class cenas:
     def cena1(self):
         self.cenas[0].vai()
         proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
-                               h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               h=60 , w=60, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.cenas[self.ind_cenas],
                                vai = self.cena2) 
         
 
-    def cena2(self):
+    def cena2(self, event = None):
         #Código se fosse usar o sistema de labirinto
         #la.centro.norte.vai()
 
@@ -125,10 +125,6 @@ class cenas:
             self.itens.append(item1)
             self.itens.append(item2)
             self.itens.append(item3)
-
-            #Pra dificultar :)
-            item_falso1 = Elemento(ITEM_FALSO, tit="Item", h=40 , w=40, x=200, y=500, cena = self.c11)
-            item_falso1 = Elemento(ITEM_FALSO, tit="Item", h=40 , w=40, x=600, y=500, cena = self.c11)
 
             #bateria vazia
             bateria = Elemento(BATERIA, tit="Bateria",h=50 , w=50, x=1050, y=20, cena= self.c11)
