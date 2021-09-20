@@ -219,16 +219,16 @@ class Persona_control:
         #self.marcadorx.entra(nome_do_fundo)
         
                        
-        self.cima = Elemento(MARCADOR_CIMA, h=70 , w=70, x=1200, y=380, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
+        self.cima = Elemento(MARCADOR_CIMA, h=70 , w=70, x=1200, y=390, vai=self.anda_cima) #cria um elemento posicionado 'acima' no joystick
         self.cima.entra(nome_do_fundo)
         
-        self.baixo = Elemento(MARCADOR_BAIXO, h=70 , w=70, x=1200, y=540, vai=self.anda_baixo) #cria um elemento posicionado 'abaixo' no joystick
+        self.baixo = Elemento(MARCADOR_BAIXO, h=70 , w=70, x=1200, y=530, vai=self.anda_baixo) #cria um elemento posicionado 'abaixo' no joystick
         self.baixo.entra(nome_do_fundo)
         
-        self.direita = Elemento(MARCADOR_DIREITA, h=70 , w=70, x=1150, y=460,vai=self.anda_direita) #cria um elemento posicionado 'à direita' no joystick
+        self.direita = Elemento(MARCADOR_DIREITA, h=70 , w=70, x=1140, y=460,vai=self.anda_direita) #cria um elemento posicionado 'à direita' no joystick
         self.direita.entra(nome_do_fundo)
         
-        self.esquerda = Elemento(MARCADOR_ESQUERDA, h=70 , w=70, x=1250, y=460, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
+        self.esquerda = Elemento(MARCADOR_ESQUERDA, h=70 , w=70, x=1260, y=460, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
         self.esquerda.entra(nome_do_fundo)
         
        # self.play = Elemento(MARCADOR_PLAY, h=70 , w=70, x=1250, y=860, vai=self.anda_esquerda) #cria um elemento posicionado 'à esquerda' no joystick
