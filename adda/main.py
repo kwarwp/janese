@@ -72,7 +72,7 @@ class cenas:
                     aux = False
                     if (len(self.itens) == 0):
                         #Se eu peguei o último item - adiciona a barrinha da bateria
-                        carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
+                        carga = Elemento(CARGA, w = 50, h = 70, x=1070+self.pos_carga, y=20)
                         self.cenas[self.ind_cenas].bota(carga)
                                            
                     break
