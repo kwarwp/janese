@@ -55,41 +55,42 @@ class cenas:
         self.pos_carga = 0  
 
     def pega_acao(self, event = None):
-
-             #Verifica se ainda existe algum item na cena - se a lista de itens está vazia        
+         
+        #Verifica se ainda existe algum item na cena - se a lista de itens está vazia        
         if (len(self.itens) > 0):
             aux = True #Variável auxiliar para exibir a mensagem de erro de proximidade
-                    #Percorre a lista de itens para encontrar se tem algum próximo
+            #Percorre a lista de itens para encontrar se tem algum próximo
             for i in self.itens:
                 if(self.verifica_proximidade(i.x, i.y)):
-                            #Se exisitir um item próximo a personagem ele será 'apagado' da cena
+                    #Se exisitir um item próximo a personagem ele será 'apagado' da cena
                     i.h = 0
                     i.w = 0
-                            #E a bateria irá encher
-                    carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
-                    self.cenas[self.ind_cenas].bota(carga)
-                            #Aumenta a posição para o próximo item
-                    self.pos_carga = self.pos_carga + 10
-                            #Remove o item encontrado da lista
+                    
+                    #Remove o item encontrado da lista
                     self.itens.remove(i)
-                            #Atualiza a variável
+                    #Atualiza a variável
                     aux = False
+                    if (len(self.itens) == 0):
+                        #Se eu peguei o último item - adiciona a barrinha da bateria
+                        carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
+                        self.cenas[self.ind_cenas].bota(carga)
+                                           
                     break
-
-                if (aux):
-                        #Se nenhum item estiver próximo
-                    texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você não está próxima de nenhum item!")
-                    texto_.vai()
-
+                    
+            if (aux):
+                #Se nenhum item estiver próximo
+                texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você não está próxima de nenhum item!")
+                texto_.vai()
+            
 
         else:
-                    #Se a lista estiver vazia
+            
             texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você pegou todos os itens!")
             texto_.vai()
-
-
-
-        #Verifica se a bonequinha está próxima de algum item
+            
+        
+            
+    #Verifica se a bonequinha está próxima de algum item
     def verifica_proximidade(self, item_x, item_y):
             #A verificação é feita atravé das posições x,y e x + largura e y + altura da bonequinha em relação 
             #as posições x, y do item
@@ -120,26 +121,22 @@ class cenas:
 
             #Cria itens e os adiciona na lista de itens    
             item1 = Elemento(PENA, tit="Item", h=30 , w=30, x=300, y=500, cena = self.c12)
-            item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c12)
-            item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c12)
+            item2 = Elemento(PENA, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c12)
+            item3 = Elemento(PENA, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c12)
             self.itens.append(item1)
             self.itens.append(item2)
             self.itens.append(item3)
 
             #bateria vazia
-            bateria = Elemento(BATERIA, tit="Bateria",h=50 , w=50, x=1050, y=20, cena= self.c12)
+            bateria = Elemento(BATERIA, tit="Bateria",h=50 , w=100, x=1050, y=20, cena= self.c12)
 
-
-        #Para inserir pop up
-            texto_ = Texto(self.c12)
-            texto_.vai()
         #Inserindo a boneca
             self.bonequinha = Persona_control(self.c12)
 
             #nome_da_musica = Musica(MINHA_MUSICA, loop = True, autoplay = True)
 
     #Botão de pegar elemento
-            pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+            pega = Elemento(MARCADOR_X, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.c12)                          
             pega.elt.bind("click", self.pega_acao)
 
