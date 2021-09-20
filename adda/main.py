@@ -10,7 +10,7 @@ PERSONAGEM = "https://imgur.com/E6lSl7l.gif"
 PERSONAGEM1= "https://imgur.com/A6wdCYS.gif"
 FOLHA = "https://i.imgur.com/upAN1GX.png"
 PENA = "https://i.imgur.com/916QFLA.png"
-MARCADOR_X = "https://imgur.com/kJ2MkuK.png"
+MARCADOR_X = "https://imgur.com/4RZPRRz.png"
 MARCADOR_DIREITA = "https://imgur.com/GTnLEnS.png"
 MARCADOR_ESQUERDA = "https://imgur.com/Nl7Qy9h.png"
 MARCADOR_CIMA = "https://imgur.com/f2zfcvx.png"
@@ -134,8 +134,8 @@ class cenas:
 
             #nome_da_musica = Musica(MINHA_MUSICA, loop = True, autoplay = True)
 
-    #Botão de pegar elemento
-            pega = Elemento(MARCADOR_X, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+    #Botão de pegar elemento  h=70 , w=70, x=1200, y=420
+            pega = Elemento(MARCADOR_X, tit = "Pegar", h=70 , w=70, x=1200, y=490, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.c12)                          
             pega.elt.bind("click", self.pega_acao)
 
