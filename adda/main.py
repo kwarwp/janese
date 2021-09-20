@@ -125,7 +125,7 @@ class cenas:
             #item3 = Elemento(PENA, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c12)
             self.itens.append(item1)
             self.itens.append(item2)
-            self.itens.append(item3)
+            #self.itens.append(item3)
 
             #bateria vazia
             bateria = Elemento(BATERIA, tit="Bateria",h=50 , w=100, x=1050, y=20, cena= self.c12)
