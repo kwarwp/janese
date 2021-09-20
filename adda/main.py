@@ -135,7 +135,7 @@ class cenas:
             #nome_da_musica = Musica(MINHA_MUSICA, loop = True, autoplay = True)
 
     #Botão de pegar elemento  h=70 , w=70, x=1200, y=420
-            pega = Elemento(MARCADOR_X, tit = "Pegar", h=70 , w=70, x=1200, y=490, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+            pega = Elemento(MARCADOR_X, tit = "Pegar", h=70 , w=70, x=1200, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.c12)                          
             pega.elt.bind("click", self.pega_acao)
 
