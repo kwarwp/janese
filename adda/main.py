@@ -54,13 +54,6 @@ class cenas:
         self.ind_cenas= 0
         self.pos_carga = 0  
 
-        def teste():
-            inicio = Cena(FUNDO_CENA1)
-            inicio.vai()
-            fundo = Cena(FUNDO_CENA2) 
-            #fundo.vai()
-            bonequinha = Persona_control( fundo) 
-
         def pega_acao(self, event = None):
 
                 #Verifica se ainda existe algum item na cena - se a lista de itens está vazia        
@@ -285,6 +278,6 @@ class Persona_control:
             self.persona1.y = self.y = self.y + 20
 if __name__ == "__main__":  
     jogo = cenas()
-    jogo.teste()
+    jogo.cena1()
 
 
