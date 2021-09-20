@@ -55,41 +55,42 @@ class cenas:
         self.pos_carga = 0  
 
     def pega_acao(self, event = None):
-
-             #Verifica se ainda existe algum item na cena - se a lista de itens está vazia        
+         
+        #Verifica se ainda existe algum item na cena - se a lista de itens está vazia        
         if (len(self.itens) > 0):
             aux = True #Variável auxiliar para exibir a mensagem de erro de proximidade
-                    #Percorre a lista de itens para encontrar se tem algum próximo
+            #Percorre a lista de itens para encontrar se tem algum próximo
             for i in self.itens:
                 if(self.verifica_proximidade(i.x, i.y)):
-                            #Se exisitir um item próximo a personagem ele será 'apagado' da cena
+                    #Se exisitir um item próximo a personagem ele será 'apagado' da cena
                     i.h = 0
                     i.w = 0
-                            #E a bateria irá encher
-                    carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
-                    self.cenas[self.ind_cenas].bota(carga)
-                            #Aumenta a posição para o próximo item
-                    self.pos_carga = self.pos_carga + 10
-                            #Remove o item encontrado da lista
+                    
+                    #Remove o item encontrado da lista
                     self.itens.remove(i)
-                            #Atualiza a variável
+                    #Atualiza a variável
                     aux = False
+                    if (len(self.itens) == 0):
+                        #Se eu peguei o último item - adiciona a barrinha da bateria
+                        carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
+                        self.cenas[self.ind_cenas].bota(carga)
+                                           
                     break
-
-                if (aux):
-                        #Se nenhum item estiver próximo
-                    texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você não está próxima de nenhum item!")
-                    texto_.vai()
-
+                    
+            if (aux):
+                #Se nenhum item estiver próximo
+                texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você não está próxima de nenhum item!")
+                texto_.vai()
+            
 
         else:
-                    #Se a lista estiver vazia
+            
             texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você pegou todos os itens!")
             texto_.vai()
-
-
-
-        #Verifica se a bonequinha está próxima de algum item
+            
+        
+            
+    #Verifica se a bonequinha está próxima de algum item
     def verifica_proximidade(self, item_x, item_y):
             #A verificação é feita atravé das posições x,y e x + largura e y + altura da bonequinha em relação 
             #as posições x, y do item
