@@ -119,36 +119,36 @@ class cenas:
             self.ind_cenas = 1
 
             #Cria itens e os adiciona na lista de itens    
-            item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=300, y=500, cena = self.c11)
-            item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
-            item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c11)
+            item1 = Elemento(PENA, tit="Item", h=30 , w=30, x=300, y=500, cena = self.c12)
+            item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c12)
+            item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c12)
             self.itens.append(item1)
             self.itens.append(item2)
             self.itens.append(item3)
 
             #bateria vazia
-            bateria = Elemento(BATERIA, tit="Bateria",h=50 , w=50, x=1050, y=20, cena= self.c11)
+            bateria = Elemento(BATERIA, tit="Bateria",h=50 , w=50, x=1050, y=20, cena= self.c12)
 
 
         #Para inserir pop up
-            texto_ = Texto(self.c11)
+            texto_ = Texto(self.c12)
             texto_.vai()
         #Inserindo a boneca
-            self.bonequinha = Persona_control(self.c11)
+            self.bonequinha = Persona_control(self.c12)
 
             #nome_da_musica = Musica(MINHA_MUSICA, loop = True, autoplay = True)
 
     #Botão de pegar elemento
             pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                               cena = self.c11)                          
+                               cena = self.c12)                          
             pega.elt.bind("click", self.pega_acao)
 
         #Inserindo o botão que muda de cena
 
-            proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
+            proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
                                h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.cenas[self.ind_cenas],
-                               vai = self.cena2)
+                               vai = self.cena3)
 
 
         #Função para ir para a cena 2
