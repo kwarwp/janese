@@ -69,7 +69,7 @@ class Persona_control:
         :param nome_do_fundo: Insere o personagem em um fundo pré-criado
         
     """
-     def __init__(self, nome_do_fundo):
+    def __init__(self, nome_do_fundo):
 
         self.x = 10 # valor pré-estabelecido do x
         self.y = 430 # valor pré-estabelecido do y
