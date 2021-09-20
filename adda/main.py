@@ -36,26 +36,8 @@ CARGA = "https://imgur.com/mw9hsBq.png"
 
 STYLE["width"]=1350
 STYLE["height"]=700
-
-def teste():
-    inicio = Cena(FUNDO_CENA1)
-    inicio.vai()
-    fundo = Cena(FUNDO_CENA2) 
-    #fundo.vai()
-    bonequinha = Persona_control( fundo) 
-        
-class Persona_control:
-    """ Cria um elemento que anda a partir do clique no joystick
-    
-        self.nome_do_elemento = Persona_control( nome_do_fundo)
-        
-        :param nome_do_fundo: Insere o personagem em um fundo pré-criado
-        
-    """
+class cenas:
     def __init__(self, nome_do_fundo):
-        self.x = 10 # valor pré-estabelecido do x
-        self.y = 430 # valor pré-estabelecido do y
-        
         self.c11 = Cena(FUNDO_CENA1)
         self.c12 = Cena(FUNDO_CENA2)
 
@@ -70,7 +52,28 @@ class Persona_control:
         self.bonequinha = 0
         self.itens = []
         self.ind_cenas= 0
-        self.pos_carga = 0
+        self.pos_carga = 0  
+        
+    def teste():
+        inicio = Cena(FUNDO_CENA1)
+        inicio.vai()
+        fundo = Cena(FUNDO_CENA2) 
+        #fundo.vai()
+        bonequinha = Persona_control( fundo) 
+     
+class Persona_control:
+    """ Cria um elemento que anda a partir do clique no joystick
+    
+        self.nome_do_elemento = Persona_control( nome_do_fundo)
+        
+        :param nome_do_fundo: Insere o personagem em um fundo pré-criado
+        
+    """
+
+        self.x = 10 # valor pré-estabelecido do x
+        self.y = 430 # valor pré-estabelecido do y
+        
+
 
         #self.persona.x = self.x
         #self.persona.y = self.y
@@ -280,6 +283,7 @@ class Persona_control:
             self.persona.y = self.y = self.y + 20
             self.persona1.y = self.y = self.y + 20
 if __name__ == "__main__":  
-    teste()
+    jogo = cenas()
+    jogo.teste()
 
 
