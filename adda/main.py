@@ -99,16 +99,24 @@ class cenas:
              return True
         else:
              return False
-
+             
     def cena1(self):
+        self.cenas[0].vai()
+        proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
+                               h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.cenas[self.ind_cenas],
+                               vai = self.cena2) 
+        
+
+    def cena2(self):
         #Código se fosse usar o sistema de labirinto
         #la.centro.norte.vai()
 
 
         #Código usando lista
         #Lembrando que lista em python começa sempre da posição 0
-            self.cenas[0].vai()
-            self.ind_cenas = 0
+            self.cenas[1].vai()
+            self.ind_cenas = 1
 
             #Cria itens e os adiciona na lista de itens    
             item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=300, y=500, cena = self.c11)
@@ -148,7 +156,7 @@ class cenas:
 
 
         #Função para ir para a cena 2
-    def cena2(self, event = None):
+    def cena3(self, event = None):
         #la.centro.sul.vai()
             if(len(self.itens) == 0):
 
