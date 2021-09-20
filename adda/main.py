@@ -60,7 +60,137 @@ class cenas:
         fundo = Cena(FUNDO_CENA2) 
         #fundo.vai()
         bonequinha = Persona_control( fundo) 
-     
+        
+    def pega_acao(self, event = None):
+
+            #Verifica se ainda existe algum item na cena - se a lista de itens está vazia        
+            if (len(self.itens) > 0):
+                aux = True #Variável auxiliar para exibir a mensagem de erro de proximidade
+                #Percorre a lista de itens para encontrar se tem algum próximo
+                for i in self.itens:
+                    if(self.verifica_proximidade(i.x, i.y)):
+                        #Se exisitir um item próximo a personagem ele será 'apagado' da cena
+                        i.h = 0
+                        i.w = 0
+                        #E a bateria irá encher
+                        carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
+                        self.cenas[self.ind_cenas].bota(carga)
+                        #Aumenta a posição para o próximo item
+                        self.pos_carga = self.pos_carga + 10
+                        #Remove o item encontrado da lista
+                        self.itens.remove(i)
+                        #Atualiza a variável
+                        aux = False
+                        break
+
+                if (aux):
+                    #Se nenhum item estiver próximo
+                    texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você não está próxima de nenhum item!")
+                    texto_.vai()
+
+
+            else:
+                #Se a lista estiver vazia
+                texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você pegou todos os itens!")
+                texto_.vai()
+
+
+
+        #Verifica se a bonequinha está próxima de algum item
+        def verifica_proximidade(self, item_x, item_y):
+            #A verificação é feita atravé das posições x,y e x + largura e y + altura da bonequinha em relação 
+            #as posições x, y do item
+
+            if((item_x >= self.bonequinha.x and item_x <= self.bonequinha.x + 100) and
+            (item_y >= self.bonequinha.y and item_y <= self.bonequinha.y + 100)):
+                return True
+            else:
+                return False
+
+        def cena1(self):
+        #Código se fosse usar o sistema de labirinto
+        #la.centro.norte.vai()
+
+
+        #Código usando lista
+        #Lembrando que lista em python começa sempre da posição 0
+            self.cenas[0].vai()
+            self.ind_cenas = 0
+
+            #Cria itens e os adiciona na lista de itens    
+            item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=300, y=500, cena = self.c11)
+            item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
+            item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c11)
+            self.itens.append(item1)
+            self.itens.append(item2)
+            self.itens.append(item3)
+
+            #Pra dificultar :)
+            item_falso1 = Elemento(ITEM_FALSO, tit="Item", h=40 , w=40, x=200, y=500, cena = self.c11)
+            item_falso1 = Elemento(ITEM_FALSO, tit="Item", h=40 , w=40, x=600, y=500, cena = self.c11)
+
+            #bateria vazia
+            bateria = Elemento(BATERIA, tit="Bateria",h=50 , w=50, x=1050, y=20, cena= self.c11)
+
+
+        #Para inserir pop up
+            texto_ = Texto(self.c11, txt = "Primeira Cena - Descubra quais são as estrelas verdadeiras e colete-as")
+            texto_.vai()
+        #Inserindo a boneca
+            self.bonequinha = Persona_control(self.c11)
+
+            #nome_da_musica = Musica(MINHA_MUSICA, loop = True, autoplay = True)
+
+    #Botão de pegar elemento
+            pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.c11)                          
+            pega.elt.bind("click", self.pega_acao)
+
+        #Inserindo o botão que muda de cena
+
+            proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
+                               h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.cenas[self.ind_cenas],
+                               vai = self.cena2)
+
+
+        #Função para ir para a cena 2
+        def cena2(self, event = None):
+        #la.centro.sul.vai()
+            if(len(self.itens) == 0):
+
+                self.cenas[1].vai()
+                #Atualiza o indíce da cena e a posição da carga da bateria
+                self.ind_cenas = 1
+                self.pos_carga = 0
+
+                item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=330, y=500, cena = self.c12)
+                #item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
+                item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c12)
+                self.itens.append(item1)
+                #self.itens.append(item2)
+                self.itens.append(item3)
+
+
+                texto_ = Texto(self.c12, txt = "Segunda Cena")
+                texto_.vai()
+                self.bonequinha = Persona_control(self.c12)
+
+                pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.c12)                          
+                pega.elt.bind("click", self.pega_acao)
+
+                #Inserindo o botão que muda de cena
+                bateria = Elemento(BATERIA, tit="Bateria",
+                               h=50 , w=50, x=1050, y=20, cena= self.c12)
+                proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
+                               h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.cenas[self.ind_cenas],
+                               vai = self.cena3)
+            else:
+                texto_ = Texto(self.c11, txt = "Você ainda não terminou de explorar essa cena!")
+                texto_.vai()
+
 class Persona_control:
     """ Cria um elemento que anda a partir do clique no joystick
     
@@ -107,136 +237,7 @@ class Persona_control:
         self.persona1.entra(nome_do_fundo) 
         
         
-    def pega_acao(self, event = None):
-         
-        #Verifica se ainda existe algum item na cena - se a lista de itens está vazia        
-        if (len(self.itens) > 0):
-            aux = True #Variável auxiliar para exibir a mensagem de erro de proximidade
-            #Percorre a lista de itens para encontrar se tem algum próximo
-            for i in self.itens:
-                if(self.verifica_proximidade(i.x, i.y)):
-                    #Se exisitir um item próximo a personagem ele será 'apagado' da cena
-                    i.h = 0
-                    i.w = 0
-                    #E a bateria irá encher
-                    carga = Elemento(CARGA, w = 50, h = 50, x=1050+self.pos_carga, y=20)
-                    self.cenas[self.ind_cenas].bota(carga)
-                    #Aumenta a posição para o próximo item
-                    self.pos_carga = self.pos_carga + 10
-                    #Remove o item encontrado da lista
-                    self.itens.remove(i)
-                    #Atualiza a variável
-                    aux = False
-                    break
-                    
-            if (aux):
-                #Se nenhum item estiver próximo
-                texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você não está próxima de nenhum item!")
-                texto_.vai()
-            
-
-        else:
-            #Se a lista estiver vazia
-            texto_ = Texto(self.cenas[self.ind_cenas], txt = "Você pegou todos os itens!")
-            texto_.vai()
-            
-        
-            
-    #Verifica se a bonequinha está próxima de algum item
-    def verifica_proximidade(self, item_x, item_y):
-        #A verificação é feita atravé das posições x,y e x + largura e y + altura da bonequinha em relação 
-        #as posições x, y do item
-        
-        if((item_x >= self.bonequinha.x and item_x <= self.bonequinha.x + 100) and
-        (item_y >= self.bonequinha.y and item_y <= self.bonequinha.y + 100)):
-            return True
-        else:
-            return False
-    
-    def cena1(self):
-    #Código se fosse usar o sistema de labirinto
-    #la.centro.norte.vai()
-    
-    
-    #Código usando lista
-    #Lembrando que lista em python começa sempre da posição 0
-        self.cenas[0].vai()
-        self.ind_cenas = 0
-        
-        #Cria itens e os adiciona na lista de itens    
-        item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=300, y=500, cena = self.c11)
-        item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
-        item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c11)
-        self.itens.append(item1)
-        self.itens.append(item2)
-        self.itens.append(item3)
-        
-        #Pra dificultar :)
-        item_falso1 = Elemento(ITEM_FALSO, tit="Item", h=40 , w=40, x=200, y=500, cena = self.c11)
-        item_falso1 = Elemento(ITEM_FALSO, tit="Item", h=40 , w=40, x=600, y=500, cena = self.c11)
-        
-        #bateria vazia
-        bateria = Elemento(BATERIA, tit="Bateria",h=50 , w=50, x=1050, y=20, cena= self.c11)
-
-    
-    #Para inserir pop up
-        texto_ = Texto(self.c11, txt = "Primeira Cena - Descubra quais são as estrelas verdadeiras e colete-as")
-        texto_.vai()
-    #Inserindo a boneca
-        self.bonequinha = Persona_control(self.c11)
-        
-        #nome_da_musica = Musica(MINHA_MUSICA, loop = True, autoplay = True)
-    
-#Botão de pegar elemento
-        pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                           cena = self.c11)                          
-        pega.elt.bind("click", self.pega_acao)
-        
-    #Inserindo o botão que muda de cena
-        
-        proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
-                           h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                           cena = self.cenas[self.ind_cenas],
-                           vai = self.cena2)
-        
-    
-    #Função para ir para a cena 2
-    def cena2(self, event = None):
-    #la.centro.sul.vai()
-        if(len(self.itens) == 0):
-            
-            self.cenas[1].vai()
-            #Atualiza o indíce da cena e a posição da carga da bateria
-            self.ind_cenas = 1
-            self.pos_carga = 0
-        
-            item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=330, y=500, cena = self.c12)
-            #item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
-            item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c12)
-            self.itens.append(item1)
-            #self.itens.append(item2)
-            self.itens.append(item3)
-        
-        
-            texto_ = Texto(self.c12, txt = "Segunda Cena")
-            texto_.vai()
-            self.bonequinha = Persona_control(self.c12)
-        
-            pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                           cena = self.c12)                          
-            pega.elt.bind("click", self.pega_acao)
-        
-            #Inserindo o botão que muda de cena
-            bateria = Elemento(BATERIA, tit="Bateria",
-                           h=50 , w=50, x=1050, y=20, cena= self.c12)
-            proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
-                           h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                           cena = self.cenas[self.ind_cenas],
-                           vai = self.cena3)
-        else:
-            texto_ = Texto(self.c11, txt = "Você ainda não terminou de explorar essa cena!")
-            texto_.vai()
-
+   
     def anda_direita(self,*_):
         """Este método guarda a expressão de movimentação do elemento quando o botão 'direita' é clicado.
         """
