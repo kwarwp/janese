@@ -153,7 +153,7 @@ class cenas:
             self.cenas[2].vai()
             self.ind_cenas = 2
             proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
-                               h=60 , w=60, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                                h=130 , w=130, x=1190, y=50, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.cenas[self.ind_cenas],
                                vai = self.cena3) 
       #  else:
