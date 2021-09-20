@@ -228,3 +228,10 @@ SyntaxError: invalid syntax
     self.c13 = Cena(FUNDO_CENA3)
 NameError: name 'FUNDO_CENA3' is not defined
 '''},
+{'date': 'Mon Sep 20 2021 17:15:32.46 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 73
+  self.x = 10 # valor pré-estabelecido do x
+  ^
+IndentationError: unexpected indent
+'''},
