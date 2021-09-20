@@ -37,7 +37,7 @@ CARGA = "https://imgur.com/mw9hsBq.png"
 STYLE["width"]=1350
 STYLE["height"]=700
 class cenas:
-    def __init__(self, nome_do_fundo):
+    def __init__(self):
         self.c11 = Cena(FUNDO_CENA1)
         self.c12 = Cena(FUNDO_CENA2)
 
