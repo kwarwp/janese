@@ -142,7 +142,7 @@ class cenas:
         #Inserindo o botão que muda de cena
 
             proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
-                               h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               h=70 , w=70, x=1200, y=50, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.cenas[self.ind_cenas],
                                vai = self.cena3)
 
