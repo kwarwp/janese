@@ -290,3 +290,10 @@ TypeError: teste() takes 0 positional argument but more were given
     jogo.teste()
 TypeError: teste() takes 0 positional argument but more were given
 '''},
+{'date': 'Mon Sep 20 2021 17:20:11.82 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 100
+  def verifica_proximidade(self, item_x, item_y):
+  ^
+IndentationError: unexpected indent
+'''},
