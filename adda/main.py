@@ -193,7 +193,10 @@ class cenas:
 
                 texto_ = Texto(self.c22, txt = "Segunda Cena")
                 texto_.vai()
+
                 self.bonequinha = Persona_control(self.c22)
+                self.x = 410 # valor pré-estabelecido do x
+                self.y = 430
 
                 pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.c22)                          
