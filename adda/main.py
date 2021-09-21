@@ -191,8 +191,6 @@ class cenas:
                 self.itens.append(item3)
 
 
-                texto_ = Texto(self.c22, txt = "Segunda Cena")
-                texto_.vai()
 
                 self.bonequinha = Persona_control(self.c22)
                 self.x = 410 # valor pré-estabelecido do x
