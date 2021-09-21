@@ -4,12 +4,25 @@
 
 from _spy.vitollino.main import Cena, Elemento, STYLE
 from browser import document
+#objetos
+FOLHA = "https://i.imgur.com/upAN1GX.png"
+PENA = "https://i.imgur.com/916QFLA.png"
+
+SOMA = "https://img.icons8.com/dusk/50/000000/plus-math.png"
+MENOS = "https://img.icons8.com/dusk/50/000000/minus-math.png"
+MULTIPLICA = "https://img.icons8.com/dusk/50/000000/multiply.png"
+DIVISAO = "https://img.icons8.com/dusk/50/000000/divide.png"
+
+INFINITOum = "https://img.icons8.com/dusk/50/000000/infinity.png"
+INFINITOdois = "https://img.icons8.com/doodle/50/000000/repeat.png"
+INFINITOtres = "https://img.icons8.com/carbon-copy/50/000000/repeat.png"
+INFINITOquarto = "https://img.icons8.com/plasticine/50/000000/repeat.png"
+
 
 FUNDO = "https://i.imgur.com/KYKStgT.png"
 PERSONAGEM = "https://imgur.com/E6lSl7l.gif"
 PERSONAGEM1= "https://imgur.com/A6wdCYS.gif"
-FOLHA = "https://i.imgur.com/upAN1GX.png"
-PENA = "https://i.imgur.com/916QFLA.png"
+
 MARCADOR_X = "https://imgur.com/4RZPRRz.png"
 MARCADOR_DIREITA = "https://imgur.com/GTnLEnS.png"
 MARCADOR_ESQUERDA = "https://imgur.com/Nl7Qy9h.png"
@@ -120,7 +133,7 @@ class cenas:
 
             #Cria itens e os adiciona na lista de itens    
             item1 = Elemento(PENA, tit="Item", h=30 , w=30, x=300, y=500, cena = self.c12)
-            item2 = Elemento(PENA, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c12)
+            item2 = Elemento(FOLHA, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c12)
             #item3 = Elemento(PENA, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c12)
             self.itens.append(item1)
             self.itens.append(item2)
@@ -164,32 +177,33 @@ class cenas:
         #la.centro.sul.vai()
             
 
-                self.cenas[1].vai()
+                self.cenas[3].vai()
                 #Atualiza o indíce da cena e a posição da carga da bateria
-                self.ind_cenas = 1
-                self.pos_carga = 0
+                self.ind_cenas = 3
+                self.pos_carga = 1
 
-                item1 = Elemento(ITEM, tit="Item", h=70 , w=70, x=330, y=500, cena = self.c12)
-                #item2 = Elemento(ITEM, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c11)
-                item3 = Elemento(ITEM, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c12)
+                item1 = Elemento(SOMA, tit="Item", h=70 , w=70, x=330, y=500, cena = self.c22)
+                item2 = Elemento(MENOS, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c22)
+                item3 = Elemento(MULTIPLICA, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c22)
+                item4 = Elemento(DIVISAO, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c22)
                 self.itens.append(item1)
                 #self.itens.append(item2)
                 self.itens.append(item3)
 
 
-                texto_ = Texto(self.c12, txt = "Segunda Cena")
+                texto_ = Texto(self.c22, txt = "Segunda Cena")
                 texto_.vai()
-                self.bonequinha = Persona_control(self.c12)
+                self.bonequinha = Persona_control(self.c22)
 
                 pega = Elemento(MARCADOR_MEIO, tit = "Pegar", h=40 , w=40, x=1005, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
-                               cena = self.c12)                          
+                               cena = self.c22)                          
                 pega.elt.bind("click", self.pega_acao)
 
                 #Inserindo o botão que muda de cena
                 bateria = Elemento(BATERIA, tit="Bateria",
-                               h=50 , w=50, x=1050, y=20, cena= self.c12)
-                proxima = Elemento(MARCADOR_ESQUERDA, tit="Próxima Cena",
-                               h=30 , w=30, x=1100, y=220, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               h=50 , w=50, x=1050, y=20, cena= self.c22)
+                proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
+                                h=70 , w=70, x=1200, y=50, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.cenas[self.ind_cenas],
                                vai = self.cena3)
 
