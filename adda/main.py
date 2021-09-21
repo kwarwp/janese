@@ -206,7 +206,19 @@ class cenas:
                 proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
                                 h=70 , w=70, x=1200, y=50, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.cenas[self.ind_cenas],
-                               vai = self.cena3)
+                               vai = self.cena5)
+                               
+                               
+                               
+    def cena5(self, event = None):
+        if(len(self.itens) == 0):
+            self.cenas[4].vai()
+            self.ind_cenas = 2
+            
+            proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
+                                h=130 , w=130, x=1190, y=50, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.cenas[self.ind_cenas],
+                               vai = self.cena6) 
 
 
 class Persona_control:
