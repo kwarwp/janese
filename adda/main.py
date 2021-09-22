@@ -249,11 +249,11 @@ class cenas:
                 pega.elt.bind("click", self.pega_acao)
 
                 #Inserindo o botão que muda de cena
-                bateria = Elemento(BATERIA, tit="Bateria",h=50 , w=100, x= 50, y=20, cena= self.c32)
+                batteria = Elemento(BATERIA, tit="Bateria",h=50 , w=100, x= 50, y=20, cena= self.c32)
                 proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
                                 h=70 , w=70, x=1200, y=50, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.cenas[self.ind_cenas],
-                             #  vai = self.cena7)
+                              vai = self.cena7)
 
 
 class Persona_control:
