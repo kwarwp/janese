@@ -232,7 +232,7 @@ class cenas:
                 item1 = Elemento(INFINITOum, tit="Item", h=70 , w=70, x=330, y=500, cena = self.c32)
                 item2 = Elemento(INFINITOdois, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c32)
                 item3 = Elemento(INFINITOtres, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c32)
-                item4 = Elemento(INFINITOquarto, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c32)
+                item4 = Elemento(INFINITOquatro, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c32)
                 self.itens.append(item1)
                 self.itens.append(item2)
                 self.itens.append(item3)
@@ -253,7 +253,7 @@ class cenas:
                 proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
                                 h=70 , w=70, x=1200, y=50, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.cenas[self.ind_cenas],
-                               vai = self.cena5)
+                             #  vai = self.cena7)
 
 
 class Persona_control:
