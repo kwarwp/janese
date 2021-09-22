@@ -219,6 +219,41 @@ class cenas:
                                 h=130 , w=130, x=1190, y=50, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.cenas[self.ind_cenas],
                                vai = self.cena6) 
+            
+    def cena6(self, event = None):
+        #la.centro.sul.vai()
+            
+
+                self.cenas[5].vai()
+                #Atualiza o indíce da cena e a posição da carga da bateria
+                self.ind_cenas = 5
+                self.pos_carga = 4
+
+                item1 = Elemento(INFINITOum, tit="Item", h=70 , w=70, x=330, y=500, cena = self.c32)
+                item2 = Elemento(INFINITOdois, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c32)
+                item3 = Elemento(INFINITOtres, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c32)
+                item4 = Elemento(INFINITOquarto, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c32)
+                self.itens.append(item1)
+                self.itens.append(item2)
+                self.itens.append(item3)
+                self.itens.append(item4)
+
+
+
+                self.bonequinha = Persona_control(self.c32)
+                self.x = 410 # valor pré-estabelecido do x
+                self.y = 430
+                
+                pega = Elemento(MARCADOR_X, tit = "Pegar", h=70 , w=70, x=1200, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.c32)                              
+                pega.elt.bind("click", self.pega_acao)
+
+                #Inserindo o botão que muda de cena
+                batteria = Elemento(BATERIA, tit="Bateria",h=50 , w=100, x= 50, y=20, cena= self.c32)
+                proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
+                                h=70 , w=70, x=1200, y=50, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+                               cena = self.cenas[self.ind_cenas],
+                               vai = self.cena5)
 
 
 class Persona_control:
