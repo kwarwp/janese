@@ -363,3 +363,10 @@ AttributeError: 'cenas' object has no attribute 'cena1'
     item1 = Elemento(ITEM, tit="Item", h=30 , w=30, x=300, y=500, cena = self.c11)
 NameError: name 'ITEM' is not defined
 '''},
+{'date': 'Tue Sep 21 2021 21:45:29.474 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 253
+  proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
+                                                                                                                                                                                                                                                                                       ^
+SyntaxError: invalid syntax
+'''},
