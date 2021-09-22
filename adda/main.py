@@ -16,7 +16,7 @@ DIVISAO = "https://img.icons8.com/dusk/50/000000/divide.png"
 INFINITOum = "https://img.icons8.com/dusk/50/000000/infinity.png"
 INFINITOdois = "https://img.icons8.com/doodle/50/000000/repeat.png"
 INFINITOtres = "https://img.icons8.com/carbon-copy/50/000000/repeat.png"
-INFINITOquarto = "https://img.icons8.com/plasticine/50/000000/repeat.png"
+INFINITOquatro = "https://img.icons8.com/plasticine/50/000000/repeat.png"
 
 
 FUNDO = "https://i.imgur.com/KYKStgT.png"
