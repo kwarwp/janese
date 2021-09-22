@@ -370,3 +370,10 @@ NameError: name 'ITEM' is not defined
                                                                                                                                                                                                                                                                                        ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Sep 21 2021 21:45:58.475 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 253
+  proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
+                                                                                                                                                                                                                                                                                       ^
+SyntaxError: invalid syntax
+'''},
