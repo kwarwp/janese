@@ -241,8 +241,8 @@ class cenas:
 
 
                 self.bonequinha = Persona_control(self.c32)
-                #self.x = 410 # valor pré-estabelecido do x
-                #self.y = 430
+                self.x = 410 # valor pré-estabelecido do x
+                self.y = 430
                 
                 pega = Elemento(MARCADOR_X, tit = "Pegar", h=70 , w=70, x=1200, y=470, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.c32)                              
