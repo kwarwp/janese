@@ -213,7 +213,7 @@ class cenas:
     def cena5(self, event = None):
         if(len(self.itens) == 0):
             self.cenas[4].vai()
-            self.ind_cenas = 2
+            self.ind_cenas = 4
             
             proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
                                 h=130 , w=130, x=1190, y=50, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
