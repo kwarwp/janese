@@ -183,8 +183,8 @@ class cenas:
                 self.pos_carga = 1
 
                 item1 = Elemento(SOMA, tit="Item", h=80 , w=80, x=330, y=600, cena = self.c22)
-                item2 = Elemento(MENOS, tit="Item", h=80 , w=80, x=400, y=480, cena = self.c22)
-                item3 = Elemento(MULTIPLICA, tit="Item", h=80 , w=80, x=400, y=1200, cena = self.c22)
+                item2 = Elemento(MENOS, tit="Item", h=80 , w=80, x=160, y=480, cena = self.c22)
+                item3 = Elemento(MULTIPLICA, tit="Item", h=80 , w=80, x=330, y=900, cena = self.c22)
                 item4 = Elemento(DIVISAO, tit="Item", h=80 , w=80, x=550, y=490, cena = self.c22)
                 self.itens.append(item1)
                 self.itens.append(item2)
