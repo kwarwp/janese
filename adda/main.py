@@ -79,7 +79,7 @@ class cenas:
                     i.h = 0
                     i.w = 0
                     #E a bateria irá encher
-                    carga = Elemento(CARGA, w = 80, h = 50, x=50+self.pos_carga, y=20)
+                    carga = Elemento(CARGA, w = 80, h = 70, x=40+self.pos_carga, y=20)
                     self.cenas[self.ind_cenas].bota(carga)
                     #Aumenta a posição para o próximo item
                     self.pos_carga = self.pos_carga + 10
