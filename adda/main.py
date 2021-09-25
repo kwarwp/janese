@@ -42,6 +42,8 @@ FUNDO_CENA6 = "https://imgur.com/BEyvnvd.jpg"
 FUNDO_CENA11 = "https://i.imgur.com/EBbuTmf.jpg"
 FUNDO_CENA12 = "https://imgur.com/XQhy1Yo.jpg"
 
+FUNDO_CENA13 = "https://imgur.com/2JIu8kK.gif"
+
 
 BATERIA = "https://imgur.com/0PGuq9q.png"
 CARGA = "https://imgur.com/mw9hsBq.png"
@@ -60,8 +62,9 @@ class cenas:
         
         self.c31 = Cena(FUNDO_CENA11)
         self.c32 = Cena(FUNDO_CENA12)
+        self.c34 = Cena(FUNDO_CENA13)
         
-        self.cenas = [self.c11, self.c12, self.c21, self.c22, self.c31, self.c32]
+        self.cenas = [self.c11, self.c12, self.c21, self.c22, self.c31, self.c32, self.c33]
         self.bonequinha = 0
         self.itens = []
         self.ind_cenas= 0
@@ -254,6 +257,15 @@ class cenas:
                                 h=70 , w=70, x=1200, y=50, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
                                cena = self.cenas[self.ind_cenas],
                               vai = self.cena7)
+    def cena7(self, event = None):
+        if(len(self.itens) == 0):
+            self.cenas[6].vai()
+            self.ind_cenas = 6
+            
+         #  proxima = Elemento(MARCADOR_PLAY, tit="Próxima Cena",
+          #                      h=130 , w=130, x=1190, y=50, # ou x=eixo_x, y=eixo_y, w=largura, h=altura
+           #                    cena = self.cenas[self.ind_cenas],
+            #                   vai = self.cena6) 
 
 
 class Persona_control:
