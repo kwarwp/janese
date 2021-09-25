@@ -132,7 +132,7 @@ class cenas:
             self.ind_cenas = 1
 
             #Cria itens e os adiciona na lista de itens    
-            item1 = Elemento(PENA, tit="Item", h=30 , w=30, x=300, y=500, cena = self.c12)
+            item1 = Elemento(PENA, tit="Item", h=30 , w=30, x=500, y=200, cena = self.c12)
             item2 = Elemento(FOLHA, tit="Item", h=30 , w=30, x=400, y=480, cena = self.c12)
             #item3 = Elemento(PENA, tit="Item", h=30 , w=30, x=550, y=490, cena = self.c12)
             self.itens.append(item1)
