@@ -140,7 +140,7 @@ class cenas:
             #self.itens.append(item3)
 
             #bateria vazia
-            bateria = Elemento(BATERIA, tit="Bateria",h=80 , w=100, x= 50, y=20, cena= self.c12)
+            bateria = Elemento(BATERIA, tit="Bateria",h=50 , w=100, x= 50, y=20, cena= self.c12)
 
         #Inserindo a boneca
             self.bonequinha = Persona_control(self.c12)
