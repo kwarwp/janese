@@ -230,9 +230,9 @@ class cenas:
                 self.pos_carga = 4
 
                 item1 = Elemento(INFINITOum, tit="Item", h=80, w=80,x=300 , y=400 , cena = self.c32)
-                item2 = Elemento(INFINITOdois, tit="Item", h=80,w=80, x=600,y=320  , cena = self.c32)
-                item3 = Elemento(INFINITOtres, tit="Item", h=80 , w=80, x=700 , y=500 , cena = self.c32)
-                item4 = Elemento(INFINITOquatro, tit="Item", h=80 , w=80, x=1200 , y=200,cena = self.c32)
+                item2 = Elemento(INFINITOdois, tit="Item", h=80,w=80, x=600,y=350 , cena = self.c32)
+                item3 = Elemento(INFINITOtres, tit="Item", h=80 , w=80, x=700 , y=530, cena = self.c32)
+                item4 = Elemento(INFINITOquatro, tit="Item", h=80 , w=80, x=1100, y=200,cena = self.c32)
                 self.itens.append(item1)
                 self.itens.append(item2)
                 self.itens.append(item3)
