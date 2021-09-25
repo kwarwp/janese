@@ -184,7 +184,7 @@ class cenas:
 
                 item1 = Elemento(SOMA, tit="Item", h=80 , w=80, x=330, y=600, cena = self.c22)
                 item2 = Elemento(MENOS, tit="Item", h=80 , w=80, x=200, y=400, cena = self.c22)
-                item3 = Elemento(MULTIPLICA, tit="Item", h=80 , w=80, x=330, y=600, cena = self.c22)
+                item3 = Elemento(MULTIPLICA, tit="Item", h=80 , w=80, x=950,y=600, cena = self.c22)
                 item4 = Elemento(DIVISAO, tit="Item", h=80 , w=80, x=550, y=350, cena = self.c22)
                 self.itens.append(item1)
                 self.itens.append(item2)
