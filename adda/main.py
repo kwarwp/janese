@@ -1,5 +1,5 @@
 # janese.adda.main.py
-#Bianca
+#Bianca Patrcínio Castro
 #Ada Lovelace
 
 from _spy.vitollino.main import Cena, Elemento, STYLE
