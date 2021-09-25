@@ -62,7 +62,7 @@ class cenas:
         
         self.c31 = Cena(FUNDO_CENA11)
         self.c32 = Cena(FUNDO_CENA12)
-        self.c34 = Cena(FUNDO_CENA13)
+        self.c33 = Cena(FUNDO_CENA13)
         
         self.cenas = [self.c11, self.c12, self.c21, self.c22, self.c31, self.c32, self.c33]
         self.bonequinha = 0
